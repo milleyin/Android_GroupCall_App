@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        style="@style/BaseBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@id/title_layout"
+                layout="@layout/head_back_title_more"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/account_layout"
+                layout="@layout/my_account_view" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

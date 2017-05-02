@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_pop"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <!-- <RadioGroup -->
+        <!-- android:id="@+id/radio_gender" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:orientation="vertical" -->
+        <!-- android:visibility="visible" > -->
+
+
+        <!-- <RadioButton -->
+        <!-- android:id="@+id/rb_male" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="50dp" -->
+        <!-- android:button="@null" -->
+        <!-- android:gravity="left|center_vertical" -->
+        <!-- android:text="@string/male" -->
+        <!-- android:textColor="@drawable/button_text_selector" /> -->
+
+
+        <!-- <RadioButton -->
+        <!-- android:id="@+id/radiobutton" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="50dp" -->
+        <!-- android:button="@null" -->
+        <!-- android:gravity="left|center_vertical" -->
+        <!-- android:text="@string/female" -->
+        <!-- android:visibility="gone" -->
+        <!-- android:textColor="@drawable/button_text_selector" /> -->
+
+        <ScrollView
+            android:id="@+id/scroller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_popup"
+            android:fadingEdge="none"
+            android:minWidth="150dp"
+            android:scrollbars="none" >
+
+            <RadioGroup
+                android:id="@id/radio_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" >
+            </RadioGroup>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

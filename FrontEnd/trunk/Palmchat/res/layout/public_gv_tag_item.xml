@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/uilist"
+    android:orientation="vertical"
+    android:layout_marginLeft="39dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/ItemImage"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:gravity="center"
+        android:src="@drawable/app_icon" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:text="texfd fdasdfaf"
+        android:lines="1"
+        android:textColor="@color/text_level_2" >
+    </TextView>
+
+</LinearLayout>

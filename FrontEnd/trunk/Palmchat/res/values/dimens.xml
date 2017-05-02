@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sideBarTextSize">10sp</dimen>
+    <dimen name="group_profile_photo_margin_top">20dp</dimen>
+    
+    <!-- points record -->
+    <dimen name="d_pr_height">80dp</dimen>
+    <dimen name="d_pr_left">20dp</dimen>
+    <dimen name="d_pr_right">17dp</dimen>
+    <dimen name="d_pr_title_big">14sp</dimen>
+    <dimen name="d_pr_title_small">12sp</dimen>
+    <dimen name="d_pr_title_margin">1dp</dimen>
+    <dimen name="d_10dp">10dp</dimen>
+    <dimen name="head_back_profile_name_max_width">230dp</dimen>
+    <dimen name="head_back_chatting_title_padding">10dp</dimen>
+
+    <dimen name="d_broadcast_item_margintop">13.5dp</dimen> 
+    <dimen name="d_broadcast_item_margin">12dp</dimen>
+    <dimen name="d_broadcast_pic_margin">2dp</dimen>
+    <dimen name="d_broadcast_desc_sp">12sp</dimen>
+    <dimen name="d_broadcast_desc_sp_share">10sp</dimen>
+     <dimen name="d_broadcast_headszie">43dip</dimen>
+      <dimen name="d_broadcast_headszie_share">34dp</dimen>
+      <dimen name="d_broadcast_nameszie">16sp</dimen>
+      <dimen name="d_broadcast_nameszie_share">14sp</dimen>
+      <dimen name="d_head_left_margin">12dp</dimen>
+    <!-- public accounts -->
+    <dimen name="accounts_imagetxt_layout_marginLR_size">12dp</dimen>
+    <dimen name="accounts_imagetxt_layout_marginTB_size">5dp</dimen>
+    <dimen name="accounts_imagetxt_layout_marginB_size">28dp</dimen>
+    <dimen name="accounts_imagetxt_img_margin_size">8dp</dimen>
+    <dimen name="accounts_imagetxt_titlebg_height_size">36dp</dimen>
+    <dimen name="accounts_imagetxt_titlttest_size">18sp</dimen>
+    <dimen name="accounts_imagetxt_paddingLR_size">8dp</dimen>
+    <dimen name="accounts_imagetxt_divideline_margintop_size">14dp</dimen>
+    
+    <dimen name="accounts_imagetxt_description_margintop_size">15dp</dimen>
+    <dimen name="accounts_imagetxt_description_text_size">14sp</dimen>
+    <dimen name="accounts_imagetxt_description_LineSpacing_size">5dp</dimen>
+    <dimen name="accounts_imagetxt_description_marginLR_size">18dp</dimen>
+    <dimen name="accounts_imagetxt_fulltxtlayout_height_size">40dp</dimen>
+    <dimen name="accounts_imagetxt_fulltxt_margin_size">16dp</dimen>
+    <dimen name="accounts_imagetxt_fulltxt_text_size">14sp</dimen>
+    
+    <!-- broadcast trending -->
+    <dimen name="broadcast_trending_hottags_marginleft_size">10dp</dimen>
+    <dimen name="broadcast_trending_hottags_margintop_size">15dp</dimen>
+    <dimen name="broadcast_trending_headerview_bottommargin_size">10dp</dimen>
+    <dimen name="broadcast_trending_headerview_seemoretext_size">12sp</dimen>
+    <dimen name="broadcast_trending_headerview_seemorepadding_size">6dp</dimen>
+    <dimen name="broadcast_trending_headerview_imagename_size">14sp</dimen>
+    <dimen name="broadcast_trending_headerview_imagename_margintop_size">2.5dp</dimen>
+    <dimen name="broadcast_trending_headerview_imagename_paddingleft_size">6dp</dimen>
+    <dimen name="broadcast_trending_headerview_list_marginlr_size">4dp</dimen>
+    <dimen name="broadcast_trending_headerview_img_width_size">85dp</dimen>
+    <dimen name="broadcast_trending_headerview_divide_margintop_size">13dp</dimen>
+    <dimen name="broadcast_trending_headerview_photoname_margintop_size">13dp</dimen>
+    <dimen name="broadcast_trending_headerview_gridview_margintop_size">8dp</dimen>
+    <dimen name="broadcast_trending_headerview_gridview_marginlr_size">4dp</dimen>
+    <dimen name="broadcast_trending_headerview_gridview_marginr_size">3dp</dimen>
+    <dimen name="broadcast_trending_headerview_photoname_marginleft_size">10dp</dimen>
+    <dimen name="broadcast_trending_headerview_photoname_text_size">6dp</dimen>
+    <dimen name="broadcast_trending_headerview_photographybottom_margintop_size">5dp</dimen>
+    <dimen name="broadcast_trending_listitem_image_height_size">30dp</dimen>
+    
+    <dimen name="broadcast_trending_listitem_image_firstline_img_size">179dp</dimen>
+    <dimen name="broadcast_trending_listitem_image_secondline_left_img_size">269dp</dimen>
+    <dimen name="broadcast_trending_listitem_image_secondline_right_img_size">88dp</dimen>
+    <dimen name="broadcast_trending_listitem_image_thirdline_img_size">119dp</dimen>
+    <dimen name="broadcast_trending_listitem_image_margin_size">2dp</dimen>
+    <dimen name="broadcast_trending_listitem_divideheight_size">2dp</dimen>
+    <dimen name="broadcast_bar_shadedownheight_size">-5.5dp</dimen>
+    <dimen name="broadcast_bar_shadeupheight_size">-3.5dp</dimen>
+    <dimen name="broadcast_bar_underline_margin_size">3dp</dimen>
+    
+    <!--tag page-->
+    <dimen name="broadcast_tagpage_tags_height_size">48dp</dimen>
+    <dimen name="broadcast_tagpage_tags_text_size">16sp</dimen>
+    <dimen name="broadcast_tagpage_partingline_height_size">11dp</dimen>
+    <dimen name="broadcast_tagpage_indicator_height_size">4dp</dimen>
+    <dimen name="broadcast_tagpage_dialog_height_size">60dp</dimen>
+    <dimen name="broadcast_tagpage_dialog_headerview_height_size">24dp</dimen>
+    <dimen name="broadcast_tagpage_dialog_headerview_margin_size">18dp</dimen>
+    <dimen name="broadcast_tagpage_dialog_text_size">16sp</dimen>
+    <dimen name="broadcast_tagpage_empty_textmargin_size">2dp</dimen>
+    <dimen name="broadcast_tagpage_tagpage_bottom_height_size">48dp</dimen>
+    <dimen name="broadcast_tagpage_nocontent0_textmargintop_size">10dp</dimen>
+    <dimen name="broadcast_tagpage_divide_width_size">1px</dimen>
+    <dimen name="broadcast_tagpage_like_item_height_size">40dp</dimen>
+    <dimen name="broadcast_tagpage_like_width_size">80dp</dimen>
+    <dimen name="broadcast_tagpage_like_height_size">44.5dp</dimen>
+    <dimen name="broadcast_tagpage_like_text_size">14dp</dimen>
+    <dimen name="broadcast_tagpage_like_divideheight_size">20dp</dimen>
+    <dimen name="broadcast_tagpage_viewmore_margin_size">24dp</dimen>
+    
+    <!--tags  -->
+    <dimen name="broadcast_tags_tag_name_size">16sp</dimen>
+    <dimen name="broadcast_tags_tag_margin_size">18dp</dimen>
+    <dimen name="broadcast_tags_tag_mark_size">13sp</dimen>
+    <dimen name="broadcast_tags_tag_sum_margin_size">7dp</dimen>
+    <dimen name="broadcast_tags_empty_text_size">16sp</dimen>
+    <dimen name="broadcast_tags_empty_margintop_size">12dp</dimen>
+    <dimen name="broadcast_tags_empty_imgwith_size">116dp</dimen>
+    <dimen name="broadcast_tags_edittext_size">16sp</dimen>
+    <dimen name="broadcast_blankview_text_size">14sp</dimen>
+    <dimen name="broadcastfragment_blankview_margintop_size">40dp</dimen>
+    <dimen name="broadcastfragment_blankview_contenttwo_margintop_size">0.5dp</dimen>
+    <dimen name="broadcastfragment_blankview_contenttwo_linespace_size">1dp</dimen>
+
+    <dimen name="homefragment_blankview_margintop_size">100dp</dimen>
+    <dimen name="friendcirclefragment_blankview_margintop_size">200dp</dimen>
+    <dimen name="friendcirclefragment_blankviewheight_size">92dp</dimen>
+    <dimen name="toppstfragment_blankviewheight_size">94.5dp</dimen>
+    
+    
+    <dimen name="broadcast_share_text_notexist">28dp</dimen>
+    <dimen name="maintab_title_height">52dp</dimen>
+    <dimen name="broadcast_tabs_margin_height">100dp</dimen>
+    <dimen name="broadcast_tagpege_margin_height">99dp</dimen>
+    <dimen name="broadcast_tagpage_tabs_margin_height_size">105dp</dimen>
+    <dimen name="broadcast_tabs_trendingmargin_height">98dp</dimen>
+    <dimen name="maintab_listview_margin_height">58dp</dimen>
+    <dimen name="home_listview_margin_height">56dp</dimen>
+    <dimen name="chatfragment_marginbottom_margin_height">52dp</dimen>
+    <dimen name="broadcast_tips_margin">4dp</dimen>
+    <dimen name="broadcast_toprefresh_margintop_size">-4dp</dimen>
+    <dimen name="broadcast_edit_pic_margin">2dp</dimen>
+    <dimen name="broadcast_edit_pic_scroll_speed">10dp</dimen>
+    <dimen name="preview_image_margin">1dp</dimen>
+    <dimen name="broadcast_area_height">0dp</dimen>
+    <dimen name="broadcast_tabs_img_marginright_size">1dp</dimen>
+    <dimen name="broacast_tab_tip_text_size">14sp</dimen>
+    <dimen name="broacast_tab_tip_text_paddingtl">5dp</dimen>
+    <dimen name="broacast_tab_tip_text_paddingbr">8dp</dimen>
+    <dimen name="broacast_tab_tip_layout_marginr">8dp</dimen>
+    <dimen name="broacast_tab_tip_margint_size">-2dp</dimen>
+    <!--account details  -->
+    <dimen name="accountdetails_headimg_marginleft_size">12dp</dimen>
+    <dimen name="accountdetails_headimg_height_size">80dp</dimen>
+    <dimen name="accountdetails_icon_marginlefet_size">12dp</dimen>
+    <dimen name="accountdetails_icon_margintop_size">7dp</dimen>
+    <dimen name="accountdetails_name_margintop_size">-5dp</dimen>
+    <dimen name="accountdetails_name_marginlefet_size">6dp</dimen>
+    <dimen name="accountdetails_name_text_size">18sp</dimen>
+    <dimen name="accountdetails_intro_paddingtop_size">17dp</dimen>
+    <dimen name="accountdetails_intro_paddingbottom_size">19dp</dimen>
+    <dimen name="accountdetails_id_margintop_size">10dp</dimen>
+    <dimen name="accountdetails_id_marginleft_size">2dp</dimen>
+    <dimen name="accountdetails_id_text_size">14sp</dimen>
+    <dimen name="accountdetails_likemark_margintop_size">8dp</dimen>
+    <dimen name="accountdetails_likecount_margintop_size">-3dp</dimen>
+    <dimen name="accountdetails_divide_height_size">1px</dimen>
+    <dimen name="accountdetails_intro_height_size">72dp</dimen>
+    <dimen name="accountdetails_divide_margintop_size">20dp</dimen>
+    <dimen name="accountdetails_intro_margintop_size">21dp</dimen>
+    <dimen name="accountdetails_dividetree_height_size">16dp</dimen>
+    <dimen name="accountdetails_viewhistory_height_size">48dp</dimen>
+    <dimen name="accountdetails_follow_margintop_size">32dp</dimen>
+    <dimen name="accountdetails_arrow_marginright_size">18dp</dimen>
+   	<dimen name="accountdetails_follow_text_size">16sp</dimen>
+   	<dimen name="accountdetails_follow_textspacing_size">4dp</dimen>
+
+  	<dimen name="sendbroadcast_title_textsize">18sp</dimen>
+   	<dimen name="sendbroadcast_edittext_height">90dp</dimen>
+    <dimen name="sendbroadcast_edittext_minheight">114dp</dimen>
+   	<dimen name="sendbroadcast_emotionbutton_layout_height">48dp</dimen>
+   	<dimen name="sendbroadcast_emotionbutton_margintop_height">3.5dp</dimen>
+   	<dimen name="sharebroadcast_emotionbutton_margintop_height">7dp</dimen>
+    <dimen name="sendbroadcastshareto_height">48dp</dimen>
+    <dimen name="sendbroadcastshareto_mleft_size">12dp</dimen>
+    <dimen name="sendbroadcastshareto_text_size">14sp</dimen>
+    <dimen name="sendbroadcastscroll_paddingtop">8dp</dimen>
+    <dimen name="sendbroadcast_xcfview_margintop">7dp</dimen>
+    <dimen name="sendbroadcast_xcfview_marginleft">12dp</dimen>
+    <dimen name="sendbroadcast_xcfview_marginbottom">8dp</dimen>
+
+    <dimen name="long_button_height">45dp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="flowview_marginwidth">220dp</dimen>
+    <dimen name="flowview_minwidth">51dp</dimen>
+    <dimen name="flowview_margintop">-4dp</dimen>
+    <dimen name="flowview_marginbottom">-2.5dp</dimen>
+    <dimen name="flowview_marginleft">12dp</dimen>
+    <dimen name="flowview_marginright">10dp</dimen>
+    <dimen name="popwindow_tagsdict_marginlr">8dp</dimen>
+    <dimen name="popwindow_tagsdict_height">175dp</dimen>
+    <dimen name="popwindow_tagsdict_margintop">6dp</dimen>
+    <dimen name="chatting_optionsydiff">55dp</dimen>
+    <dimen name="maintab_sendicon_marginright_size">20dp</dimen>
+    <dimen name="maintab_sendicon_marginbottom_size">20dp</dimen>
+    <dimen name="maintab_sendphotoicon_marginbottom_size">71dp</dimen>
+    <dimen name="maintab_sendvoiceicon_marginright_size">4.5dp</dimen>
+    <dimen name="maintab_sendvoice_text_size">13sp</dimen>
+    <dimen name="maintab_sendvoice_marginright_size">12dp</dimen>
+    <dimen name="maintab_sendphoto_marginright_size">9dp</dimen>
+    <dimen name="maintab_sendphototext_margintop_size">10dp</dimen>
+    <dimen name="maintab_sendvoicetext_margintop_size">6dp</dimen>
+    <dimen name="maintab_send_paddingtop_size">6dp</dimen>
+    <dimen name="maintab_send_paddingbottom_size">10dp</dimen>
+    <dimen name="maintab_send_paddinglr_size">13dp</dimen>
+    <dimen name="maintab_send_guide_triangle_marginr">45dp</dimen>
+    <dimen name="maintab_send_guide_triangle_marginb">3dp</dimen>
+    <dimen name="maintab_send_guide_text_marginb">-5dp</dimen>
+    <dimen name="maintab_sendvoice_guide_text_size">14sp</dimen>
+    <dimen name="maintab_bottomlabel_text_size">10sp</dimen>
+  	<dimen name="broadcast_tab_height">48dp</dimen>
+    <dimen name="broadcast_newcontents_margintiop_size">112dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="chating_margin">10dp</dimen>
+    <dimen name="chating_margin_left_right">35dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="chat_img_borderRadius">15dp</dimen>
+    <dimen name="common_title_height_48dp">48dp</dimen>
+    <dimen name="public_account_margin_size">4sp</dimen>
+
+    <dimen name="rippleStrokeWidth">2dp</dimen>
+    <dimen name="rippleRadius">64dp</dimen>
+    <dimen name="captrue_activity_top">80dp</dimen>
+    <dimen name="captrue_activity_width">260dp</dimen>
+    <dimen name="captrue_activity_height">260dp</dimen>
+    <!--QR-->
+    <dimen name="qr_img_width">240dp</dimen>
+    <dimen name="qr_img_margion_top">33dp</dimen>
+    <dimen name="qr_text_prompt_margion_top">14dp</dimen>
+    <dimen name="qr_text_code_margion_top">25dp</dimen>
+    <dimen name="headportrait_save_widht">67dp</dimen>
+
+    <dimen name="palmcall_detail_20sp">20sp</dimen>
+
+    <dimen name="palmcall_reward">60dp</dimen>
+    <dimen name="palmcall_clearance">16dp</dimen>
+    <dimen name="palmcall_top_18">18dp</dimen>
+    <dimen name="palmcall_top_12">12dp</dimen>
+    <dimen name="palmcall_top_8">8dp</dimen>
+
+    <dimen name="palmcall_Hostlist_Header_Heigth">48dp</dimen>
+    <dimen name="header_More_Heigth">56dp</dimen>
+    <dimen name="palmcall_Hostlist_intro_Heigth">48dp</dimen>
+
+    <dimen name="edit_broadcast_pic_edit_w">28dp</dimen>
+    <dimen name="edit_broadcast_pic_edit_h">14dp</dimen>
+    <dimen name="edit_broadcast_pic_edit_margin">4dp</dimen>
+    <dimen name="edit_broadcast_pic_delete_wh">16dp</dimen>
+    <dimen name="edit_broadcast_pic_edit_textsize">12sp</dimen>
+    
+    <dimen name="palmcall_width_120">120dp</dimen>
+    <dimen name="palmcall_height_42">42dp</dimen>
+</resources>

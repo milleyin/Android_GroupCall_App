@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:layout_gravity="center"
+    android:paddingBottom="10.0dip"
+    android:paddingTop="10.0dip" 
+    android:background="@drawable/loading_dialog"
+    >
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/dialog_voice_recording"
+        android:textColor="#ff88ff00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/recording" />
+
+    <ImageView
+        android:id="@id/dialog_voice_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/empty"
+        android:layout_marginBottom="12dp"
+        android:padding="6.0dip"
+        android:textSize="20sp" />
+	<TextView
+        android:id="@+id/dialog_voice_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

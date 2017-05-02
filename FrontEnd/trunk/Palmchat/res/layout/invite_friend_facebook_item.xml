@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/item_top"
+        android:background="@drawable/home_list"
+        android:minHeight="60dip" >
+
+        <TextView
+            android:id="@+id/friend_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="A"
+            android:textColor="@color/text_level_2"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:id="@+id/wraphead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp" >
+
+            <RelativeLayout
+                android:id="@+id/chatlogs_friend_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <!-- 存放好友头像 -->
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/add_layout"
+            android:layout_toRightOf="@+id/wraphead"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/text_level_1" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/add_layout"
+            android:layout_width="55dip"
+            android:layout_height="60dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+            <ImageView
+                android:id="@+id/add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dip"
+                android:background="@drawable/invite_friend_add" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dibidingline_1"
+        android:visibility="gone" />
+
+</LinearLayout>

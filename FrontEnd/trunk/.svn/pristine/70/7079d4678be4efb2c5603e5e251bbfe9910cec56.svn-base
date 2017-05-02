@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/head_back_title_more" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/all"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/all" />
+
+            <TextView
+                android:id="@+id/gender_male"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_male" />
+
+            <TextView
+                android:id="@+id/gender_female"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_female" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

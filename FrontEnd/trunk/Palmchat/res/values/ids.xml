@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- loading -->
+    <item type="id" name="base_loading"/>
+    <item type="id" name="base_loading_text"/>
+    <item type="id" name="listview_prompt"/>
+    <item type="id" name="back_layout"/>
+    <item type="id" name="cardbar_options"/>
+    <item type="id" name="cardbar_options_2"/>
+    <item type="id" name="view_profile"/>
+    <!-- country -->
+    <item type="id" name="country_text"/>
+    <item type="id" name="country_code"/>
+    <item type="id" name="select_country"/>
+    <item type="id" name="checkbox"/>
+    <item type="id" name="go_afid"/>
+    <item type="id" name="go_phone"/>
+    <item type="id" name="view_offline"/>
+    <item type="id" name="bind_phone_tips"/>
+    <!-- pick -->
+    <item type="id" name="year"/>
+    <item type="id" name="month"/>
+    <item type="id" name="day"/>
+    <item type="id" name="country"/>
+    <item type="id" name="city"/>
+    <item type="id" name="state"/>
+    <item type="id" name="region"/>
+    <!-- Main Tab -->
+    <item type="id" name="main_tab_bg"/>
+    <item type="id" name="main_tab_chats"/>
+    <item type="id" name="main_tab_friends"/>
+    <item type="id" name="main_tab_social"/>
+    <item type="id" name="main_tab_settings"/>
+    <item type="id" name="tab_chats_line"/>
+    <item type="id" name="tab_friends_line"/>
+    <item type="id" name="tab_social_line"/>
+    <item type="id" name="tab_settings_line"/>
+    
+    <item type="id" name="options_add"/>
+    <item type="id" name="options_delete"/>
+    <item type="id" name="options_chat"/>
+    <item type="id" name="options_recommend"/>
+    
+    <item type="id" name="profile_options_one"/>
+    <item type="id" name="profile_options_two"/>
+    <item type="id" name="profile_options_three"/>
+    <item type="id" name="profile_options_four"/>
+    
+    <item type="id" name="options_one"/>
+    <item type="id" name="options_two"/>
+    <item type="id" name="options_three"/>
+    <item type="id" name="options_four"/>
+    
+    <item type="id" name="title_operate_buttom"/>
+    <item type="id" name="title_add_buttom"/>
+    <item type="id" name="title_chats"/>
+    <item type="id" name="title_logo"/>
+    <item type="id" name="title_options_one"/>
+    <item type="id" name="title_options_two"/>
+    <item type="id" name="title_options_one_layout"/>
+    <item type="id" name="title_options_two_layout"/>
+    <item type="id" name="title_chats_layout"/>
+    <item type="id" name="title_friends_layout"/>
+    <item type="id" name="title_social_layout"/>
+    <item type="id" name="title_settings_layout"/>
+    <item type="id" name="title_setpass_layout"/>
+    <item type="id" name="title_layout"/>
+    
+    <item type="id" name="guide"/>
+    <item type="id" name="g_1"/>
+    <item type="id" name="g_2"/>
+    <item type="id" name="g_3"/>
+    <item type="id" name="unread_msg"/>
+    <item type="id" name="nav_layout"/>
+    <item type="id" name="radio_gender"/>
+    <item type="id" name="radio_female"/>
+    <item type="id" name="radio_male"/>
+    <item type="id" name="agree_layout"/>
+    <item type="id" name="attr_layout"/>
+    
+    <item type="id" name="submit"/>
+    <item type="id" name="layout"/>
+    <item type="id" name="body_layout"/>
+    <item type="id" name="notify_icon"/>
+    <item type="id" name="notify_name"/>
+    <item type="id" name="notify_other"/>
+    <item type="id" name="icon"/>
+    <item type="id" name="list_cl"/>
+    
+    <item type="id" name="title_text"/>
+    <item type="id" name="loading_text"/>
+    <item type="id" name="loading_progress"/>
+    <item type="id" name="send_button"/>
+    <item type="id" name="back_button"/>
+    <item type="id" name="next_button"/>
+    <item type="id" name="ok_button"/>
+    <item type="id" name="footer_text"/>
+    <item type="id" name="footer_progress"/>
+    <item type="id" name="footer_prompt"/>
+    <item type="id" name="footer_loading_layout"/>
+    <!-- register -->
+	<item type="id" name="succeed_id_key"/>
+	<item type="id" name="succeed_password_key"/>
+	<item type="id" name="succeed_id_value"/>
+	<item type="id" name="succeed_password_value"/>
+	<item type="id" name="forget_password"/>
+	<item type="id" name="register_username_key"/>
+	<item type="id" name="register_password_key"/>
+	<item type="id" name="register_dob_key"/>
+	<item type="id" name="register_ragion_key"/>
+	<item type="id" name="register_create_account_layout"/>
+	<item type="id" name="register_create_account"/>
+	<item type="id" name="change_login_layout"/>
+	<item type="id" name="change_login"/>
+	<item type="id" name="edit_dob"/>
+	<item type="id" name="edit_ragion"/>
+	<item type="id" name="old_password"/>
+	<item type="id" name="old_password_label"/>
+	<item type="id" name="new_password"/>	
+	<item type="id" name="re_new_password_label"/>
+    <item type="id" name="re_new_password"/>
+	<item type="id" name="new_password_label"/>
+	<item type="id" name="reset_pass_detail"/>
+	<item type="id" name="register_label"/>
+	<item type="id" name="login_label"/>
+	<!-- login -->
+	<item type="id" name="login_password"/>
+	<item type="id" name="login_button"/>
+	<item type="id" name="login_username_key"/>
+	<item type="id" name="login_password_key"/>
+	<item type="id" name="with_account"/>
+	<item type="id" name="phone_layout"/>
+	<item type="id" name="afid_layout"/>
+	<item type="id" name="pass_layout"/>
+	<item type="id" name="login_user"/>
+	<item type="id" name="login_pass"/>
+	<item type="id" name="change_id"/>
+	
+    <item type="id" name="main_layout"/>
+    <item type="id" name="tab_left_layout"/>
+    <item type="id" name="tab_center_layout"/>
+    <item type="id" name="tab_right_layout"/>
+    
+    <item type="id" name="edit_user"/>
+    <item type="id" name="edit_pass"/>
+    <item type="id" name="register_button"/>
+    <!-- phonebook -->
+    <item type="id" name="search_layout"/>
+    <item type="id" name="search_input"/>
+    <item type="id" name="account_edit"/>
+    <item type="id" name="search_button"/>
+    <item type="id" name="search"/>
+    <item type="id" name="edit_delete_layout"/>
+    <item type="id" name="mass_sms_layout"/>
+    <item type="id" name="edit_mode_layout"/>
+    <item type="id" name="delete_button"/>
+    <item type="id" name="cancel_button"/>
+    <item type="id" name="confim_button"/>
+    <item type="id" name="skip_button"/>
+    <item type="id" name="edit_user_list"/>
+    <item type="id" name="dialog_title"/>
+    
+    <item type="id" name="phonebook_sort"/>
+    <item type="id" name="phonebook_name"/>
+    <item type="id" name="phonebook_number"/>
+    <item type="id" name="phonebook_photo"/>
+    <item type="id" name="phonebook_check"/>
+    <item type="id" name="phonebook_account_type"/>
+    
+    <item type="id" name="chats_name"/>
+    <item type="id" name="chats_sign"/>
+    <item type="id" name="chats_time"/>
+    <item type="id" name="chats_photo"/>
+    <item type="id" name="chats_sex"/>
+    <item type="id" name="chats_sort"/>
+    <item type="id" name="chats_msg"/>
+    
+    <item type="id" name="friend_number"/>
+    <item type="id" name="friend_sort"/>
+    <item type="id" name="friend_range"/>
+    <item type="id" name="range_icon"/>
+    <item type="id" name="friend_time"/>
+    <item type="id" name="friend_city"/>
+    <item type="id" name="friend_region"/>
+    <item type="id" name="friend_interests"/>
+    <item type="id" name="friend_name"/>
+    <item type="id" name="friend_afid"/>
+    <item type="id" name="friend_sign"/>
+    <item type="id" name="friend_photo"/>
+    <item type="id" name="friend_check"/>
+    <item type="id" name="friend_account_type"/>
+    <item type="id" name="friend_age"/>
+    <item type="id" name="friend_sex"/>
+    <item type="id" name="friend_sex_back"/>
+    <item type="id" name="region_icon"/>
+    <item type="id" name="time_icon"/>
+    <item type="id" name="shake_img"/>
+    <item type="id" name="shake_prompt"/>
+    <!-- menu -->
+    <item type="id" name="menu_grid"/>
+    <item type="id" name="menu_item"/>
+    
+    <item type="id" name="list0"/>
+    <item type="id" name="list1"/>
+    <item type="id" name="list2"/>
+    <item type="id" name="list3"/>
+    <item type="id" name="list4"/>
+    <item type="id" name="list5"/>
+    <item type="id" name="setting_my_profile_content_layout"/>
+    <item type="id" name="setting_my_profile_layout"/>
+    <item type="id" name="setting_my_profile_photo"/>
+    <item type="id" name="setting_my_profile_name"/>
+    <item type="id" name="setting_my_profile_sign"/>
+    <item type="id" name="setting_one"/>
+    <item type="id" name="setting_two"/>
+    <item type="id" name="setting_three"/>
+    <item type="id" name="setting_account"/>
+    <item type="id" name="setting_assistent"/>
+    <item type="id" name="setting_data_traffic"/>
+    <item type="id" name="setting_backu"/>
+    <item type="id" name="setting_mute"/>
+    <item type="id" name="setting_vibratio"/>
+    <item type="id" name="setting_change_password"/>
+    <item type="id" name="setting_logout"/>
+    <item type="id" name="setting_arrow"/>
+    <item type="id" name="setting_title"/>
+    <item type="id" name="setting_modify"/>
+    <item type="id" name="setting_traffic_layout"/>
+    <item type="id" name="setting_traffic_specific"/>
+    <item type="id" name="setting_traffic_specific_2"/>
+    <item type="id" name="setting_traffic_progress"/>
+    <item type="id" name="setting_display_password"/>
+    <item type="id" name="setting_forget_password"/>
+    <item type="id" name="recovery"/>
+    <item type="id" name="backup"/>
+    <item type="id" name="feedback_text"/>
+    <item type="id" name="feedback_edit"/>
+    <item type="id" name="op_layout"/>
+    <item type="id" name="arrow"/>
+    <item type="id" name="arrow_afid"/>
+    <item type="id" name="arrow_name"/>
+    <item type="id" name="arrow_alias"/>
+    <item type="id" name="arrow_gender"/>
+    <item type="id" name="arrow_sex"/>
+    <item type="id" name="arrow_dob"/>
+    <item type="id" name="arrow_region"/>
+    <item type="id" name="arrow_hobbys"/>
+    <item type="id" name="arrow_religion"/>
+    <item type="id" name="arrow_profession"/>
+    <item type="id" name="arrow_education"/>
+    <item type="id" name="arrow_status"/>
+    <!-- Chat -->
+    
+    
+    <item type="id" name="chatting_play_time"/>
+    <item type="id" name="chatting_play_icon"/>
+    <item type="id" name="chatting_to_layout"/>
+    <item type="id" name="chatting_from_layout"/>
+    <item type="id" name="chatting_target"/>
+    <item type="id" name="chatting_checkall"/>
+    <item type="id" name="chatting_photo"/>
+    <item type="id" name="chatting_msg_content"/>
+    <item type="id" name="chatting_content_layout"/>
+    <item type="id" name="chatting_date"/>
+    <item type="id" name="chatting_send_edit"/>
+    <item type="id" name="send_type"/>
+    <item type="id" name="vibrator_button"/>
+    <item type="id" name="sending_status"/>
+    <item type="id" name="talk_button"/>
+    <item type="id" name="start_button"/>
+    <item type="id" name="stop_button"/>
+    <item type="id" name="un_talk"/>
+    <item type="id" name="ignore"/>
+    <item type="id" name="accept"/>
+    
+    <!-- chatting -->
+    <item type="id" name="chatting_list"/>
+    <item type="id" name="chatting_send_button"/>
+    <item type="id" name="chatting_message_edit"/>
+    <item type="id" name="chatting_operate_one"/>
+    <item type="id" name="chatting_operate_two"/>
+    <item type="id" name="chatting_grid_options"/>
+    <item type="id" name="chatting_grid_emotion"/>
+    <item type="id" name="chatting_emotion_type_layout"/>
+    <item type="id" name="chatting_options_layout"/>
+    <item type="id" name="chatting_emotion_img"/>
+    <item type="id" name="chatting_emotion_smiles"/>
+    <item type="id" name="chatting_emotion_bells"/>
+    <item type="id" name="chatting_emotion_flowers"/>
+    <item type="id" name="chatting_emotion_cars"/>
+    <item type="id" name="chatting_emotion_numbers"/>
+    
+    <item type="id" name="chatting_emotion_sun"/>
+    <item type="id" name="chatting_emotion_face"/>
+    <item type="id" name="chatting_emotion_fire"/>
+    <item type="id" name="chatting_emotion_black"/>
+    
+    <item type="id" name="chatting_options_text"/>
+    <item type="id" name="chatting_options_img"/>
+    <item type="id" name="dialog_voice_img"/>
+    <item type="id" name="dialog_voice_recording"/>
+    <item type="id" name="dialog_voice_time"/>
+    <item type="id" name="chatting_progress"/>
+    
+    
+    <item type="id" name="account_name_text"/>
+    <item type="id" name="account_name_edit"/>
+    <item type="id" name="account_number_text"/>
+    <item type="id" name="account_number_edit"/>
+    <item type="id" name="account_id_text"/>
+    <item type="id" name="account_id_edit"/>
+    <item type="id" name="account_sim1"/>
+    <item type="id" name="account_sim2"/>
+    <item type="id" name="account_phonebook"/>
+    <item type="id" name="account_saveInto_text"/>
+    <!-- long press -->
+    <item type="id" name="long_press_menu_text"/>
+    
+    <!-- Setting -->
+    <item type="id" name="traffic_data"/>
+    <item type="id" name="confim_edit_pass"/>
+    <item type="id" name="edit_phone"/>
+    <item type="id" name="edit_phone_text"/>
+    <item type="id" name="register_protocol" />
+    <item type="id" name="register_gender_key" />
+    <item type="id" name="register_gender_value" />
+    
+    <item type="id" name="photo_gallery"/>
+    <item type="id" name="profile_item_key"/>
+    <item type="id" name="profile_item_value"/>
+    <item type="id" name="profile_head_layout"/>
+    <item type="id" name="profile_afid_layout"/>
+    <item type="id" name="profile_name_layout"/>
+    <item type="id" name="profile_alias_layout"/>
+    <item type="id" name="profile_nick_layout"/>
+    <item type="id" name="profile_sex_layout"/>
+    <item type="id" name="profile_brith_layout"/>
+    <item type="id" name="profile_hobby_layout"/>
+    <item type="id" name="profile_city_layout"/>
+    <item type="id" name="profile_sign_layout"/>
+    <item type="id" name="profile_school_layout"/>
+    <item type="id" name="profile_religion_layout"/>
+    <item type="id" name="profile_profession_layout"/>
+    <item type="id" name="profile_region_layout"/>
+    <item type="id" name="profile_email_layout"/>
+    <item type="id" name="profile_phone_layout"/>
+    <item type="id" name="profile_status_layout"/>
+    <item type="id" name="profile_status_sign_layout"/>
+    <item type="id" name="profile_status_sort"/>
+    <item type="id" name="profile_status"/>
+    <item type="id" name="profile_status_value"/>
+    <item type="id" name="profile_status_key"/>
+    <item type="id" name="profile_socia_layout"/>
+    <item type="id" name="profile_socia_sort"/>
+    <item type="id" name="profile_socia_facebook_layout"/>
+    <item type="id" name="profile_socia_facebook_key"/>
+    <item type="id" name="profile_socia_facebook_value"/>
+    <item type="id" name="profile_socia_twitter_layout"/>
+    <item type="id" name="profile_socia_twitter_key"/>
+    <item type="id" name="profile_socia_twitter_value"/>
+    <item type="id" name="profile_basic_layout"/>
+    <item type="id" name="profile_basic_sort"/>
+    <item type="id" name="profile_experience_layout"/>
+    <item type="id" name="profile_experience_sort"/>
+    <item type="id" name="profile_interests_key"/>
+    <item type="id" name="profile_interests_value"/>
+    <item type="id" name="social_interests_prompt"/>
+    
+    <item type="id" name="profile_head_img"/>
+    <item type="id" name="profile_afid_key"/>
+    <item type="id" name="profile_afid_value"/>
+    <item type="id" name="profile_phone_key"/>
+    <item type="id" name="profile_phone_value"/>
+    <item type="id" name="profile_phone_identiy"/>
+    <item type="id" name="profile_email_key"/>
+    <item type="id" name="profile_email_value"/>
+    <item type="id" name="profile_age_key"/>
+    <item type="id" name="profile_age_value"/>
+    <item type="id" name="profile_region_key"/>
+    <item type="id" name="profile_region_value"/>
+    <item type="id" name="profile_religion_key"/>
+    <item type="id" name="profile_religion_value"/>
+    <item type="id" name="profile_profession_key"/>
+    <item type="id" name="profile_profession_value"/>
+    <item type="id" name="profile_school_key"/>
+    <item type="id" name="profile_school_value"/>
+    <item type="id" name="profile_sign_key"/>
+    <item type="id" name="profile_sign_value"/>
+    <item type="id" name="profile_city_key"/>
+    <item type="id" name="profile_city_value"/>
+    <item type="id" name="profile_hobby_key"/>
+    <item type="id" name="profile_hobby_value"/>
+    <item type="id" name="profile_brith_key"/>
+    <item type="id" name="profile_brith_value"/>
+    <item type="id" name="profile_name_key"/>
+    <item type="id" name="profile_name_value"/>
+    <item type="id" name="profile_alias_key"/>
+    <item type="id" name="profile_alias_value"/>
+    <item type="id" name="profile_sex_key"/>
+    <item type="id" name="profile_sex_value"/>
+    <item type="id" name="to_chat_button"/>
+    <item type="id" name="op"/>
+    
+    <!-- Friend_list -->
+    <item type="id" name="friend_profile"/>
+    <item type="id" name="make_friend_list"/>
+    <item type="id" name="make_friend_prompt"/>
+    <item type="id" name="nearby_search_icon"/>
+    <item type="id" name="nearby_search_prompt"/>
+    <item type="id" name="nearby_try_again"/>
+    <item type="id" name="add_friend_layout"/>
+    <item type="id" name="add_friend_button"/>
+    
+    <!-- date picker -->
+    <item name="st__increment" type="id" />
+    <item name="st__decrement" type="id" />
+    
+    <!-- group chat -->
+     <item name="group_owner_icon" type="id" />
+
+    <!--qr code add -->
+    <item type="id" name="auto_focus"/>
+    <item type="id" name="decode"/>
+    <item type="id" name="decode_failed"/>
+    <item type="id" name="decode_succeeded"/>
+    <item type="id" name="encode_failed"/>
+    <item type="id" name="encode_succeeded"/>
+    <item type="id" name="launch_product_query"/>
+    <item type="id" name="quit"/>
+    <item type="id" name="restart_preview"/>
+    <item type="id" name="return_scan_result"/>
+    <item type="id" name="search_book_contents_failed"/>
+    <item type="id" name="search_book_contents_succeeded"/>
+
+    <!--&lt;!&ndash;palmcall setting add &ndash;&gt;-->
+    <!--<item type="id" name="palmcall_repeatdays_name"/>-->
+    <!--<item type="id" name="palmcall_repeatdays_value"/>-->
+
+    <!--<item type="id" name="palmcall_starttime_name"/>-->
+    <!--<item type="id" name="palmcall_starttime_value"/>-->
+    <!--<item type="id" name="palmcall_endtime_name"/>-->
+    <!--<item type="id" name="palmcall_endtime_value"/>-->
+
+</resources>

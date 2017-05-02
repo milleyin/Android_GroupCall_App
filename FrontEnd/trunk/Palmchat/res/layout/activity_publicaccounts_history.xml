@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <include
+        android:id="@+id/publichistory_title_layout"
+        layout="@layout/head_back_title_more" />
+    
+	<com.afmobi.palmchat.ui.activity.chattingroom.widget.XListView
+	    android:id="@+id/publichistory_listview_id"
+	    android:layout_below="@id/publichistory_title_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:cacheColorHint="@color/transparent"
+	    android:divider="@color/predict_d10"
+		android:dividerHeight="@dimen/broadcast_tagpage_partingline_height_size"
+		android:fadingEdge="none"
+		android:scrollbars="none" 
+		android:background="@color/predict_d10"
+		app:showfootview="true"
+	    />
+	
+	<!-- 刷新成功 -->
+	<TextView
+	    android:id="@+id/publichistory_top_refresh"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/publichistory_title_layout"
+	    android:layout_marginTop="@dimen/broadcast_toprefresh_margintop_size"
+	    android:padding="10dp"
+	    android:gravity="center_horizontal"
+	    android:text="@string/update_successful"
+	    android:textColor="@color/white"
+	    android:background="@color/text_level_1"
+	    android:visibility="gone" />
+        
+	<!-- 无数据布局 -->
+	<RelativeLayout
+		android:id="@+id/publichistory_nodata_layout"
+     	android:layout_width="fill_parent"
+      	android:layout_height="fill_parent"
+      	android:background="@color/base_back"
+      	android:layout_below="@id/publichistory_title_layout"
+      	android:orientation="vertical"
+      	android:visibility="gone" >
+	
+		<ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/img_loadnothing_giraffe"
+	        android:layout_centerHorizontal="true"
+	        android:layout_above="@+id/publichistory_account_text"
+	        android:contentDescription="@null"
+	        android:layout_marginBottom="@dimen/broadcast_tagpage_nocontent0_textmargintop_size"
+	        android:visibility="visible" />
+	
+	    <TextView
+	       	android:id="@+id/publichistory_account_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:text="@string/broadcast_tagpage_nocontent"
+	        android:layout_centerInParent="true"
+	        android:textColor="@color/text_level_2"
+	        android:textSize="@dimen/broadcast_blankview_text_size"/>
+	</RelativeLayout>
+	
+</RelativeLayout>

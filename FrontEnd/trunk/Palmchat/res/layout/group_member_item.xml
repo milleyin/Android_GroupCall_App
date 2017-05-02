@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/photo_item_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/img_photo_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/img_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/head_male2"
+            android:contentDescription="@string/empty" />
+
+        <include layout="@layout/include_sex" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/photo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="stone"
+        android:textColor="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/viewparent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d_pr_height"
+    android:background="@drawable/uilist"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="@dimen/d_pr_left"
+    android:paddingRight="@dimen/d_pr_right" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/c_pr_title"
+                android:textSize="@dimen/d_pr_title_small" />
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_title"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginTop="@dimen/d_pr_title_margin"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/c_pr_result"
+                android:textSize="@dimen/d_pr_title_big" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical|right" >
+
+            <TextView
+                android:id="@+id/tv_coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/c_pr_coins_success"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/linefault_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dibidingline_1" />
+
+</RelativeLayout>

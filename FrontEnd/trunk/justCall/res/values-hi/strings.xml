@@ -1,0 +1,7 @@
+<resources>
+  <string name="call_mute_text">म्यूट</string>
+  <string name="call_audio">स्पीकर</string>
+  <string name="call_decline_text">बंद करें</string>
+  <string name="peer_refuse_to_answer">उपयोगकर्ताने कॉल अस्वीकार की</string>
+  <string name="call_ended">कॉल समाप्त हुई</string>
+</resources>

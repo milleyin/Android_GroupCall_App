@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_back_title_more" />
+
+    <ScrollView
+        style="@style/BaseBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/setting_main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_list"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/explore_line" />
+
+                <RelativeLayout
+                    android:id="@+id/r_all_day"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/filter_right_down_selector" >
+
+                    <TextView
+                        style="@style/exploreItemImage"
+                        android:text="@string/setting_all_day"
+                        android:textColor="@color/color_black" />
+
+                    <ImageView
+                        android:id="@+id/img_all_day"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/radiobutton_normal" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="18dp"
+                    android:background="@color/explore_line" />
+
+                <RelativeLayout
+                    android:id="@+id/r_only_night"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/filter_right_down_selector" >
+
+                    <TextView
+                        style="@style/exploreItemImage"
+                        android:text="@string/setting_night"
+                        android:textColor="@color/color_black" />
+
+                    <ImageView
+                        android:id="@+id/img_only_night"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/radiobutton_normal" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="18dp"
+                    android:background="@color/explore_line" />
+
+                <RelativeLayout
+                    android:id="@+id/r_close"
+                    style="@style/profile_layout"
+                    android:background="@drawable/filter_right_down_selector" >
+
+                    <TextView
+                        style="@style/exploreItemImage"
+                        android:text="@string/sound_setting_close"
+                        android:textColor="@color/color_black" />
+
+                    <ImageView
+                        android:id="@+id/img_close"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/radiobutton_press" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/explore_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="20dp"
+                android:text="@string/sound_setting_describe" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

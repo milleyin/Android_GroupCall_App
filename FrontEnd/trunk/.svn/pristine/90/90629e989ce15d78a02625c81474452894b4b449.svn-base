@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Centaline" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:editTextStyle">@style/Widget.Centaline.EditText</item>
+		<item name="android:spinnerStyle">@style/Widget.Centaline.Spinner</item>
+		<item name="android:buttonStyle">@style/Widget.Centaline.Button</item>
+		<item name="android:imageButtonStyle">@style/Widget.Centaline.ImageButton</item>
+        <item name="android:radioButtonStyle">@style/Widget.Centaline.CompoundButton.RadioButton</item>
+		<item name="android:checkboxStyle">@style/Widget.Centaline.CompoundButton.CheckBox</item>
+        <item name="android:windowAnimationStyle">@style/AnimFade</item>
+    </style>
+    
+    
+    <style name="Widget.Centaline.EditText" parent="@android:style/Widget.EditText">
+	 	<!-- <item name="android:background">@drawable/edit_text_holo_light</item> -->
+	</style>
+	<style name="Widget.Centaline.Spinner" parent="@android:style/Widget.Spinner">
+        <!-- <item name="android:background">@drawable/spinner_background_holo_light</item> -->
+    </style>
+    
+    <style name="Widget.Centaline.Button" parent="@android:style/Widget.Button">
+        <!-- <item name="android:background">@drawable/btn_default_holo_light</item> -->
+    </style>
+    
+    <style name="Widget.Centaline.ImageButton" parent="@android:style/Widget.ImageButton">
+        <!-- <item name="android:background">@drawable/btn_default_holo_light</item> -->
+    </style>
+    
+    <style name="Widget.Centaline.CompoundButton.CheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <!-- <item name="android:button">?android:attr/listChoiceIndicatorMultiple</item> -->
+	</style>
+	<style name="Widget.Centaline.CompoundButton.RadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <!-- <item name="android:button">?android:attr/listChoiceIndicatorSingle</item> -->
+    </style>
+    
+    <style name="AnimFade" parent="@android:style/Animation.Activity">
+        <!-- 
+	        activityOpenEnterAnimation：表示新的activity创建进入效果，
+	        activityOpenExitAnimation：activity还没有finish()下退出效果，
+	        activityCloseEnterAnimation：表示上一个activity返回进入效果，
+	        activityCloseExitAnimation：activity finish()之后退出效果
+         -->
+     <!-- 
+	     <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+	     <item name="android:activityOpenExitAnimation">@anim/hold</item>
+	     <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+	     <item name="android:activityCloseExitAnimation">@anim/fade_out</item> 
+      -->
+ 	</style>
+ 	
+    <style name="Large.Image.Activity" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item> 
+         <item name="@android:windowAnimationStyle">@style/LargeImageAnimationActivity</item>
+    </style>
+    
+    <style name="LargeImageAnimationActivity" parent="@style/AnimationActivity">
+    	<item name="android:activityOpenEnterAnimation">@null</item>  
+    	<item name="android:activityCloseEnterAnimation">@null</item>
+    	<item name="android:activityOpenExitAnimation">@null</item>
+    	<item name="android:activityCloseExitAnimation">@null</item>
+</style> 
+</resources>

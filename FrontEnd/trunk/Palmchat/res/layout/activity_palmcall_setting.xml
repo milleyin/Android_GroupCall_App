@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/title_bg" >
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_button"
+            android:clickable="true"
+            android:layout_marginLeft="4dp"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/settings"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        style="@style/BaseBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/setting_main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_list"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/broadcast_trending_cccccc" />
+
+
+                <!-- 重复播放 -->
+
+                <RelativeLayout
+                    android:id="@+id/Palmcall_photo"
+                    style="@style/exploreItemBg"
+                    android:layout_height="80dp"
+                    android:background="@drawable/filter_right_down_selector" >
+
+                    <TextView
+                        android:id="@+id/palmcall_photo_name"
+                        style="@style/profile_detail_key"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dip"
+                        android:text="@string/picture"
+                        android:textColor="@color/color_black" />
+
+                    <ImageView
+                        android:id="@+id/plamcall_photo_value"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dip"
+                        android:layout_alignParentRight="true" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/predict_e6" />
+
+
+                <!-- 录音介绍 -->
+
+                <RelativeLayout
+                    android:id="@+id/btn_VoiceIntroduction"
+                    style="@style/exploreItemBg"
+                    android:layout_height="48dp"
+                    android:background="@drawable/filter_right_down_selector" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dip"
+                        android:layout_marginTop="14dp"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/call_VoiceIntroduction"
+                        android:textColor="@color/color_black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dip"
+                        android:contentDescription="@null"
+                        android:src="@drawable/navigation_forward"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/predict_e6" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/broadcast_trending_cccccc" />
+            </LinearLayout>
+
+            <!-- 免打扰设置 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="18dip"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/call_Donot_disturb"
+                    android:textColor="@color/public_group_memeber_count_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_list"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/broadcast_trending_cccccc" />
+
+
+                <!-- 应答开关 -->
+
+                <RelativeLayout
+                    android:id="@+id/btn_Answering_switch"
+                    style="@style/exploreItemBg"
+                    android:layout_height="48dp"
+                    android:background="@drawable/filter_right_down_selector" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dip"
+                        android:text="@string/call_Answering_Switch"
+                        android:textColor="@color/color_black" />
+
+                    <com.afmobi.palmchat.ui.customview.switchbutton.SwitchButton
+                        android:id="@+id/checkbox_call_answering_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="18dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"/>
+
+                    <!--<CheckBox-->
+
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginRight="18dp"-->
+                        <!--android:button="@drawable/setting_check_selector" />-->
+                </RelativeLayout>
+
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/predict_e6" />
+
+                <!-- 开始时间 -->
+
+                <RelativeLayout
+                    android:id="@+id/btn_start_time"
+                    style="@style/exploreItemBg"
+                    android:layout_height="48dp"
+                    android:background="@drawable/filter_right_down_selector"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/palmcall_strattime_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dip"
+                        android:text="@string/call_Start_time"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/img_arrow_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dip"
+                        android:src="@drawable/navigation_forward"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/palmcall_strattime_value"
+                        style="@style/profile_detail_value"
+                        android:layout_toLeftOf="@id/img_arrow_start"
+                        android:layout_toRightOf="@id/palmcall_strattime_name"
+                        android:background="@null"
+                        android:focusableInTouchMode="true"
+                        android:inputType="none"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/predict_e6" />
+                <!-- 结束时间 -->
+
+                <RelativeLayout
+                    android:id="@+id/btn_end_time"
+                    style="@style/exploreItemBg"
+                    android:layout_height="48dp"
+                    android:background="@drawable/filter_right_down_selector"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/palmcall_endtime_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dip"
+                        android:text="@string/call_End_time"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/img_arrow_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dip"
+                        android:src="@drawable/navigation_forward"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/palmcall_endtime_value"
+                        style="@style/profile_detail_value"
+                        android:layout_toLeftOf="@id/img_arrow_end"
+                        android:layout_toRightOf="@id/palmcall_endtime_name"
+                        android:background="@null"
+                        android:focusableInTouchMode="true"
+                        android:inputType="none"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/broadcast_trending_cccccc" />
+            </LinearLayout>
+
+            <!-- 保存按钮 -->
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/long_button_height"
+                android:layout_margin="18dp"
+                android:background="@drawable/btn_blue_d"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/save"
+                android:textColor="@color/guide_text_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

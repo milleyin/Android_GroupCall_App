@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="flowview_margintop">0dp</dimen>
+    <dimen name="flowview_marginbottom">-2.5dp</dimen>
+    <dimen name="flowview_marginleft">12dp</dimen>
+    <dimen name="flowview_marginright">10dp</dimen>
+    <dimen name="sendbroadcast_edittext_height">90dp</dimen>
+    <dimen name="chating_margin">5dp</dimen>
+    <dimen name="captrue_activity_top">80dp</dimen>
+    <dimen name="captrue_activity_width">200dp</dimen>
+    <dimen name="captrue_activity_height">200dp</dimen>
+    <dimen name="qr_img_margion_top">72dp</dimen>
+    <dimen name="qr_text_prompt_margion_top">16dp</dimen>
+    <dimen name="qr_text_code_margion_top">36dp</dimen>
+    <dimen name="palmcall_clearance">28dp</dimen>
+</resources>

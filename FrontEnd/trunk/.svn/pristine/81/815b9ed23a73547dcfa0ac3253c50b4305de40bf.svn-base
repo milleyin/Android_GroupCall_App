@@ -1,0 +1,7 @@
+<resources>
+  <string name="call_mute_text">Silenciar</string>
+  <string name="call_audio">Altavoz</string>
+  <string name="call_decline_text">Colgar</string>
+  <string name="peer_refuse_to_answer">Llamada rechazada por el usuario</string>
+  <string name="call_ended">Llamada finalizada</string>
+</resources>

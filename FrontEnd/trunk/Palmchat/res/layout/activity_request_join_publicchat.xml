@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/SystemBarTint_Style"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include
+        android:id="@+id/editmygroup_title_layout"
+        layout="@layout/head_back_title_more" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_main_bg">
+
+        <RelativeLayout
+            android:id="@+id/group_whatup_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_groupchat_notice"
+            android:layout_marginLeft="18dip"
+            android:layout_marginRight="18dip"
+            android:layout_marginTop="18dip"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <com.afmobi.palmchat.ui.customview.CutstomEditTextBanLineKey
+                    android:id="@+id/request_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/transparent"
+                    android:gravity="top"
+                    android:hint="@string/group_request_join"
+                    android:textColorHint="@color/main_bg"
+                    android:imeOptions="actionDone"
+                    android:maxLength="60"
+                    android:maxLines="2"
+                    android:textSize="16sp"
+                    android:minHeight="70dip"
+                    android:padding="12dip" />
+
+                <TextView
+                    android:id="@+id/request_info_textSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="6dip"
+                    android:layout_marginTop="6dip"
+                    android:layout_marginBottom="6dp"
+                    android:text="60/60"
+                    android:textColor="@color/main_bg"/>
+            </LinearLayout>
+        </RelativeLayout>
+             <Button
+                 android:id="@+id/public_accept"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/login_button_selector"
+                 android:text="@string/public_group_send_request"
+                 android:layout_marginLeft="18dip"
+                 android:layout_marginRight="18dip"
+                 android:textColor="@color/white"
+                 android:textSize="18dp"
+                 android:layout_marginTop="34dp"
+                 android:minHeight="50dp"/>
+    </LinearLayout>
+
+</LinearLayout>

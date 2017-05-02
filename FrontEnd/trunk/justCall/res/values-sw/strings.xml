@@ -1,0 +1,7 @@
+<resources>
+  <string name="call_mute_text">Nyamazisha</string>
+  <string name="call_audio">Kipaza sauti</string>
+  <string name="call_decline_text">Kata simu</string>
+  <string name="peer_refuse_to_answer">Mtumiaji amekataa simu hii</string>
+  <string name="call_ended">Simu imekamilishwa</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+  <string name="call_mute_text">Tsit</string>
+  <string name="call_audio">Lasifika</string>
+  <string name="call_decline_text">Ajiyewa</string>
+  <string name="peer_refuse_to_answer">Mai amfani ya ƙi amsa kira</string>
+  <string name="call_ended">Ƙare kira</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    
+    >
+    
+    <LinearLayout 
+        android:id="@+id/linearLayout_sign_up"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:orientation="vertical" 
+	    android:gravity="center"
+	    android:background="@drawable/button_signup_forgetpassword_selector"
+	    >
+    
+        <TextView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/get_started"
+    		android:textColor="@color/color_text_bottom_gray"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/sign_up"
+    		android:textColor="@color/color_text_bottom_cyan"
+            />
+        </LinearLayout>
+            
+        
+    <LinearLayout 
+        android:id="@+id/linearLayout_forget_password"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:orientation="vertical" 
+	    android:gravity="center"
+	    android:background="@drawable/button_signup_forgetpassword_selector"
+	    >
+    
+        <TextView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/forget_password"
+    		android:textColor="@color/color_text_bottom_gray"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/get_password"
+    		android:textColor="@color/color_text_bottom_cyan"
+            />
+        </LinearLayout>
+    
+
+</LinearLayout>

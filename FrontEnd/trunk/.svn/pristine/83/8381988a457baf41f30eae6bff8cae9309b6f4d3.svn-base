@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SystemBarTint_Style" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_back" >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/head_back_title_more" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/title_layout" >
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:cacheColorHint="@color/transparent"
+                android:choiceMode="singleChoice"
+                android:divider="@null"
+                android:drawSelectorOnTop="false"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="true"
+                android:groupIndicator="@null"
+                android:listSelector="@drawable/home_list"
+                android:scrollbars="none"
+                android:scrollingCache="true" />
+
+            <TextView
+                android:id="@+id/textview_show"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_selectletter"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="30.0dip"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <com.afmobi.palmchat.ui.customview.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/title_layout"
+            android:background="@color/transparent" />
+    </RelativeLayout>
+
+</RelativeLayout>

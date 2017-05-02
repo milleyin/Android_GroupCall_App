@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+     >
+
+        <FrameLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    
+        <FrameLayout android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:background="@drawable/images_frame"
+    android:layout_marginBottom="6dp" >
+            
+    <ImageView android:id="@+id/icon" 
+        android:layout_width="100dip"
+		android:layout_height="100dip"
+		android:contentDescription="@string/empty"
+		android:layout_margin="10dp"
+		android:layout_gravity="center" />
+        </FrameLayout>
+    
+    <TextView android:id="@+id/size" 
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/about"
+		android:textSize="15sp"
+		android:textColor="@color/black"
+		android:gravity="center"
+		android:layout_gravity="bottom|center_horizontal"
+		android:background="@drawable/images_number" />
+    
+        </FrameLayout>
+    
+    <TextView android:id="@+id/name" 
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/about"
+		android:textSize="15sp"
+		android:singleLine="true"
+		android:maxEms="5"
+		android:ellipsize="end"
+		android:textColor="@color/black"
+		android:gravity="center_horizontal"
+		android:layout_gravity="center_horizontal" />
+    
+    </LinearLayout>
+</FrameLayout>

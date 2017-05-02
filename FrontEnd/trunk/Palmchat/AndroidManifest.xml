@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.afmobigroup.gphone"
+    android:installLocation="auto"
+    android:versionCode="56"
+    android:versionName="5.4.00_test6">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22" />
+    
+     <supports-screens 
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        />
+    
+    <application
+        android:icon="@drawable/app_icon"
+        android:name="com.afmobi.palmchat.PalmchatApp"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true">
+        <activity
+            android:name="com.afmobi.palmchat.ui.activity.LaunchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.AppStart">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="app.palmchat.com"
+                    android:scheme="palmchat" />
+            </intent-filter>
+        </activity>
+     
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.guide.NewGuideActivity"  android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.guide.NewGuideNextActivity"  android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.afmobi.palmchat.ui.activity.login.SignUpOrLoginActivity"  android:screenOrientation="portrait"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        
+        <activity android:name="com.afmobi.palmchat.ui.activity.MainTab"  android:configChanges="keyboardHidden|orientation"  android:theme="@style/ThemeActivity" android:windowSoftInputMode="adjustNothing" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.afmobi.palmchat.ui.activity.SoftkeyboardActivity"  android:windowSoftInputMode="adjustResize"/>
+
+        <activity android:theme="@android:style/Theme.Wallpaper" android:name="com.afmobi.palmchat.ui.activity.chats.PopMessageActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan"
+         android:excludeFromRecents="true"
+         android:finishOnTaskLaunch="true" />
+        <activity android:theme="@android:style/Theme.Wallpaper" android:name="com.afmobi.palmchat.ui.activity.groupchat.PopGroupMessageActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan"
+         android:excludeFromRecents="true"
+         android:finishOnTaskLaunch="true" />
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.chats.Chatting"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.chats.ActivityBackgroundChange"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+         <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.chats.SelectListActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.login.LoginActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.register.CompleteProfileActivity"  android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.register.EmailForgotPasswordActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.register.CountryActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.register.ForgotPasswordActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.register.RegionOneActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.register.RegionTwoActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.register.RegionThreeActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.register.ResetActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+
+      <!--  settings -->
+        
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.setting.SettingsActivity"   android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.setting.ChangePasswordActivity"   android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.setting.MyAccountActivity"   android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.setting.MyAccountInfoActivity"   android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.setting.ChangePhoneActivity"   android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.setting.NewBindPhoneActivity"   android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.setting.BackupActivity"   android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+          <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.setting.AboutActivity"   android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+          <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.setting.FeedbackActivity"   android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+
+         <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.people.PeopleYouMayKnowTwoActivity"   android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.setting.SoundSettingActivty"   android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.setting.SoundNotificationActivity"   android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.setting.SoundNotDisturbNotificationActivity"   android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+		<activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.setting.LanguageActivity"   android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>         
+        
+		<!--ChattingRoom  -->
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.chattingroom.ChattingRoomMainAct"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+
+          <!-- GroupChat --> 
+          <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.groupchat.GroupChatActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+           <!-- 2013-10-26 -->
+           <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.groupchat.EditGroupActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan"/>
+           <activity
+               android:name="com.afmobi.palmchat.ui.activity.friends.FriendsActivity"
+               android:configChanges="keyboardHidden|orientation"
+               android:theme="@style/ThemeActivity"
+               android:windowSoftInputMode="stateHidden" >
+           </activity>
+              <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.profile.UpdateStatusActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+
+              <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.profile.ProfileActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan" />
+              <activity  android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.profile.MyProfileActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+              <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.profile.GiftDetailActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+              <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.profile.MyProfileDetailActivity"   android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+       	<activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.setting.SecurityAnswerActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+		<activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.setting.SetRequestActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize"/>
+		<activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.setting.SetAnswerActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize"/>
+		<activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.social.BroadcastRetryPageActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize"/>
+       
+		<activity
+            android:name="com.afmobi.palmchat.ui.activity.chats.ForwardSelectActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/ThemeActivity"
+            android:icon="@drawable/app_icon"
+            android:windowSoftInputMode="stateHidden" >
+            
+		    <intent-filter
+                android:label="@string/app_name">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter
+                android:label="@string/app_name">
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+		    
+        </activity>
+        
+	   <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.invitefriends.PublicAccountsFragmentActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+        
+	   <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.publicaccounts.PublicAccountDetailsActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+	    <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.login.FacebookCompleteProfileActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+	   
+		
+	    <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.social.BroadcastAreaActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+	  
+	   
+	   <activity
+            android:name="com.afmobi.palmchat.ui.activity.social.ActivitySendBroadcastMessage"
+            android:configChanges="keyboardHidden|orientation"
+            android:icon="@drawable/app_icon"
+            android:label="@string/option_broadcast"
+            android:theme="@style/ThemeActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity  android:name="com.afmobi.palmchat.ui.activity.social.ShareToBroadcastActivity"  android:configChanges="keyboardHidden|orientation" android:theme="@style/ThemeActivity" android:windowSoftInputMode="stateHidden"/>
+	    
+	   
+        <activity
+            android:name="com.afmobi.palmchat.ui.activity.social.EditBroadcastPictureActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:icon="@drawable/app_icon"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter
+                android:label="@string/option_broadcast">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter
+                android:label="@string/option_broadcast">
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+
+    <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.social.ShakeFragmentActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustResize"/>
+       
+
+	    
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.store.StoreFaceDetailActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.store.AccountCenterFragmentAcitivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden"/>
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.store.StoreMyPurchaseActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize"/>
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.store.StoreMyEmojiActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize"/>
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.store.StorePurchaseHistoryActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize"/>
+     
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.store.StoreFaceDownLoadActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.store.StoreFragmentActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden" android:launchMode="singleTop"/>
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.friends.ContactsActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.friends.ContactsAddActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.friends.InviteFriendsActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.people.PeopleYouMayKnowActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.invitefriends.PhoneBookActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+         <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.friends.LocalSearchActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan|stateVisible"/>
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.friends.GroupListActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.friends.PublicAccountListActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.social.BroadcastNotificationActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.social.BroadcastDetailActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustNothing"/>
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.social.BroadcastLikeActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.afmobi.palmchat.ui.activity.social.VisionFilterActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.chats.PreviewImageActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.register.RegistrationActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.register.RegisteredByPhoneActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.register.RegisteredByEmailActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+       <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.profile.ComfireProfileActivity"  android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:theme ="@style/Transparent" android:name="com.afmobi.palmchat.ui.activity.main.UpdateStateActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+     
+          <!-- Chatroom -->
+        <activity android:name="com.afmobi.palmchat.ui.activity.chattingroom.ChattingRoomListActivity"  android:configChanges="keyboardHidden|orientation"  android:theme="@style/ThemeActivity" android:windowSoftInputMode="adjustNothing"/>
+
+ 
+       <activity android:name="com.afmobi.palmchat.ui.activity.social.FunnyClubActivity"  android:configChanges="keyboardHidden|orientation"  android:theme="@style/ThemeActivity" android:windowSoftInputMode="stateHidden|adjustPan"/>
+       
+       <!-- officialaccounts -->
+       <activity android:name="com.afmobi.palmchat.ui.activity.publicaccounts.AccountsChattingActivity" android:configChanges="keyboardHidden|orientation" android:theme="@style/ThemeActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>
+       <activity
+           android:name="com.afmobi.palmchat.ui.activity.publicaccounts.InnerNoAbBrowserActivity"
+           android:configChanges="keyboardHidden|orientation"
+           android:theme="@style/ThemeActivity"
+           android:windowSoftInputMode="stateHidden"
+           android:launchMode="singleTask" />
+
+        <activity android:name="com.afmobi.palmchat.ui.activity.main.ChatsContactsActivity" android:configChanges="keyboardHidden|orientation" android:theme="@style/ThemeActivity" android:windowSoftInputMode="stateHidden"/>
+      
+        
+
+        <!-- 广播分享fb中间集中处理activity -->
+		<activity 
+		    android:name="com.afmobi.palmchat.ui.activity.social.BroadcastShareToFbActivity"
+		    android:configChanges="keyboardHidden|orientation"
+		    android:theme="@android:style/Theme.Translucent"
+		    android:windowSoftInputMode="stateHidden"/>
+		  <!-- 5.2.2 palmguess start zhh -->
+		 <activity android:name="com.afmobi.palmchat.ui.activity.payment.MyWapActivity"  android:configChanges="keyboardHidden|orientation"  android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+		 <activity android:theme ="@style/BaseCustomDialog" android:name="com.afmobi.palmchat.ui.activity.payment.CoinRechargeDialogActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme ="@style/BaseCustomDialog" android:name="com.afmobi.palmchat.ui.activity.payment.MobileTopUpDialogActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+          <!-- sp add -->
+       <!-- <receiver android:name=".broadcasts.SmsSendReceiver">
+            <intent-filter >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.intent.action.DATA_SMS_RECEIVED" />
+                <data android:scheme="sms" />
+                <data android:host="localhost" />
+                <data android:port="51234" />
+            </intent-filter>
+        </receiver> -->
+        <receiver android:name="com.afmobi.palmchat.broadcasts.AppReceiver" >
+		    <intent-filter >
+		        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+		  
+		        <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+		        
+		        
+		        <!-- <action android:name="android.intent.action.USER_PRESENT"/>
+            	
+            	<action android:name="android.intent.action.PACKAGE_RESTARTED"/> -->
+            	
+            	<action android:name="start"/>
+            	<action android:name="stop"/>
+            	<action android:name="APP_STATUS" />
+		    </intent-filter>
+		</receiver>
+ 
+ 		<receiver android:name="com.afmobi.palmchat.broadcasts.BroadcastNotificationReceiver"
+             android:exported="false" />
+ 
+      	<service android:name="com.afmobi.palmchat.services.AppStatusService" android:exported="false" >
+            <intent-filter android:priority = "1000">
+                <action android:name="start" />
+                <action android:name="stop" />
+                <action android:name="APP_STATUS" />
+            </intent-filter>
+        </service>
+        
+       
+      <!--高德地图 release key-->
+      <meta-data
+            android:name="com.amap.api.v2.apikey" 
+            android:value="f57e05f9e4cb58e1e03f7feaaf6cd453"  />
+      <!-- debug key
+      <meta-data
+            android:name="com.amap.api.v2.apikey"  
+            android:value="db0ed9c73d5557071e4a53ce0d2d0985"  />-->      
+         
+       <receiver android:name="com.afmobi.palmchat.logic.MsgAlarmReceiver">
+			<intent-filter>
+				<action android:name=".logic.MSG_REQUEST" />
+			</intent-filter>
+		</receiver>
+
+      <!--  已去Umeng的所有集成
+       <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="52f9c24556240bd47b0d4b24" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="android_gp" />
+		<service
+		    android:name="com.umeng.common.net.DownloadingService"
+		    android:process=":DownloadingService" >
+		</service> -->
+		
+		<!-- afmobi social SDK begin-->
+        <!--<activity
+            android:name="com.afmobi.asn.lib.OAuthActivity"
+            android:theme="@style/Theme.SocialNetworks" />-->
+		
+
+
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+		
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+		
+     <!--    <provider
+            android:name="com.facebook.NativeAppCallContentProvider"
+            android:authorities="com.facebook.app.NativeAppCallContentProvider265763763565701"
+            android:exported="true" /> -->
+            <provider android:authorities="com.facebook.app.FacebookContentProvider930217953693664"
+                  android:name="com.facebook.FacebookContentProvider"
+                  android:exported="true"/>
+        <!-- afmobi social SDK end-->
+        
+          <!-- sign key: AIzaSyCkCNjmSuB3gxD2cbzQeOI0fp0UnKOjTEw -->
+            <!-- local debug key: AIzaSyDYlflv467pkKPMIIECotk6amg3pNtZiuc -->
+            <!-- local gtf debug key: AIzaSyAYDZd9TE1rc6r_3peobqPIiYpp_zM5L9k -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDYlflv467pkKPMIIECotk6amg3pNtZiuc" />
+
+        <!--扫描二维码界面 -->
+        <activity
+            android:name="com.afmobi.palmchat.ui.activity.qrcode.activity.CaptureActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 显示二维码界面-->
+        <activity
+            android:name="com.afmobi.palmchat.ui.activity.profile.MyQrCodeActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--二维码扫描的文本显示界面 -->
+        <activity
+            android:name="com.afmobi.palmchat.ui.activity.qrcode.activity.QrcodeScanningTextActivity"
+            android:theme="@android:style/Theme.Translucent"
+            android:screenOrientation="portrait">
+        </activity>
+		<!-- 黑名单列表界面 -->
+		<activity 
+		    android:name="com.afmobi.palmchat.ui.activity.setting.BlockedListActivity"
+		    android:theme="@style/ThemeActivity"
+		    android:screenOrientation="portrait"/>
+		
+  	 	<!--  充值start -->
+        <!-- points充值页面-->
+        <activity android:name="com.afmobi.palmchat.ui.activity.payment.PointsRechargeActivity" android:theme="@android:style/Theme.Translucent" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+ 		<!--Mobile Top Up-->
+ 		<activity android:name="com.afmobi.palmchat.ui.activity.payment.MobileTopUpActivity" android:theme="@android:style/Theme.Translucent" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+       	<!--手机话费充值确认页面-->
+ 		<activity android:name="com.afmobi.palmchat.ui.activity.payment.MobileTopUpSureActivity" android:theme="@android:style/Theme.Translucent" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+ 		 <!--话费充值成功页面-->
+ 		<activity android:name="com.afmobi.palmchat.ui.activity.payment.PaymentSuccessActivity" android:theme="@android:style/Theme.Translucent" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden"/>
+ 		  <!-- palmcoin充值页面-->
+        <activity
+            android:name="com.afmobi.palmchat.ui.activity.payment.PalmCoinRechargeActivty"
+            android:theme="@style/ThemeActivity"
+            android:screenOrientation="portrait"/>
+
+ 		 <!--paga充值页面-->
+ 		<activity android:name="com.afmobi.palmchat.ui.activity.payment.PagaRechargeActivity" android:configChanges="keyboardHidden|orientation"  android:theme="@style/ThemeActivity" android:windowSoftInputMode="stateHidden|adjustPan"/>
+ 		 <!-->wallet充值记录页  -->
+ 		<activity android:name="com.afmobi.palmchat.ui.activity.payment.WalletTransactionActivity" android:configChanges="keyboardHidden|orientation"  android:theme="@style/ThemeActivity" android:windowSoftInputMode="stateHidden|adjustPan"/>
+ 		<!--  充值end-->
+ 
+ 		<!-- tag界面 -->
+  		<activity
+ 		    android:name="com.afmobi.palmchat.ui.activity.tagpage.TagsActivity"
+ 		    android:theme="@style/ThemeActivity"
+ 		    android:windowSoftInputMode="stateHidden|adjustPan"
+ 		    android:screenOrientation="portrait"/>
+
+
+ 		
+ 		<!-- tagPageaAtivity -->
+ 		<activity 
+ 		    android:name="com.afmobi.palmchat.ui.activity.tagpage.TagPageActivity"
+ 		    android:theme="@style/ThemeActivity"
+ 		    android:configChanges="keyboardHidden|orientation"
+ 		    android:windowSoftInputMode="adjustNothing"
+ 		    android:screenOrientation="portrait"/>
+
+        
+        <activity 
+            android:name="com.afmobi.palmchat.ui.activity.publicaccounts.PublicAccountsHistoryActivity"  
+            android:configChanges="keyboardHidden|orientation"  
+            android:theme="@style/ThemeActivity" 
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"/>
+
+        <activity android:name="com.afmobi.palmchat.ui.activity.social.HotTodayActivity"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:theme="@style/ThemeActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.palmcall.PalmCallRecentsActivity" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.palmcall.PalmCallSettingActivity" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/ThemeActivity" android:name="com.afmobi.palmchat.ui.activity.palmcall.PalmCallSendVoiceActivity" android:configChanges="keyboardHidden|orientation"/>
+
+
+    <!--    &lt;!&ndash;语音通话&ndash;&gt;
+        <activity
+            android:name="com.afmobi.palmchat.ui.activity.justcall.JustcallActivity"
+            android:theme="@style/ThemeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        
+        &lt;!&ndash; 拨号 &ndash;&gt;
+        <activity
+            android:name="com.afmobi.palmchat.ui.activity.justcall.DialActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+			<intent-filter>
+                <action android:name="com.palmchatgroup.gphone.call.action.backfromcall" />                
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+		</activity>-->
+        
+        <!-- 通话界面 -->
+        <activity
+            android:name="com.afmobi.palmchat.ui.activity.palmcall.PalmcallActivity"
+            android:launchMode="singleTask"
+            android:exported="true"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <service android:name="com.justalk.cloud.juspush.MtcService" />
+        <service android:name="com.justalk.cloud.juscall.FloatWindowService" />
+
+        <service
+            android:name="com.afmobi.palmchat.ui.activity.palmcall.PalmcallService"
+            android:priority="1000"/>
+
+        <!-- justalk end -->
+
+        <activity
+            android:name="com.afmobi.palmchat.ui.activity.palmcall.PalmCallDetailDialogActivity"
+            android:theme="@style/BaseCustomDialog"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
+
+    </application>
+    
+
+   <!-- google play -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.front"  android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    
+    <uses-permission android:name="com.google.android.apps.photos.permission.GOOGLE_PHOTOS"/> 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+<!-- 	<uses-permission android:name="android.permission.READ_LOGS" /> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+   <!--  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" /> 
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+	<uses-permission android:name="android.permission.RESTART_PACKAGES"/>  
+<!-- 	<uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/> -->
+	<uses-permission android:name="android.permission.FLASHLIGHT"/>
+	
+    <!--add by chengyu-->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" 
+         android:protectionLevel="normal"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"
+         android:protectionLevel="normal" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"
+         android:protectionLevel="normal" />
+ <!--    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" /> -->
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" /> 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>     
+		
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+	
+	<!-- add by HJG 2015-12-25  -->
+	<uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/> 
+	
+    <!-- shortcut exist start       add by HJG 2015-12-24 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="net.qihoo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="net.qihoo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adwfreak.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adwfreak.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher_donut.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher_donut.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.sec.android.app.twlauncher.settings.READ_SETTINGS" />
+    <uses-permission android:name="com.sec.android.app.twlauncher.settings.WRITE_SETTINGS" />
+    <uses-permission android:name="com.anddoes.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.anddoes.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.tencent.qqlauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.tencent.qqlauncher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.mylauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.mylauncher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.ebproductions.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.ebproductions.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.lenovo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.lenovo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="telecom.mdesk.permission.READ_SETTINGS" />
+    <uses-permission android:name="telecom.mdesk.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="dianxin.permission.ACCESS_LAUNCHER_DATA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="com.justalk.cloud.sample.android.call.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+    <!-- shortcut exist end       add by HJG 2015-12-24 -->
+</manifest>
+

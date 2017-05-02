@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mask_bg"
+    tools:context=".ui.activity.chats.PopMessageActivity" >
+
+    <LinearLayout
+        android:id="@+id/popmsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:minHeight="300dp"
+        android:minWidth="10000dp"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/pophead" />
+
+        <!-- layout="@layout/head_back_title_more" -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0" >
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/white"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:transcriptMode="disabled" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@id/chatting_options_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg_profile"
+            android:orientation="horizontal"
+            android:paddingLeft="7.0dp"
+            android:paddingRight="7.0dip" >
+
+            <LinearLayout
+                android:id="@id/un_talk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1.0"
+                android:orientation="horizontal" >
+
+                <com.afmobi.palmchat.ui.customview.CutstomEditText
+                    android:id="@id/chatting_message_edit"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7.0dip"
+                    android:layout_marginRight="7.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/textbox"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/message"
+                    android:textColorHint="@color/text_level_3"
+                    android:imeOptions="actionSend|flagNoEnterAction"
+                    android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+                    android:maxLines="4"
+                    android:minHeight="36.0dip"
+                    android:nextFocusRight="@id/chatting_send_button" />
+
+                <ImageView
+                    android:id="@+id/image_emotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/chatting_room_smile_selector" />
+                <ImageView
+                    android:id="@+id/btn_keyboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="18.0dp"
+                    android:paddingRight="9.0dip"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/btn_keyboard_selector"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" >
+
+                <ImageView
+                    android:id="@id/chatting_send_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/send_button"
+                    android:nextFocusLeft="@id/chatting_message_edit"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:id="@id/chatting_operate_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/send_button_bg_selector"
+                    android:gravity="center"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip" />
+            </FrameLayout>
+        </LinearLayout>
+<LinearLayout
+        android:id="@+id/chatting_voice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:orientation="vertical"
+        android:background="@drawable/btn_bg_profile"
+        android:visibility="gone" >
+        
+        <FrameLayout android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="2dp" >
+        
+        <ProgressBar android:id="@+id/voice_progress"
+		android:layout_width="match_parent" 
+		android:layout_height="2dp"
+		android:progressDrawable="@drawable/voice_progress_layer_blue"
+		style="?android:attr/progressBarStyleHorizontal"
+        android:max="30"
+        android:progress="0" />
+        
+        
+        <ProgressBar android:id="@+id/voice_progress2"
+		android:layout_width="match_parent" 
+		android:layout_height="2dp"
+		android:progressDrawable="@drawable/voice_progress_layer_red"
+		style="?android:attr/progressBarStyleHorizontal"
+        android:max="30"
+        android:progress="0"
+        android:visibility="gone" />
+        
+        </FrameLayout>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="18.0dp"
+        android:paddingRight="18.0dp"
+        android:paddingBottom="10dp" >
+            
+        <TextView
+            android:id="@+id/text_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/log_blue"
+            android:textSize="18sp"
+            android:visibility="gone" />
+        
+        
+         <ImageView
+                android:id="@+id/image_emotion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="18.0dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_backkeyboard"
+                android:src="@drawable/chatting_room_smile_selector" />
+
+
+            <ImageView
+                android:id="@+id/btn_backkeyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/btn_keyboard_selector" />
+    
+    </RelativeLayout>
+        
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_voice_line" />
+        
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <TextView
+            android:id="@+id/cancel_voice_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_level_3"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:visibility="gone" />
+          
+        <Button
+                android:id="@id/talk_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_voice_selector" />
+        
+        
+        <com.afmobi.palmchat.ui.customview.RippleView 
+            android:id="@+id/ripple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:visibility="gone" />
+        
+        </RelativeLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chatting_emoji_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|left|center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/popMessage_doubleClick_Tip"
+            android:textSize="15dp"
+            android:textColor="@color/setting_content_text"/>
+    </LinearLayout>
+
+</FrameLayout>

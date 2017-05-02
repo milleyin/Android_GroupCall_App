@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/bg_menu_broadcast_messages">
+    
+    <ListView
+        android:id="@+id/popwindowlist_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1px"
+        android:divider="@color/color_light_gray"
+        android:background="@color/white" 
+        />
+    
+
+</RelativeLayout>

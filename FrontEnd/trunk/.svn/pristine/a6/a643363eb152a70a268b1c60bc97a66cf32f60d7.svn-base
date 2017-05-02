@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/head_back_title_more" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="20dip"
+            android:layout_height="25dip"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"></ImageView>
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"></ImageView>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/scanning_prompt_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_default_status"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="14dip"
+        android:visibility="gone"
+        android:textColor="@color/text_level_3"/>
+
+        <Button
+            android:id="@+id/btn_myqrcode"
+            android:layout_width="176dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/btn_myqrcode"
+            android:layout_centerHorizontal="true"
+            android:text="@string/my_qrcode"
+            android:textColor="@color/guide_text_color"
+            android:visibility="gone"
+            android:textSize="16dip" />
+</RelativeLayout>

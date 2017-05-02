@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 需要改为对应的 -->
+	<string name="JusTalkCloud_AppKey">45fa5520dacfce43b6334096</string>
+	<string name="justcall_key">"MIIEpAIBAAKCAQEAtzJF3SdDDZNuMit61hrIrDNROPhCnma9lp1gPaBF0tZGvn2X" + "\n" +
+     		    "GQWtlrQ1XEGbfTrpN1whsVB/e8SBWdmNHwE6Ze67fzYAw8B5Ul+bkO4lx79LL2If" + "\n" +
+     		    "n2oQ6doW9NYCCFt0CHv4A9esU1zB8SNKZazKfU/u3n/UEEInd/cJ/vMiuAWGSSPa" + "\n" +
+     		    "wLCqJJT7Ly+/Cgq9vK4jdX0YohBA7/ZSr7jx+9Zs2Lj4/L+y6lKR6UdXoTY0nJKf" + "\n" +
+     		    "jSEZCxwFCPh57snvg90fDyizn58EI1dZ977+bG5oD1zE2O4CmhLaX4tQiQCioZeP" + "\n" +
+     		    "D+iHTsXWYP9u8l2J/PBxVObqLBPAcqV4UyslZwIDAQABAoIBADd9X9IUEWhsTsWd" + "\n" +
+     		    "i/CMXlpilOinsi4eurCDbOJdyKiLRRRwIDNxF9p9LWiLatis3nVpT79Qvby0keWw" + "\n" +
+     		    "UuGgUpsLi/mFVwf0JguAcDOfHwx48gIhO6jizMq4x5lTtXvoj6X+PuqTClyZzRkI" + "\n" +
+     		    "coGHrDH240i7+XUPRLs+teVmqg6JAlVh2t3WjI7967I1wgzywchFWMSTftilULjl" + "\n" +
+     		    "7NKZEn0anDIJoN4Rgy0KSX9pzHHaEMmkD9bdpx/XlaXjaWpEfLB9frl8XEweixo8" + "\n" +
+     		    "R55Hpowk/Q4Qk73+xTvUmSO1XktyEWAumGgF1jWla5Z/5D3CadSgfJcfeePMXxCy" + "\n" +
+     		    "YC7TSxECgYEA6G/nOnrzNMe0dem8nt++86LOPn1wKqr0FV+AelNM2gzsoMtTUazX" + "\n" +
+     		    "C5Jyt6Xdq8+Y/xQ8WXmRziXlAS5753RenHbR9pY5XXP0AeMvMW4tlngGtKk0c/Rt" + "\n" +
+     		    "2W+eF7EI+sgI9g9TMRPjbvUGQDZl8gr2a94Q6u15tgYFJpjx8A3d1akCgYEAycR/" + "\n" +
+     		    "XCwVnGRqQTRA3cRhfz0usF3pyESqOoVfzzK0bSyOJAv7FOTd0V1MNhzwoWPwdTrl" + "\n" +
+     		    "5CGzTGxyaHZpi+sRVg5X/XolYwjgXrFKCckxmnVYlYFY30iegJfu3GR6phyTlwgc" + "\n" +
+     		    "nSQ2vfSseLnHTFDlrBEy/56H2MoQ4qXad5Sh7I8CgYEAsbDijyVxCbdl8QJ37OjV" + "\n" +
+     		    "vMGIc+NHPYclQ7WXrWxDAysANshZcMX2O+WAB38ooHD64H3iyPAUFAmKMUYM+NtQ" + "\n" +
+     		    "fMKlLqKXRicfsdWwvVQiS7aEQdZcwAxrcd9Pd4Mifz0vBJSgn5M5uhhc5/fuJYRV" + "\n" +
+     		    "8A561m4nLo0ZoPEpe7/OB8kCgYBvsplzNHCOUMTF7iCO5N24q+1B8+utU94NYbLF" + "\n" +
+     		    "qONboRPbfsp0KbNm6Uh8mI7aOdJvg7irD8EL6Ol5TTxnGi5RvsUVbV5vMgXMRkef" + "\n" +
+     		    "nUMZqCbvNVk22yPsOrAgUHvZo+5M6U+16stnY6FrgCWF6S8Mj8T04BWCfXLVlk2Y" + "\n" +
+     		    "b68onwKBgQDN2yjNq+B3FBI91DQGoHPWqsSbMPed/TJ6pGiSftKeckyA35tQVMAO" + "\n" +
+     		    "JoBCLU0G5Z2KWuqIFphjcg+YjR/Agsu/0v7ZRVyU1bDjmHW7MtBOLXPTB2QB8DF7" + "\n" +
+     		    "SeCrYJLUItyJaqQmxAaGQtDp8+dqm0BywAwoB2AgqDjXhph1xWMQIA==" + "\n"</string>
+     		    
+	<string name="MiPush_AppId">45fa5520dacfce43b6334096</string>
+	<string name="MiPush_AppKey">5711741678084</string>
+	<string name="gcm_sender_id">527225413725</string>
+	<string name="justcall_testserver">sudp:dev.ae.justalkcloud.com:9851</string>
+	<string name="justcall_normalserver">sudp:ae.justalkcloud.com:9851</string>
+	<string name="justcall_updateserver">sarc:arc@AccessEntry:99</string>
+	<string name="justcall_updatenetwork">http:router.justalkcloud.com:8080</string>
+	<string name="justcall_palmserver">sudp:100866.cloud.justalk.com</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_back"
+    >
+
+    <!--<ListView
+        android:id="@+id/ls_palmcall"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:transcriptMode="disabled"
+        android:layout_marginTop="@dimen/common_title_height_48dp"
+        />-->
+
+
+    <com.afmobi.palmchat.ui.activity.chattingroom.widget.XListView
+        android:id="@+id/ls_palmcall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent"
+        android:transcriptMode="disabled"
+        app:showfootview="true"
+        app:showblankviewheight="@dimen/home_listview_margin_height"
+        />
+</FrameLayout>

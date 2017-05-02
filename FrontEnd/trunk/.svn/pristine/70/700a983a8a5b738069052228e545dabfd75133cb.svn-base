@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_from_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="18dp"
+            android:visibility="visible"
+            android:layout_marginRight="@dimen/chating_margin_left_right">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:singleLine="true"
+                android:background="@drawable/circle_corner_textview_selector"
+                android:textSize="13sp"
+                android:text="fdafafaf"
+                android:maxHeight="28dp"
+                android:minHeight="26dp"
+                android:maxWidth="202dp"
+                android:textColor="@drawable/chatroom_name_textcolor"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/text_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_sexage_female"
+                android:drawableLeft="@drawable/icon_sexage_girl"
+                android:lines="1"
+                android:paddingRight="4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6.5dp"
+                android:text="222"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/tv_name"
+                />
+		 <RelativeLayout
+            style="@style/chatting_msg_layout"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:gravity="left"
+            android:layout_below="@id/tv_name" >
+
+            <com.afmobi.palmchat.ui.customview.MyTextView
+                android:id="@+id/msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web|phone"
+                android:background="@drawable/chatting_from_text_selector"
+                android:clickable="true"
+                android:gravity="center|left"
+                android:minHeight="20.0dip"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/public_group_memeber_color"
+                android:textColorLink="@color/link_color"
+                android:maxLength="6100"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+        </RelativeLayout>
+       <RelativeLayout
+            android:id="@id/chatting_to_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:visibility="visible"
+            android:layout_alignParentRight="true"
+           android:layout_marginLeft="@dimen/chating_margin_left_right">
+           <LinearLayout
+               android:id="@+id/linear_sending_status_text"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:gravity="bottom"
+               android:orientation="vertical"
+               >
+               <ImageView
+                   android:id="@+id/sending_status_text_img"
+                   android:layout_width="18dp"
+                   android:layout_height="18dp"
+                   android:layout_gravity="bottom"
+                   android:background="@drawable/msg_send_delivered"
+                   android:contentDescription="@string/empty" />
+
+               <ProgressBar
+                   android:id="@+id/img_sending_status"
+                   style="@style/loading_dialog"
+                   android:layout_width="18dp"
+                   android:layout_height="18dp"
+                   android:contentDescription="@string/empty"
+                   android:visibility="gone" />
+           </LinearLayout>
+            <com.afmobi.palmchat.ui.customview.MyTextView
+                android:id="@+id/msg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="18dp"
+                android:autoLink="web|phone"
+                android:background="@drawable/chatting_to_text_selector"
+                android:clickable="true"
+                android:gravity="center|left"
+                android:minHeight="20.0dip"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:textColorLink="@color/link_color"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/linear_sending_status_text"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativelayout_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/chatting_system_color"
+            android:lineSpacingExtra="0dp"
+            android:background="@drawable/chatting_system_backgroud"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_show2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_show"
+            android:text=""
+            android:textSize="12sp"
+            android:textColor="@color/color_text_bottom_gray" />
+
+    </RelativeLayout>
+    
+
+</RelativeLayout>

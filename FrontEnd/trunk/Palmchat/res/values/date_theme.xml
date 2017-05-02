@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.DatePicker.Dialog.Light" parent="@android:style/Theme.Light">
+        <item name="calendarViewStyle">@style/Widget.Holo.Light.STCalendarView</item>
+        <item name="datePickerStyle">@style/Widget.Holo.Light.STDatePicker</item>
+        <item name="numberPickerStyle">@style/Widget.Holo.Light.STNumberPicker</item>
+    </style>
+    
+    <style name="Theme.DatePicker.Dialog" parent="@android:style/Theme">
+        <item name="calendarViewStyle">@style/Widget.Holo.STCalendarView</item>
+        <item name="datePickerStyle">@style/Widget.Holo.STDatePicker</item>
+        <item name="numberPickerStyle">@style/Widget.Holo.STNumberPicker</item>
+    </style>
+    
+    <style name="Widget.ProgressBar">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:minWidth">48dip</item>
+        <item name="android:maxWidth">48dip</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+    </style>
+    
+    <style name="Widget.ProgressBar.Small">
+        <item name="android:minWidth">16dip</item>
+        <item name="android:maxWidth">16dip</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+    
+    <style name="Widget.Holo.ProgressBar" parent="Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progress_medium_holo</item>
+    </style>
+   
+    <style name="Widget.Holo.ProgressBar.Small" parent="Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/progress_small_holo</item>
+    </style>
+
+</resources>

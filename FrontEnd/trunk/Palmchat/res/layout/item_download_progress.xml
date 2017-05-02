@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/r_face"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/loadingbar_s_1" >
+
+        <TextView
+            android:id="@+id/tv_face_download_progress"
+            android:layout_width="0dp"
+            android:layout_height="6dp"
+            android:background="@drawable/loadingbar_s_2" />
+
+        <TextView
+            android:id="@+id/tv_face_download_value"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:text="0%"
+            android:textColor="@color/chatting_room_ater_me"
+            android:textSize="8sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/r_face"
+        android:visibility="gone"/>
+
+</RelativeLayout>

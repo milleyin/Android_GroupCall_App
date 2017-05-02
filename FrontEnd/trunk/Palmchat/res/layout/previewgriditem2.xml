@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+     android:layout_gravity="center"
+     android:padding="@dimen/preview_image_margin"
+        android:background="@color/white">
+
+    
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:layout_gravity="center"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/selectphotos_bg" />
+
+        <RelativeLayout
+            android:id="@+id/ll_photo"
+              android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:layout_gravity="center"
+            android:background="@color/bg_chatting"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/icon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/btn_camera_preview_selector"
+                    android:contentDescription="@string/empty" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/icon2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/take_photo"
+                    android:textColor="@color/text_tab"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/isselected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:contentDescription="@string/empty"
+            android:padding="8dp"
+            android:src="@drawable/btn_chattingbackground_nosel_big" />
+  
+
+</FrameLayout>

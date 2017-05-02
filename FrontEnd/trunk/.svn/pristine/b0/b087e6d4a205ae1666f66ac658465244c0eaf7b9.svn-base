@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_back"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@id/title_layout"
+            layout="@layout/head_back_title_more" />
+
+        <ScrollView
+            android:id="@id/friend_profile"
+            style="@style/BaseBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none" >
+
+            <com.afmobi.palmchat.ui.customview.list.LinearLayoutListView
+                android:id="@id/list1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp" />
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version = "1.0" encoding ="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/predict_d10">
+
+    <RelativeLayout
+        android:id="@+id/trending_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+        <!-- banner -->
+        <include
+            android:id="@+id/broadcast_trending_bannnerview"
+            layout="@layout/bannerview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="168dp" />
+
+        <!--Hot Tags -->
+        <TextView
+            android:id="@+id/broadcast_trending_hottags_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/broadcast_trending_bannnerview"
+            android:layout_marginLeft="@dimen/broadcast_trending_hottags_marginleft_size"
+            android:layout_marginTop="@dimen/broadcast_trending_hottags_margintop_size"
+            android:text="@string/broadcast_trending_hottags"
+            android:textColor="@color/broadcast_trending_868892"
+            android:textSize="@dimen/broadcast_trending_headerview_seemoretext_size" />
+
+        <!-- see more -->
+        <TextView
+            android:id="@+id/broadcast_tags_seemore_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/broadcast_trending_hottags_id"
+            android:layout_marginRight="@dimen/broadcast_trending_hottags_marginleft_size"
+            android:drawablePadding="@dimen/broadcast_trending_headerview_seemorepadding_size"
+            android:text="@string/broadcast_trending_seemore"
+            android:textColor="@color/broadcast_trending_17a5ef"
+            android:textSize="@dimen/broadcast_trending_headerview_seemoretext_size" />
+        <!-- android:drawableRight="@drawable/trending_header_see_more" -->
+
+        <GridView
+            android:id="@+id/broadcast_trending_tags_gridview_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/broadcast_trending_hottags_id"
+            android:layout_marginLeft="@dimen/broadcast_trending_headerview_gridview_marginlr_size"
+            android:layout_marginRight="@dimen/broadcast_trending_headerview_gridview_marginr_size"
+            android:layout_marginTop="@dimen/broadcast_trending_headerview_gridview_margintop_size"
+            android:gravity="center"
+            android:horizontalSpacing="4dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:numColumns="4"></GridView>
+
+        <!-- 分割线 -->
+        <View
+            android:id="@+id/broadcast_trending_divideline_id"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/broadcast_trending_tags_gridview_id"
+            android:layout_marginTop="@dimen/broadcast_trending_headerview_divide_margintop_size"
+            android:background="@color/broadcast_trending_cccccc" />
+
+        <!-- 照片墙名字-->
+        <TextView
+            android:id="@+id/broadcast_trending_photoname_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/broadcast_trending_divideline_id"
+            android:layout_marginLeft="@dimen/broadcast_trending_headerview_photoname_marginleft_size"
+            android:layout_marginTop="@dimen/broadcast_trending_headerview_photoname_margintop_size"
+            android:textColor="@color/broadcast_trending_17a5ef"
+            android:textSize="@dimen/broadcast_trending_headerview_imagename_size" />
+
+        <!-- 留白 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/broadcast_trending_photoname_id"
+            android:layout_marginTop="@dimen/broadcast_trending_headerview_photographybottom_margintop_size" />
+
+    </RelativeLayout>
+
+    <!-- 无数据布局 -->
+    <LinearLayout
+        android:id="@+id/trending_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/predict_d10"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_loadnothing_giraffe"
+            android:contentDescription="@null"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/broadcast_tagpage_nocontent0_textmargintop_size"
+            android:text="@string/broadcast_tagpage_nocontent"
+            android:textColor="@color/text_level_2"
+            android:textSize="@dimen/broadcast_blankview_text_size" />
+    </LinearLayout>
+
+
+</RelativeLayout>

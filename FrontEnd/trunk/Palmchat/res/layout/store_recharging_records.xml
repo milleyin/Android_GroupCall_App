@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.store.StoreMyPurchaseActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_back"/>
+    
+	<include
+		android:id="@id/title_layout"
+		layout="@layout/head_back_title_more" />
+
+	<com.afmobi.palmchat.ui.customview.RefreshableView
+    	android:id="@+id/recharging_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_layout"
+        android:orientation="vertical" >
+
+       	<ListView
+        	android:id="@+id/recharging_refresh_listview"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:cacheColorHint="@android:color/transparent"
+			android:divider="@null"
+			android:fadingEdge="none"
+			android:scrollbars="none" />
+	</com.afmobi.palmchat.ui.customview.RefreshableView>
+
+</RelativeLayout>

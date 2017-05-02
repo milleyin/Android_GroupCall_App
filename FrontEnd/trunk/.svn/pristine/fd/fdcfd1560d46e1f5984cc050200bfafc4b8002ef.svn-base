@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="head_back_profile_name_max_width">170dp</dimen>
+    <dimen name="head_back_chatting_title_padding">13dp</dimen>
+    
+    <dimen name="flowview_margintop">0dp</dimen>
+    <dimen name="flowview_marginbottom">-2.5dp</dimen>
+    <dimen name="flowview_marginleft">12dp</dimen>
+    <dimen name="flowview_marginright">10dp</dimen>
+    <dimen name="captrue_activity_top">80dp</dimen>
+    <dimen name="palmcall_reward">50dp</dimen>
+    <dimen name="palmcall_top_18">18dp</dimen>
+    <dimen name="palmcall_top_12">12dp</dimen>
+    <dimen name="palmcall_top_8">8dp</dimen>
+    <dimen name="palmcall_clearance">8dp</dimen>
+</resources>

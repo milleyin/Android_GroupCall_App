@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatting_accounts_from_layout_from"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- 公共账号对方头像 -->
+
+    <ImageView
+        android:id="@+id/chatting_accounts_photo"
+        style="@style/chatting_head_style"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/head_male2"
+        android:contentDescription="@string/empty" />
+
+    <!-- 公共账号收到的文本消息 -->
+
+    <RelativeLayout
+        android:id="@+id/chatting_accounts_from_layout_from_text"
+        style="@style/chatting_msg_layout"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/chatting_accounts_photo"
+        android:gravity="left"
+        android:visibility="gone" >
+
+        <com.afmobi.palmchat.ui.customview.MyTextView
+            android:id="@+id/chatting_accounts_msg_content_from_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:autoLink="web|phone"
+            android:background="@drawable/chatting_from_text_selector"
+            android:clickable="true"
+            android:gravity="center|left"
+            android:maxLength="6100"
+            android:minHeight="20.0dip"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/black"
+            android:textColorLink="@color/link_color"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <!-- 公共账号图文消息 -->
+
+    <RelativeLayout
+        android:id="@+id/chatting_accounts_imagetxtmsg_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/public_account_margin_size"
+        android:layout_marginRight="@dimen/public_account_margin_size"
+        android:background="@drawable/bg_chattingaccounts_imagetxtmsg"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/public_account_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/accounts_imagetxt_divideline_margintop_size"
+            android:layout_marginRight="@dimen/accounts_imagetxt_layout_marginLR_size"
+            android:layout_marginLeft="@dimen/accounts_imagetxt_layout_marginLR_size"
+            android:text="fdadfadfsaf"
+            android:textSize="@dimen/dp_12"
+            android:textColor="@color/text_level_2"
+            android:gravity="center_vertical"/>
+        <!-- 图片 -->
+
+        <ImageView
+            android:id="@+id/chatting_accounts_imagetxtmsg_img_id"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="@dimen/accounts_imagetxt_divideline_margintop_size"
+            android:layout_marginLeft="@dimen/accounts_imagetxt_layout_marginLR_size"
+            android:layout_marginRight="@dimen/accounts_imagetxt_layout_marginLR_size"
+            android:background="@color/light_white"
+            android:contentDescription="@null"
+            android:layout_below="@+id/public_account_time"
+            android:scaleType="fitXY" />
+
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/chatting_accounts_imagetxtmsg_title_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/accounts_imagetxt_titlebg_height_size"
+            android:layout_alignBottom="@id/chatting_accounts_imagetxtmsg_img_id"
+            android:layout_alignLeft="@id/chatting_accounts_imagetxtmsg_img_id"
+            android:layout_alignRight="@id/chatting_accounts_imagetxtmsg_img_id"
+            android:background="@color/accounts_title_bg"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/accounts_imagetxt_paddingLR_size"
+            android:paddingRight="@dimen/accounts_imagetxt_paddingLR_size"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/accounts_imagetxt_titlttest_size" />
+
+        <!-- 描述 -->
+
+        <TextView
+            android:id="@+id/chatting_accounts_imagetxtmsg_description_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chatting_accounts_imagetxtmsg_img_id"
+            android:layout_marginLeft="@dimen/accounts_imagetxt_layout_marginLR_size"
+            android:layout_marginRight="@dimen/accounts_imagetxt_layout_marginLR_size"
+            android:layout_marginTop="@dimen/accounts_imagetxt_description_margintop_size"
+            android:layout_marginBottom="@dimen/accounts_imagetxt_divideline_margintop_size"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/accounts_imagetxt_description_LineSpacing_size"
+            android:maxLines="3"
+            android:textColor="@color/text_level_2"
+            android:textSize="@dimen/accounts_imagetxt_description_text_size" />
+
+        <TextView
+            android:id="@+id/chatting_accounts_txtmsg_description_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chatting_accounts_imagetxtmsg_img_id"
+            android:layout_marginLeft="@dimen/accounts_imagetxt_layout_marginLR_size"
+            android:layout_marginRight="@dimen/accounts_imagetxt_layout_marginLR_size"
+            android:layout_marginTop="@dimen/accounts_imagetxt_description_margintop_size"
+            android:layout_marginBottom="@dimen/accounts_imagetxt_divideline_margintop_size"
+            android:lineSpacingExtra="@dimen/accounts_imagetxt_description_LineSpacing_size"
+            android:textColor="@color/text_level_2"
+            android:textSize="@dimen/accounts_imagetxt_description_text_size" />
+
+        <!-- 分割线 -->
+
+        <View
+            android:id="@+id/chatting_accounts_divideline_id"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/chatting_accounts_imagetxtmsg_description_id"
+            android:background="@color/main_bg" />
+
+        <!-- 更多内容布局 -->
+
+        <RelativeLayout
+            android:id="@+id/chatting_accounts_fulltxt_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/accounts_imagetxt_fulltxtlayout_height_size"
+            android:layout_below="@id/chatting_accounts_divideline_id" >
+
+            <!-- 右箭头标记 -->
+
+            <ImageView
+                android:id="@+id/chatting_accounts_fulltxt_flag_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/accounts_imagetxt_fulltxt_margin_size"
+                android:background="@drawable/arrow_right_light"
+                android:contentDescription="@null" />
+
+            <!-- Read the full text -->
+
+            <TextView
+                android:id="@+id/chatting_accounts_fulltxt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/accounts_imagetxt_layout_marginLR_size"
+                android:layout_toLeftOf="@id/chatting_accounts_fulltxt_flag_id"
+                android:singleLine="true"
+                android:text="@string/accounts_readallcontent"
+                android:textColor="@color/text_level_1"
+                android:textSize="@dimen/accounts_imagetxt_fulltxt_text_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- 支付coin改变收到的通知消息 -->
+
+    <LinearLayout
+        android:id="@+id/ll_coin_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/accounts_imagetxt_layout_marginLR_size"
+        android:layout_marginRight="@dimen/accounts_imagetxt_layout_marginLR_size"
+        android:layout_marginTop="@dimen/accounts_imagetxt_layout_marginTB_size"
+        android:background="@drawable/bg_chattingaccounts_imagetxtmsg"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rl_coin_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/accounts_imagetxt_layout_marginLR_size"
+            android:layout_marginRight="@dimen/accounts_imagetxt_layout_marginLR_size"
+            android:layout_marginTop="@dimen/accounts_imagetxt_layout_marginLR_size" >
+
+            <ImageView
+                android:id="@+id/img_coin_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_coin_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/accounts_imagetxt_img_margin_size"
+                android:layout_toRightOf="@id/img_coin_status"
+                android:textColor="@color/text_level_1"
+                android:textSize="@dimen/accounts_imagetxt_titlttest_size" />
+        </RelativeLayout>
+
+        <com.afmobi.palmchat.ui.customview.list.LinearLayoutListView
+            android:id="@+id/ll_coin_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/accounts_imagetxt_layout_marginLR_size"
+            android:layout_marginRight="@dimen/accounts_imagetxt_layout_marginLR_size"
+            android:layout_marginTop="@dimen/broadcast_tagpage_dialog_headerview_height_size" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="@dimen/broadcast_tagpage_dialog_headerview_height_size"
+            android:background="@color/main_bg" />
+
+        <RelativeLayout
+            android:id="@+id/rl_more_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/accounts_imagetxt_layout_marginLR_size"
+            android:layout_marginRight="@dimen/accounts_imagetxt_layout_marginLR_size"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_more_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more_details"
+                android:textColor="@color/text_level_1"
+                android:textSize="@dimen/accounts_imagetxt_description_text_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

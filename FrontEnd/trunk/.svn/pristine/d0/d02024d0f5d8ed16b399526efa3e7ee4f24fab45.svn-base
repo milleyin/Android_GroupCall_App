@@ -1,0 +1,8 @@
+<resources>
+  <string name="call_mute_text">静音</string>
+  <string name="call_audio">扬声器</string>
+  <string name="call_decline_text">挂断</string>
+  <string name="peer_refuse_to_answer">对方拒绝</string>
+  <string name="call_ended">通话结束</string>
+  <string name="Calling">正在呼叫</string>
+</resources>

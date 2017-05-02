@@ -1,0 +1,484 @@
+﻿$axure.loadCurrentPage({
+  "url":"产品需求及定义.html",
+  "generationDate":new Date(1426478507223.57),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"6205c30c98d945e38f3a8b11b7f0eecd",
+    "type":"Axure:Page",
+    "name":"产品需求及定义",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"34089be7dab147a7b9817eeb92226893",
+          "label":"",
+          "type":"table",
+          "styleType":"table",
+          "visible":true,
+          "style":{
+            "fontName":"'应用字体 Regular', '应用字体'",
+            "location":{
+              "x":35,
+              "y":30},
+            "size":{
+              "width":715,
+              "height":221}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"dcbd225aa9b14318b626a72071309d95",
+              "label":"",
+              "type":"tableCell",
+              "styleType":"tableCell",
+              "visible":true,
+              "style":{
+                "fontName":"'应用字体 Bold', '应用字体'",
+                "fontWeight":"700",
+                "horizontalAlignment":"center",
+                "verticalAlignment":"middle",
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFF2F2F2},
+                "size":{
+                  "width":96,
+                  "height":56}},
+              "adaptiveStyles":{
+},
+              "objects":[{
+                  "id":"881aec2173b04695adcd86262df9c78f",
+                  "label":"",
+                  "isContained":true,
+                  "type":"richTextPanel",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'应用字体 Bold', '应用字体'",
+                    "fontWeight":"700",
+                    "horizontalAlignment":"center",
+                    "verticalAlignment":"middle",
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFFF2F2F2},
+                    "size":{
+                      "width":96,
+                      "height":56}},
+                  "adaptiveStyles":{
+}}],
+              "images":{
+                "normal~":"images/产品需求及定义/u1.png"}},
+{
+              "id":"bff6608a479b45458c711acbecb8fab6",
+              "label":"",
+              "type":"tableCell",
+              "styleType":"tableCell",
+              "visible":true,
+              "style":{
+                "fontName":"'应用字体 Regular', '应用字体'",
+                "horizontalAlignment":"center",
+                "verticalAlignment":"middle",
+                "location":{
+                  "x":0,
+                  "y":56},
+                "size":{
+                  "width":96,
+                  "height":42}},
+              "adaptiveStyles":{
+},
+              "objects":[{
+                  "id":"6e2f473633774b1c929db91afec49a0d",
+                  "label":"",
+                  "isContained":true,
+                  "type":"richTextPanel",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'应用字体 Regular', '应用字体'",
+                    "horizontalAlignment":"center",
+                    "verticalAlignment":"middle",
+                    "location":{
+                      "x":0,
+                      "y":56},
+                    "size":{
+                      "width":96,
+                      "height":42}},
+                  "adaptiveStyles":{
+}}],
+              "images":{
+                "normal~":"images/产品需求及定义/u5.png"}},
+{
+              "id":"71e54e3792544174878632348635ba26",
+              "label":"",
+              "type":"tableCell",
+              "styleType":"tableCell",
+              "visible":true,
+              "style":{
+                "fontName":"'应用字体 Regular', '应用字体'",
+                "horizontalAlignment":"center",
+                "verticalAlignment":"middle",
+                "location":{
+                  "x":0,
+                  "y":98},
+                "size":{
+                  "width":96,
+                  "height":41}},
+              "adaptiveStyles":{
+},
+              "objects":[{
+                  "id":"934d4b5d80b14b8792e09ba75acf9d84",
+                  "label":"",
+                  "isContained":true,
+                  "type":"richTextPanel",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'应用字体 Regular', '应用字体'",
+                    "horizontalAlignment":"center",
+                    "verticalAlignment":"middle",
+                    "location":{
+                      "x":0,
+                      "y":98},
+                    "size":{
+                      "width":96,
+                      "height":41}},
+                  "adaptiveStyles":{
+}}],
+              "images":{
+                "normal~":"images/产品需求及定义/u9.png"}},
+{
+              "id":"f2aca02325e84a5faa00c71a8c645a89",
+              "label":"",
+              "type":"tableCell",
+              "styleType":"tableCell",
+              "visible":true,
+              "style":{
+                "fontName":"'应用字体 Bold', '应用字体'",
+                "fontWeight":"700",
+                "horizontalAlignment":"center",
+                "verticalAlignment":"middle",
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFF2F2F2},
+                "location":{
+                  "x":96,
+                  "y":0},
+                "size":{
+                  "width":619,
+                  "height":56}},
+              "adaptiveStyles":{
+},
+              "objects":[{
+                  "id":"9e0c233c37cd4735a1c3786a5740dab5",
+                  "label":"",
+                  "isContained":true,
+                  "type":"richTextPanel",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'应用字体 Bold', '应用字体'",
+                    "fontWeight":"700",
+                    "horizontalAlignment":"center",
+                    "verticalAlignment":"middle",
+                    "fill":{
+                      "fillType":"solid",
+                      "color":0xFFF2F2F2},
+                    "location":{
+                      "x":96,
+                      "y":0},
+                    "size":{
+                      "width":619,
+                      "height":56}},
+                  "adaptiveStyles":{
+}}],
+              "images":{
+                "normal~":"images/产品需求及定义/u3.png"}},
+{
+              "id":"0fce6e136a444e27a00862fb7b4520f5",
+              "label":"",
+              "type":"tableCell",
+              "styleType":"tableCell",
+              "visible":true,
+              "style":{
+                "fontName":"'应用字体 Regular', '应用字体'",
+                "verticalAlignment":"middle",
+                "location":{
+                  "x":96,
+                  "y":56},
+                "size":{
+                  "width":619,
+                  "height":42}},
+              "adaptiveStyles":{
+},
+              "objects":[{
+                  "id":"03c7678b423545a2ab43fea8d0b24aa2",
+                  "label":"",
+                  "isContained":true,
+                  "type":"richTextPanel",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'应用字体 Regular', '应用字体'",
+                    "verticalAlignment":"middle",
+                    "location":{
+                      "x":96,
+                      "y":56},
+                    "size":{
+                      "width":619,
+                      "height":42}},
+                  "adaptiveStyles":{
+}}],
+              "images":{
+                "normal~":"images/产品需求及定义/u7.png"}},
+{
+              "id":"e6f7844aa66c418280edf09dad528183",
+              "label":"",
+              "type":"tableCell",
+              "styleType":"tableCell",
+              "visible":true,
+              "style":{
+                "fontName":"'应用字体 Regular', '应用字体'",
+                "verticalAlignment":"middle",
+                "location":{
+                  "x":96,
+                  "y":98},
+                "size":{
+                  "width":619,
+                  "height":41}},
+              "adaptiveStyles":{
+},
+              "objects":[{
+                  "id":"a80262c9e29a4cb084b6c79c30834219",
+                  "label":"",
+                  "isContained":true,
+                  "type":"richTextPanel",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'应用字体 Regular', '应用字体'",
+                    "verticalAlignment":"middle",
+                    "location":{
+                      "x":96,
+                      "y":98},
+                    "size":{
+                      "width":619,
+                      "height":41}},
+                  "adaptiveStyles":{
+}}],
+              "images":{
+                "normal~":"images/产品需求及定义/u11.png"}},
+{
+              "id":"385b76ab28ab459bb221e8ef1753bc80",
+              "label":"",
+              "type":"tableCell",
+              "styleType":"tableCell",
+              "visible":true,
+              "style":{
+                "fontName":"'应用字体 Regular', '应用字体'",
+                "horizontalAlignment":"center",
+                "verticalAlignment":"middle",
+                "location":{
+                  "x":0,
+                  "y":139},
+                "size":{
+                  "width":96,
+                  "height":41}},
+              "adaptiveStyles":{
+},
+              "objects":[{
+                  "id":"cd21cc7bc4d24b00bdf1021b038d3f0e",
+                  "label":"",
+                  "isContained":true,
+                  "type":"richTextPanel",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'应用字体 Regular', '应用字体'",
+                    "horizontalAlignment":"center",
+                    "verticalAlignment":"middle",
+                    "location":{
+                      "x":0,
+                      "y":139},
+                    "size":{
+                      "width":96,
+                      "height":41}},
+                  "adaptiveStyles":{
+}}],
+              "images":{
+                "normal~":"images/产品需求及定义/u9.png"}},
+{
+              "id":"d620d4a7516146c89fdc44883d6891d2",
+              "label":"",
+              "type":"tableCell",
+              "styleType":"tableCell",
+              "visible":true,
+              "style":{
+                "fontName":"'应用字体 Regular', '应用字体'",
+                "verticalAlignment":"middle",
+                "location":{
+                  "x":96,
+                  "y":139},
+                "size":{
+                  "width":619,
+                  "height":41}},
+              "adaptiveStyles":{
+},
+              "objects":[{
+                  "id":"fae61b1b7de24eada99d8abe7d656d2e",
+                  "label":"",
+                  "isContained":true,
+                  "type":"richTextPanel",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'应用字体 Regular', '应用字体'",
+                    "verticalAlignment":"middle",
+                    "location":{
+                      "x":96,
+                      "y":139},
+                    "size":{
+                      "width":619,
+                      "height":41}},
+                  "adaptiveStyles":{
+}}],
+              "images":{
+                "normal~":"images/产品需求及定义/u11.png"}},
+{
+              "id":"06a326d8accb477f9d2d6e714df8a700",
+              "label":"",
+              "type":"tableCell",
+              "styleType":"tableCell",
+              "visible":true,
+              "style":{
+                "fontName":"'应用字体 Regular', '应用字体'",
+                "horizontalAlignment":"center",
+                "verticalAlignment":"middle",
+                "location":{
+                  "x":0,
+                  "y":180},
+                "size":{
+                  "width":96,
+                  "height":41}},
+              "adaptiveStyles":{
+},
+              "objects":[{
+                  "id":"80803cbf5b9c4ee49dcdcdb37a2b8d45",
+                  "label":"",
+                  "isContained":true,
+                  "type":"richTextPanel",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'应用字体 Regular', '应用字体'",
+                    "horizontalAlignment":"center",
+                    "verticalAlignment":"middle",
+                    "location":{
+                      "x":0,
+                      "y":180},
+                    "size":{
+                      "width":96,
+                      "height":41}},
+                  "adaptiveStyles":{
+}}],
+              "images":{
+                "normal~":"images/产品需求及定义/u17.png"}},
+{
+              "id":"6ac69c083e934598a8f7c2d9f349b5c8",
+              "label":"",
+              "type":"tableCell",
+              "styleType":"tableCell",
+              "visible":true,
+              "style":{
+                "fontName":"'应用字体 Regular', '应用字体'",
+                "verticalAlignment":"middle",
+                "location":{
+                  "x":96,
+                  "y":180},
+                "size":{
+                  "width":619,
+                  "height":41}},
+              "adaptiveStyles":{
+},
+              "objects":[{
+                  "id":"f5273e287bef4b6ba35846aabe914ae8",
+                  "label":"",
+                  "isContained":true,
+                  "type":"richTextPanel",
+                  "styleType":"paragraph",
+                  "visible":true,
+                  "style":{
+                    "fontName":"'应用字体 Regular', '应用字体'",
+                    "verticalAlignment":"middle",
+                    "location":{
+                      "x":96,
+                      "y":180},
+                    "size":{
+                      "width":619,
+                      "height":41}},
+                  "adaptiveStyles":{
+}}],
+              "images":{
+                "normal~":"images/产品需求及定义/u19.png"}}]}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "34089be7dab147a7b9817eeb92226893":{
+      "scriptId":"u0"},
+    "dcbd225aa9b14318b626a72071309d95":{
+      "scriptId":"u1"},
+    "881aec2173b04695adcd86262df9c78f":{
+      "scriptId":"u2"},
+    "f2aca02325e84a5faa00c71a8c645a89":{
+      "scriptId":"u3"},
+    "9e0c233c37cd4735a1c3786a5740dab5":{
+      "scriptId":"u4"},
+    "bff6608a479b45458c711acbecb8fab6":{
+      "scriptId":"u5"},
+    "6e2f473633774b1c929db91afec49a0d":{
+      "scriptId":"u6"},
+    "0fce6e136a444e27a00862fb7b4520f5":{
+      "scriptId":"u7"},
+    "03c7678b423545a2ab43fea8d0b24aa2":{
+      "scriptId":"u8"},
+    "71e54e3792544174878632348635ba26":{
+      "scriptId":"u9"},
+    "934d4b5d80b14b8792e09ba75acf9d84":{
+      "scriptId":"u10"},
+    "e6f7844aa66c418280edf09dad528183":{
+      "scriptId":"u11"},
+    "a80262c9e29a4cb084b6c79c30834219":{
+      "scriptId":"u12"},
+    "385b76ab28ab459bb221e8ef1753bc80":{
+      "scriptId":"u13"},
+    "cd21cc7bc4d24b00bdf1021b038d3f0e":{
+      "scriptId":"u14"},
+    "d620d4a7516146c89fdc44883d6891d2":{
+      "scriptId":"u15"},
+    "fae61b1b7de24eada99d8abe7d656d2e":{
+      "scriptId":"u16"},
+    "06a326d8accb477f9d2d6e714df8a700":{
+      "scriptId":"u17"},
+    "80803cbf5b9c4ee49dcdcdb37a2b8d45":{
+      "scriptId":"u18"},
+    "6ac69c083e934598a8f7c2d9f349b5c8":{
+      "scriptId":"u19"},
+    "f5273e287bef4b6ba35846aabe914ae8":{
+      "scriptId":"u20"}}});

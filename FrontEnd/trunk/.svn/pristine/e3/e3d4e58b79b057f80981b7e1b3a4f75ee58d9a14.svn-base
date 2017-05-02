@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/BaseBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/rl_head" 
+            layout="@layout/registration_head_titile" />
+
+        <ScrollView
+            android:id="@id/friend_profile" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none" >
+
+            <LinearLayout
+                android:id="@+id/ll_top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_getstart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginTop="17dp"
+                    android:gravity="center"
+                    android:text="@string/complete_profile"
+                    android:textColor="@color/invite_friend_phonenum"
+                    android:textSize="30sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/broadcast_trending_cccccc" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_photo"
+                    style="@style/profile_layout1" >
+
+                    <TextView
+                        android:id="@+id/tv_photo"
+                        style="@style/profile_detail_key"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dip"
+                        android:text="@string/set_picture"
+                        android:textColor="@color/text_level_1" />
+
+                    <ImageView
+                        android:id="@+id/img_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dip"
+                        android:contentDescription="@null"
+                        android:src="@drawable/navigation_forward"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/img_photo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_toLeftOf="@id/img_arrow"
+                        android:background="@drawable/head_male2" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/broadcast_trending_cccccc" />
+
+
+
+
+
+
+                
+                
+                <RelativeLayout
+                    android:id="@+id/rl_inviter"
+                    style="@style/profile_layout1" 
+                    android:visibility="gone">
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/broadcast_trending_cccccc" />
+                    <TextView
+                        android:id="@+id/tv_inviter_left"
+                       android:layout_width="wrap_content"
+				        android:layout_height="match_parent" 
+				        android:textSize="16sp" 
+				       android:singleLine="true" 
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dip"
+                        android:text="@string/inviter"
+                        android:textColor="@color/text_level_1" /> 
+                     
+                    <EditText
+                        android:id="@+id/tv_inviter_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="18dp"
+                        android:layout_toRightOf="@+id/tv_inviter_left"
+                        android:background="@null"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        android:digits="0123456789"
+                        android:hint="@string/enter_inviter_id"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_level_2" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/broadcast_trending_cccccc" />
+                </RelativeLayout>
+                
+                
+                <Button
+                    android:id="@+id/btn_complete"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="34dp"
+                    android:background="@drawable/login_button_selector"
+                    android:text="@string/complete"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

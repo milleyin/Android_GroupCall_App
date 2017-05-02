@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contactitem_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="@dimen/d_broadcast_item_margin"
+    android:paddingRight="@dimen/d_broadcast_item_margin"
+    android:minHeight="24dip" >
+
+        <FrameLayout
+            android:id="@+id/fl_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp" >
+
+            <ImageView
+                android:id="@+id/img_head_empty"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/head_female"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_head"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/head_female" />
+        </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/fl_head"
+                android:layout_toLeftOf="@+id/c_time" >
+
+                <!-- 公共账号标志 -->
+
+                <ImageView
+                    android:id="@+id/pa_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/icon_broadcast_list_comment_public_account"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/c_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:lines="1"
+                    android:clickable="true"
+                    android:textColor="@color/color_nice_blue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/c_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/predict_9af"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_below="@+id/layout_name"
+                android:layout_toRightOf="@+id/fl_head"
+                >
+
+                <TextView
+                    android:id="@+id/c_countent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:descendantFocusability="blocksDescendants"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_level_1" />
+
+            </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <include
+        android:id="@id/title_layout"
+        layout="@layout/head_back_title_more" />
+
+    <ListView
+        android:id="@+id/ls_palmcallrecents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:transcriptMode="disabled"
+        android:visibility="gone"/>
+    <include android:id="@+id/palmcall_recent_nodata"
+    layout="@layout/no_content_layout"
+        />
+</LinearLayout>

@@ -1,0 +1,80 @@
+<resources>
+    <!--挂断-->
+    <string name="call_decline_text">Hang up</string>
+    <!--麦克风-->
+    <string name="call_mute_text">Mute</string>
+    <!--扬声器-->
+    <string name="call_audio">Speaker</string>
+    <!--接听-->
+    <string name="call_accept">Accept</string>
+    <!--重播-->
+    <string name="call_redial">Redial</string>
+    <string name="palmcall_busy">The called party is busy.Please try again later.</string>
+    <!--主播打方的附加信息提示-->
+    <string name="call_lefttime_tip">You have XXXX minutes of calls left</string>
+    <!--被拨打方的附加信息提示-->
+    <string name="call_income_tip">Income:XXXX coin</string>
+    <!--一个未接来电-->
+    <string name="onoallcoming">one call coming</string>
+    <string name="userself_infoupdate_fail">Users own information update failure!</string>
+    <string name="peer_refuse_to_answer">Call declined by user</string>
+    <string name="call_ended">Call ended</string>
+    <string name="peer_no_answer">No answer</string>
+    <string name="Accept">Accept</string>
+    <string name="Answering">Answering</string>
+    <string name="Audio_device_error">Audio device error</string>
+    <string name="Audio_device_occupied">audio device occupied</string>
+    <string name="Busy">Busy</string>
+    <string name="Call_disconnected">Call disconnected</string>
+    <string name="Call_ended">Call ended</string>
+    <string name="Call_ending">Call ending</string>
+    <string name="Call_paused">Call paused</string>
+    <string name="Calling">Calling</string>
+    <string name="Camera_device_error">Camera device error</string>
+    <string name="Camera_off">Camera off</string>
+    <string name="Camera_on">Camera on</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Connecting">Connecting</string>
+    <string name="Decline">Decline</string>
+    <string name="Enable_display_pop_up_window">Enable \"Display pop-up window\"</string>
+    <string name="Enable_display_pop_up_window_description_format">To use minimized calling feature, enable \"Display pop-up window\" for %1$s in \"Security > Permissions > Permissions\"</string>
+    <string name="Front_camera">Front camera</string>
+    <string name="Headset">Headset</string>
+    <string name="Incoming">Incoming</string>
+    <string name="Interrupted_by_regular_call_description">Interrupted by regular call, please hold on</string>
+    <string name="No_answer">No answer</string>
+    <string name="No_internet_connection">No Internet connection</string>
+    <string name="Not_running">Not running</string>
+    <string name="OK">OK</string>
+    <string name="Offline">Offline</string>
+    <string name="Open_Camera">Open Camera</string>
+    <string name="Open_Camera_app_to_fix_device_error">Open Camera app to fix device error</string>
+    <string name="Other_side_camera_off">Camera off</string>
+    <string name="Paused">Paused</string>
+    <string name="Please_check_the_network_connection">Please check the network connection</string>
+    <string name="Please_hang_up_the_regular_call_before_you_answer">Please hang up the regular call before you answer %1$s</string>
+    <string name="Poor_connection">Poor connection</string>
+    <string name="Poor_connection_description">The connection is poor. The video will resume automatically when the connection improves.</string>
+    <string name="Rear_camera">Rear camera</string>
+    <string name="Receiver">Receiver</string>
+    <string name="Reconnecting">Reconnecting</string>
+    <string name="Redial">Redial</string>
+    <string name="Ringing">Ringing</string>
+    <string name="Security">Security</string>
+    <string name="Speaker">Speaker</string>
+    <string name="Switch">Switch</string>
+    <string name="Switched_to_voice_call">Switched to voice call</string>
+    <string name="Talking">Talking</string>
+    <string name="Temporarily_unavailable">Temporarily unavailable</string>
+    <string name="Video_call">Video call</string>
+    <string name="Video_incoming">Video incoming</string>
+    <string name="Video_paused">Video paused</string>
+    <string name="Voice_call">Voice call</string>
+    <string name="Voice_incoming">Voice incoming</string>
+    <string name="Voice_only">Voice only</string>
+    <string name="app_label_hasnot_been_installed">%1$s hasn\'t been installed</string>
+    <string name="app_name">JusCall</string>
+    <string name="ringtone_spring_ding_dong">spring_ding_dong.mp3</string>
+    <string name="statistics">statistics</string>
+
+</resources>

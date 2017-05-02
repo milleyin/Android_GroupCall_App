@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:transcriptMode="disabled"
+        android:drawSelectorOnTop="false"
+        android:groupIndicator="@null"/>
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_selectletter"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+    </FrameLayout>
+    <com.afmobi.palmchat.ui.customview.SideBar
+        android:id="@+id/sidrbar"
+        android:layout_width="30.0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparent" />
+</RelativeLayout>

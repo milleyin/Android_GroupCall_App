@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/home_list" >
+        
+    <TextView
+        android:id="@id/friend_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="A"
+        android:textColor="@color/text_level_2"
+        android:textSize="15sp"
+        android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/select_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/empty"
+                android:background="@drawable/set_select_bg" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:contentDescription="@string/empty"
+            android:background="@drawable/head_male2" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/icon"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:text="1111"
+            android:textColor="@color/text_level_1" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/color_btn"
+            android:text="@string/notifications"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

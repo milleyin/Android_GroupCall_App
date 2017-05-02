@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Widget.STCalendarView">
+        <item name="st_showWeekNumber">true</item>
+        <item name="st_firstDayOfWeek">1</item>
+        <item name="st_minDate">01/01/1900</item>
+        <item name="st_maxDate">12/31/2100</item>
+        <item name="st_shownWeekCount">6</item>
+        <item name="st_selectedWeekBackgroundColor">#330099FF</item>
+        <item name="st_focusedMonthDateColor">#FFFFFFFF</item>
+        <item name="st_unfocusedMonthDateColor">#66FFFFFF</item>
+        <item name="st_weekNumberColor">#33FFFFFF</item>
+        <item name="st_weekSeparatorLineColor">#19FFFFFF</item>
+        <item name="st_selectedDateVerticalBar">@drawable/day_picker_week_view_dayline_holo</item>
+        <item name="st_weekDayTextAppearance">@style/TextAppearance.Small.STCalendarViewWeekDayView</item>
+        <item name="st_dateTextAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="Widget.Holo.STCalendarView" parent="Widget.STCalendarView">
+        <item name="st_selectedWeekBackgroundColor">#330099FF</item>
+        <item name="st_focusedMonthDateColor">#FFFFFFFF</item>
+        <item name="st_unfocusedMonthDateColor">#66FFFFFF</item>
+        <item name="st_weekNumberColor">#33FFFFFF</item>
+        <item name="st_weekSeparatorLineColor">#19FFFFFF</item>
+        <item name="st_selectedDateVerticalBar">@drawable/day_picker_week_view_dayline_holo</item>
+        <item name="st_weekDayTextAppearance">@style/TextAppearance.Holo.STCalendarViewWeekDayView</item>
+        <item name="st_dividerHorizontal">@drawable/list_divider_holo_dark</item>
+    </style>
+
+    <style name="Widget.Holo.Light.STCalendarView" parent="Widget.STCalendarView">
+        <item name="st_selectedWeekBackgroundColor">#330066ff</item>
+        <item name="st_focusedMonthDateColor">#FF000000</item>
+        <item name="st_unfocusedMonthDateColor">#7F08002B</item>
+        <item name="st_weekNumberColor">#7F080021</item>
+        <item name="st_weekSeparatorLineColor">#7F08002A</item>
+        <item name="st_weekDayTextAppearance">@style/TextAppearance.Holo.Light.STCalendarViewWeekDayView</item>
+        <item name="st_dividerHorizontal">@drawable/list_divider_holo_light</item>
+    </style>
+
+    <style name="TextAppearance.Small.STCalendarViewWeekDayView" parent="@android:style/TextAppearance.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Holo.STCalendarViewWeekDayView" parent="TextAppearance.Small.STCalendarViewWeekDayView">
+        <item name="android:textColor">#505050</item>
+    </style>
+
+    <style name="TextAppearance.Holo.Light.STCalendarViewWeekDayView" parent="TextAppearance.Small.STCalendarViewWeekDayView">
+    </style>
+    
+    
+    <!-- NumberDatePicker style -->
+
+    <style name="Widget.STNumberPicker">
+        <item name="android:orientation">vertical</item>
+        <item name="android:fadingEdge">vertical</item>
+        <item name="android:fadingEdgeLength">50dip</item>
+    </style>
+
+    <style name="Widget.Holo.STNumberPicker" parent="Widget.STNumberPicker">
+        <item name="solidColor">@android:color/transparent</item>
+        <item name="selectionDivider">@drawable/np_numberpicker_selection_divider</item>
+        <item name="selectionDividerHeight">2dip</item>
+        <item name="internalLayout">@layout/number_picker_with_selector_wheel</item>
+        <item name="internalMinWidth">64dip</item>
+        <item name="internalMaxHeight">180dip</item>
+        <item name="virtualButtonPressedDrawable">@drawable/item_background_holo_dark</item>
+    </style>
+
+    <style name="Widget.Holo.Light.STNumberPicker" parent="Widget.Holo.STNumberPicker">
+        <item name="virtualButtonPressedDrawable">@drawable/item_background_holo_light</item>
+    </style>
+    
+    
+    
+    
+    <!-- DatePicker style -->
+    <style name="Theme.Hold.Dialog.Date" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/date_picker_dialog_round</item>
+    </style>
+    <style name="Theme.Dialog.Alert" parent="@style/Theme.Hold.Dialog.Date">
+    </style>
+
+    <style name="Widget">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+    </style>
+
+    <style name="Widget.STDatePicker">
+        <!--item name="android:layout">@android:layout/date_picker</item-->
+        <item name="dp_calendarViewShown">false</item>
+    </style>
+
+    <style name="Widget.Holo.STDatePicker" parent="Widget.STDatePicker">
+        <item name="dp_internalLayout">@layout/date_picker_holo</item>
+        <item name="dp_calendarViewShown">true</item>
+    </style>
+	
+    <style name="Widget.Holo.Light.STDatePicker" parent="Widget.Holo.STDatePicker">
+    </style>
+    
+</resources>

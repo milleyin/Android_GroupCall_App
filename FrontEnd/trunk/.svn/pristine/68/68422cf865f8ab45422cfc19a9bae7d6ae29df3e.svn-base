@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/title_bg" >
+             
+               <FrameLayout android:id="@+id/head_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true" >
+ 
+                <ImageView
+                    android:id="@+id/itemimage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/head_male2"
+                    android:contentDescription="@string/empty"
+                     />
+
+                <!-- 存放群聊头像 -->
+
+                <RelativeLayout
+                    android:id="@+id/group_heads"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:visibility="gone" >
+
+<!--                     <ImageView -->
+<!--                         android:id="@+id/group_head_1" -->
+<!--                         android:layout_width="22dip" -->
+<!--                         android:layout_height="22dip" -->
+<!--                         android:layout_alignParentLeft="true" -->
+<!--                         android:layout_alignParentTop="true" -->
+<!--                         android:layout_margin="2.0dip" -->
+<!--                         android:adjustViewBounds="true" -->
+<!--                         android:scaleType="centerInside" -->
+<!--                         android:contentDescription="@string/empty" /> -->
+
+<!--                     <ImageView -->
+<!--                         android:id="@+id/group_head_2" -->
+<!--                         android:layout_width="22dip" -->
+<!--                         android:layout_height="22dip" -->
+<!--                         android:layout_alignParentRight="true" -->
+<!--                         android:layout_alignParentTop="true" -->
+<!--                         android:layout_marginBottom="2dip" -->
+<!--                         android:layout_marginRight="2dip" -->
+<!--                         android:layout_marginTop="2dip" -->
+<!--                         android:layout_toRightOf="@id/group_head_1" -->
+<!--                         android:adjustViewBounds="true" -->
+<!--                         android:scaleType="centerInside" -->
+<!--                         android:contentDescription="@string/empty" /> -->
+
+<!--                     <ImageView -->
+<!--                         android:id="@+id/group_head_3" -->
+<!--                         android:layout_width="22dip" -->
+<!--                         android:layout_height="22dip" -->
+<!--                         android:layout_alignParentBottom="true" -->
+<!--                         android:layout_alignParentLeft="true" -->
+<!--                         android:layout_below="@id/group_head_1" -->
+<!--                         android:layout_marginBottom="2dip" -->
+<!--                         android:layout_marginLeft="2dip" -->
+<!--                         android:layout_marginRight="2dip" -->
+<!--                         android:adjustViewBounds="true" -->
+<!--                         android:scaleType="centerInside" -->
+<!--                         android:contentDescription="@string/empty" /> -->
+
+<!--                     <ImageView -->
+<!--                         android:id="@+id/group_head_4" -->
+<!--                         android:layout_width="22dip" -->
+<!--                         android:layout_height="22dip" -->
+<!--                         android:layout_alignParentBottom="true" -->
+<!--                         android:layout_alignParentRight="true" -->
+<!--                         android:layout_below="@id/group_head_2" -->
+<!--                         android:layout_marginBottom="2dip" -->
+<!--                         android:layout_marginRight="2dip" -->
+<!--                         android:layout_toRightOf="@id/group_head_3" -->
+<!--                         android:adjustViewBounds="true" -->
+<!--                         android:scaleType="centerInside" -->
+<!--                         android:contentDescription="@string/empty" /> -->
+					<ImageView
+                        android:id="@+id/group_head_1"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="11dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/group_head_2"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@+id/group_head_1"
+                        android:layout_marginTop="-8dp"
+                         />
+
+                    <ImageView
+                        android:id="@+id/group_head_3"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_below="@+id/group_head_1"
+                        android:layout_marginLeft="-8dp"
+                        android:layout_marginTop="-8dp"
+                        android:layout_toRightOf="@+id/group_head_2"
+                         />
+                </RelativeLayout>
+
+            </FrameLayout>
+             
+             
+             <TextView
+                    android:id="@+id/pophead_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:maxEms="8"
+                    android:textSize="15sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:layout_toRightOf="@+id/head_frame"
+                    android:text="@string/upload_photo"
+                    android:layout_centerVertical="true" />
+             
+             <TextView
+                    android:id="@+id/pophead_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textColor="@color/look_around_range_normal"
+                    android:textSize="11sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/head_frame"
+                    android:layout_below="@+id/pophead_name"
+                    android:text="afid"
+                    android:visibility="gone" />
+             
+                <ImageView
+                    android:id="@+id/pophead_exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_popmsg_exit"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@string/empty" />
+                
+             </RelativeLayout>

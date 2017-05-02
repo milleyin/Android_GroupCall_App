@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    
+    <!-- 第一项 -->
+	<RelativeLayout 
+    	android:id="@+id/broadcast_dialog_itemfirst_id"
+       	android:layout_width="match_parent"
+       	android:layout_height="@dimen/broadcast_tagpage_dialog_height_size"
+       	style="@style/pop_text_style"
+       	android:clickable="true"
+       	android:gravity="center_vertical">
+       
+		<ImageView
+           android:id="@+id/broadcast_dialog_itemfirst_icon_id"
+           android:layout_width="@dimen/broadcast_tagpage_dialog_headerview_height_size"
+           android:layout_height="@dimen/broadcast_tagpage_dialog_headerview_height_size"
+           android:layout_marginLeft="@dimen/broadcast_tagpage_dialog_headerview_margin_size"
+           android:contentDescription="@null"
+           android:background="@android:color/white"
+           />
+       
+       	<TextView
+           android:id="@+id/broadcast_dialog_itemfirst_text_id"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/broadcast_dialog_itemfirst_icon_id"
+           android:layout_marginLeft="@dimen/broadcast_tagpage_dialog_headerview_margin_size"
+           android:textSize = "@dimen/broadcast_tagpage_dialog_text_size"
+           android:textColor = "@color/text_level_1"
+           />
+        
+    </RelativeLayout>
+    
+	<!-- 第二项 -->
+	<RelativeLayout 
+    	android:id="@+id/broadcast_dialog_itemsecond_id"
+       	android:layout_width="match_parent"
+       	android:layout_height="@dimen/broadcast_tagpage_dialog_height_size"
+       	android:clickable="true"
+       	style="@style/pop_text_style"       	
+       	android:gravity="center_vertical">
+		
+	   	<ImageView
+           android:id="@+id/broadcast_dialog_itemsecond_icon_id"
+           android:layout_width="@dimen/broadcast_tagpage_dialog_headerview_height_size"
+           android:layout_height="@dimen/broadcast_tagpage_dialog_headerview_height_size"
+           android:layout_marginLeft="@dimen/broadcast_tagpage_dialog_headerview_margin_size"
+           android:contentDescription="@null"
+           android:background="@android:color/white"
+           />
+       
+       	<TextView
+           android:id="@+id/broadcast_dialog_itemsecond_text_id"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/broadcast_dialog_itemsecond_icon_id"
+           android:layout_marginLeft="@dimen/broadcast_tagpage_dialog_headerview_margin_size"
+           android:textSize = "@dimen/broadcast_tagpage_dialog_text_size"
+           android:textColor = "@color/text_level_1" /> 
+    </RelativeLayout>
+   
+</LinearLayout>

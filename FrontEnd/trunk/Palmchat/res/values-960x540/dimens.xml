@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="head_back_profile_name_max_width">210dp</dimen>
+    <dimen name="head_back_chatting_title_padding">12dp</dimen>
+    <dimen name="sendbroadcast_edittext_height">90dp</dimen>
+    <dimen name="qr_img_margion_top">72dp</dimen>
+    <dimen name="qr_text_prompt_margion_top">16dp</dimen>
+    <dimen name="qr_text_code_margion_top">36dp</dimen>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="71dip" >
+
+        <TextView
+            android:id="@+id/text_Prize_name"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#242633"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_player_photo"
+            style="@style/head_style"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/text_Prize_name"
+            android:contentDescription="@string/empty" />
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_alignParentTop="true"
+           android:layout_marginLeft="16dp"
+           android:layout_toRightOf="@+id/img_player_photo"
+           android:descendantFocusability="blocksDescendants" >
+
+           <TextView
+               android:id="@+id/text_user_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_above="@+id/text_win"
+               android:layout_alignParentLeft="true"
+               android:layout_marginTop="5dp"
+               android:ellipsize="end"
+               android:maxEms="6"
+               android:singleLine="true"
+               android:text="noma"
+               android:textColor="#666666"
+               android:textSize="14sp" />
+
+           <TextView
+               android:id="@+id/text_win"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_centerVertical="true"
+               android:gravity="center"
+               android:text="100%"
+               android:textColor="#242633"
+               android:textSize="14sp" />
+
+           <TextView
+               android:id="@+id/textView1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_below="@+id/text_win"
+               android:layout_marginTop="3dp"
+               android:gravity="center"
+               android:text="Win"
+               android:textColor="#b8b9bf"
+               android:textSize="12sp" />
+
+           <TextView
+               android:id="@+id/text_follow"
+               android:layout_width="60dp"
+               android:layout_height="29dp"
+               android:layout_alignParentRight="true"
+               android:layout_centerInParent="true"
+               android:layout_marginRight="16dp"
+               android:background="@drawable/login_button_selector"
+               android:clickable="true"
+               android:focusable="true"
+               android:gravity="center"
+               android:focusableInTouchMode="false"
+               android:text="@string/ran_view"
+               android:textColor="@color/white" />
+
+           <TextView
+               android:id="@+id/points_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignLeft="@+id/text_amount"
+               android:layout_below="@+id/text_amount"
+               android:layout_marginTop="3dp"
+               android:gravity="center"
+               android:text="Points"
+               android:textColor="#b8b9bf"
+               android:textSize="12sp" />
+
+           <View
+               android:layout_width="fill_parent"
+               android:layout_height="1dp"
+               android:layout_alignParentBottom="true"
+               android:background="#e1e1e1" />
+
+           <TextView
+               android:id="@+id/text_amount"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_above="@+id/textView1"
+               android:layout_marginLeft="72dp"
+               android:gravity="center"
+               android:text="1080"
+               android:textColor="#242633"
+               android:textSize="14sp" />
+
+       </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="com.afmobi.AccountType"
+    android:icon="@drawable/app_icon"
+    android:smallIcon="@drawable/app_icon"
+    android:label="Afmobi"
+    android:accountPreferences="@xml/account_preferences"
+     android:protectionLevel="normal"
+ />

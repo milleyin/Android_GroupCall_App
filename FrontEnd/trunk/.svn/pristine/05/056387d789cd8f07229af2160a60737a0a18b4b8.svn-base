@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding ="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SystemBarTint_Style">   
+
+
+	<com.afmobi.palmchat.ui.activity.chattingroom.widget.XListView
+		android:id="@+id/broadcast_tagposts_listview_id"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:cacheColorHint="@android:color/transparent"
+		android:divider="@color/predict_d10"
+		android:dividerHeight="@dimen/broadcast_tagpage_partingline_height_size"
+		android:fadingEdge="none"
+		android:scrollbars="none" 
+		android:background="@color/predict_d10"
+		app:showfootview="true"
+		app:showblankviewheight="@dimen/toppstfragment_blankviewheight_size"/>
+</RelativeLayout>

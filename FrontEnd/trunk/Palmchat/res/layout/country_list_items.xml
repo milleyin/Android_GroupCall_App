@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/country_sort"
+        style="@style/MMListCatalog"
+        android:background="@drawable/list_label"
+        android:paddingRight="4.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/uilist"
+        android:orientation="horizontal"
+        android:paddingLeft="6dip"
+        android:paddingRight="20.0dip" >
+
+        <TextView
+            android:id="@id/country_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@drawable/name_text_color"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@id/country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="@drawable/name_text_color" />
+    </LinearLayout>
+
+</LinearLayout>

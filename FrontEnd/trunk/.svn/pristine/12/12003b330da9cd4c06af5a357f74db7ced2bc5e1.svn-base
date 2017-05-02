@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <include
+            android:id="@id/title_layout"
+            layout="@layout/registration_head_titile2" />
+
+        <ScrollView
+            android:id="@+id/set_info_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/title_layout"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+        android:id="@+id/view_complete_profile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/network_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dip"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/dropped_ico" />
+
+        <TextView
+            android:id="@+id/offline_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dip"
+            android:text="@string/complete_profile"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+                <!--          <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@drawable/dividingline_582" /> -->
+
+
+                <EditText
+                            android:id="@+id/edit_user"
+                            android:layout_width="fill_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/text_fouse_selector"
+                            android:drawablePadding="15dp"
+                            android:hint="@string/name"
+                            android:inputType="text"
+                            android:maxLength="12"
+                            android:textColorHint="@color/text_level_3"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"
+                            android:drawableLeft="@drawable/ic_login_exclamationmark" />
+   <RelativeLayout
+                    android:id="@+id/rl_ragion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/text_fouse_selector"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" >
+
+                    <TextView android:id="@+id/tx1"
+                        style="@style/vertical_text_style"
+                        android:layout_centerVertical="true"
+                        android:text="@string/region"
+                        android:layout_toRightOf="@+id/note_region" />
+
+                    <TextView
+                        android:id="@+id/edit_ragion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/img_arrow"
+                        android:layout_toRightOf="@+id/tx1"
+                        android:textColor="@color/setting_content_text"
+                        android:gravity="right"
+                        android:maxWidth="200dp"
+                        android:layout_marginRight="5dp" />
+
+                    <ImageView
+                        android:id="@+id/img_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:background="@drawable/navigation_forward" />
+                    
+                    
+                    <ImageView
+                        android:id="@+id/note_region"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_login_exclamationmark"
+                        android:paddingRight="10dp" />
+                    
+                </RelativeLayout>
+                
+<RelativeLayout
+                    android:id="@+id/rl_dob"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/text_fouse_selector"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" >
+                    
+           <ImageView
+                        android:id="@+id/note_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_login_exclamationmark"
+                        android:paddingRight="10dp" />
+
+                    <TextView android:id="@+id/tx2"
+                        style="@style/vertical_text_style"
+                        android:layout_centerVertical="true"
+                        android:text="@string/dob"
+                        android:layout_toRightOf="@+id/note_birthday" />
+
+                    <TextView
+                        android:id="@+id/edit_dob"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/img_arrow1"
+                        android:layout_toRightOf="@+id/tx2"
+                        android:textColor="@color/setting_content_text"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right" />
+
+                    <ImageView android:id="@+id/img_arrow1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/empty"
+                        android:background="@drawable/navigation_forward" />
+                </RelativeLayout>
+                
+   <TextView
+                            android:id="@+id/gender_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gender"
+                            android:textColor="@color/log_gray"
+                            android:textSize="15sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:drawablePadding="10dp"
+                            android:drawableLeft="@drawable/ic_login_exclamationmark" />
+
+                <RadioGroup
+                                android:id="@+id/gender_radio_g"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="20dp" >
+
+                                <RadioButton
+                                    android:id="@+id/radio_gender_male"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/radio_button_selector"
+                                    android:text="@string/male"
+                                    android:paddingLeft="10dp"
+                                    android:textColor="@color/text_level_1" />
+                                
+                                
+                                <RadioButton
+                                    android:id="@+id/radio_gender_female"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/radio_button_selector"
+                                    android:gravity="center"
+                                    android:textColor="@color/text_level_1"
+                                    android:text="@string/female"
+                                    android:paddingLeft="10dp"
+                                    android:layout_marginLeft="50dp" />
+
+                            </RadioGroup>
+
+
+                <LinearLayout
+                    android:id="@+id/btn_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@id/register_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/login_button_selector"
+                        android:text="@string/save"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

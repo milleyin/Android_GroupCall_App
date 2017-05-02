@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/title_bg" >
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_button"
+            android:clickable="true"
+            android:layout_marginLeft="4dp"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/call_VoiceIntroduction"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp" >
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/noticefication_accept"
+                android:maxWidth="82dp"
+                android:minWidth="64dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textSize="@dimen/dp_15"/>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sendvoice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:background="@color/brdcast_voice_blue"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/chatting_voice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/voice_bottom"
+            android:orientation="vertical" >
+
+
+            <ImageView
+                android:id="@+id/img_decibel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/brcast_voice01"
+                android:contentDescription="@string/empty" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="58dp"
+                android:layout_marginRight="58dp"
+                android:gravity="center"
+                android:text="@string/call_Voice_introduce"
+                android:textSize="12sp"
+                android:textColor="@color/brdcast_voice_txt_color2" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/voice_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="242dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_bg_profile"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+
+                <ProgressBar
+                    android:id="@+id/voice_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:max="60"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/voice_progress_layer_blue" />
+
+                <ProgressBar
+                    android:id="@+id/voice_progress2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:max="30"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/voice_progress_layer_red"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="18.0dp"
+                android:paddingRight="18.0dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/voice_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0.0s"
+                    android:textColor="@color/log_blue"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_voice_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/push_up_to_cancel"
+                    android:textColor="@color/text_level_3"
+                    android:textSize="14sp" />
+
+                <com.afmobi.palmchat.ui.customview.RippleBackground
+                    android:id="@+id/palmcall_recordcall_effect"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    app:rb_strokeWidth = "1dp"
+                    app:rb_color="@color/brdcast_voice_blue"
+                    app:rb_radius="20dp"
+                    app:rb_rippleAmount="6"
+                    app:rb_duration="3000"
+                    app:rb_scale="6">
+
+                    <Button
+                        android:id="@+id/talk_button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_voice_selector" />
+                </com.afmobi.palmchat.ui.customview.RippleBackground>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/retalk_test_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/retalk_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/btn_retalk_selector"
+                             />
+                        <TextView
+                            android:id="@+id/tv_retalk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/retalk_btn"
+                            android:layout_marginTop="@dimen/d_10dp"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:text="@string/call_Voice_retalk"
+                            android:textColor="@color/text_level_3"
+                            android:textSize="12sp" />
+
+                   </RelativeLayout>
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/talktest_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/btn_talktest_selector"
+                            android:gravity="center"  />
+                       <TextView
+                           android:id="@+id/tv_retest"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_below="@id/talktest_btn"
+                           android:layout_marginTop="@dimen/d_10dp"
+                           android:layout_centerHorizontal="true"
+                           android:gravity="center"
+                           android:text="@string/call_Voice_test"
+                           android:textColor="@color/text_level_3"
+                           android:textSize="12sp" />
+                   </RelativeLayout>
+                </LinearLayout>
+
+
+                <com.afmobi.palmchat.ui.customview.RippleView
+                    android:id="@+id/ripple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

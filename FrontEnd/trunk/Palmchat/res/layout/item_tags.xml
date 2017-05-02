@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tags_item_id"
+    android:background="@drawable/home_list">
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        />
+    <!-- tag name -->
+    <TextView 
+        android:id = "@+id/tags_item_tag_name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/broadcast_tags_tag_margin_size"
+        android:layout_toLeftOf="@+id/tags_item_tag_postsum"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/broadcast_trending_242633"
+        android:textSize="@dimen/broadcast_tags_tag_name_size"
+        android:layout_centerVertical="true"/>
+    
+    <!-- sum -->
+    <TextView
+        android:id="@+id/tags_item_tag_postsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tags_item_tag_mark"
+        android:layout_marginRight="7dp"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:textSize="@dimen/broadcast_tags_tag_mark_size"
+        android:textColor="@color/broadcast_tags_868892"/>
+    
+    <!-- posts -->
+    <TextView 
+        android:id="@+id/tags_item_tag_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/broadcast_tags_tag_mark_size"
+        android:textColor="@color/broadcast_tags_9fa0a6"
+        android:layout_marginRight="@dimen/broadcast_tags_tag_margin_size"
+        android:text="@string/broadcast_tags_item_mark"/>
+
+</RelativeLayout>

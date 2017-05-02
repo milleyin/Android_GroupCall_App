@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+    <brand name="tecno">
+        <item>t1</item>
+        <item>t3</item>
+        <item>n3</item>
+        <item>d3</item>
+        <item>d5</item>
+        <item>n5</item>
+        <item>q1</item>
+        <item>q2</item>
+        <item>n7</item>
+        <item>b3</item>
+        <item>l3</item>
+        <item>f7</item>
+        <item>p3</item>
+        <item>n9</item>
+        <item>m3</item>
+    </brand>
+    <brand name="itel">
+        <item>it1350</item>
+    </brand>
+    <brand name="infinix">
+        <item>x400</item>
+        <item>x500</item>
+        <item>x350</item>
+        <item>x401</item>
+        <item>x450</item>
+        <item>x451</item>
+        <item>x351</item>
+        <item>x260</item>
+        <item>x700</item>
+        <item>x402</item>
+        <item>x800</item>
+        <item>x530</item>
+        <item>x501</item>
+    </brand>
+</list>

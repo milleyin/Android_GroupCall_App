@@ -1,0 +1,361 @@
+{
+  "contents": {
+    "list": [
+      {
+        "country": "Algeria",
+        "cc": "213",
+        "mcc": "603"
+      },
+      {
+        "country": "Angola",
+        "cc": "244",
+        "mcc": "631"
+      },
+      {
+        "country": "Argentina",
+        "cc": "54",
+        "mcc": "722"
+      },
+      {
+        "country": "Bangladesh",
+        "cc": "880",
+        "mcc": "470"
+      },
+      {
+        "country": "Benin",
+        "cc": "229",
+        "mcc": "616"
+      },
+      {
+        "country": "Brazil",
+        "cc": "55",
+        "mcc": "724"
+      },
+      {
+        "country": "Burkina Faso",
+        "cc": "226",
+        "mcc": "613"
+      },
+      {
+        "country": "Burundi",
+        "cc": "257",
+        "mcc": "642"
+      },
+      {
+        "country": "Cameroon",
+        "cc": "237",
+        "mcc": "624"
+      },
+      {
+        "country": "Canada",
+        "cc": "1",
+        "mcc": "302"
+      },
+      {
+        "country": "Chad",
+        "cc": "235",
+        "mcc": "622"
+      },
+      {
+        "country": "China",
+        "cc": "86",
+        "mcc": "460"
+      },
+      {
+        "country": "CN-Hong Kong",
+        "cc": "852",
+        "mcc": "454"
+      },
+      {
+        "country": "CN-Macau",
+        "cc": "853",
+        "mcc": "455"
+      },
+      {
+        "country": "CN-Taiwan",
+        "cc": "886",
+        "mcc": "466"
+      },
+      {
+        "country": "Colombia",
+        "cc": "57",
+        "mcc": "732"
+      },
+      {
+        "country": "Denmark",
+        "cc": "45",
+        "mcc": "238"
+      },
+      {
+        "country": "Dr Congo",
+        "cc": "243",
+        "mcc": "630"
+      },
+      {
+        "country": "Egypt",
+        "cc": "20",
+        "mcc": "602"
+      },
+      {
+        "country": "Ethiopia",
+        "cc": "251",
+        "mcc": "636"
+      },
+      {
+        "country": "Fiji",
+        "cc": "679",
+        "mcc": "542"
+      },
+      {
+        "country": "France",
+        "cc": "33",
+        "mcc": "208"
+      },
+      {
+        "country": "Gabon",
+        "cc": "241",
+        "mcc": "628"
+      },
+      {
+        "country": "Ghana",
+        "cc": "233",
+        "mcc": "620"
+      },
+      {
+        "country": "Guinea-Bissau",
+        "cc": "245",
+        "mcc": "632"
+      },
+      {
+        "country": "Guinea",
+        "cc": "224",
+        "mcc": "611"
+      },
+      {
+        "country": "India",
+        "cc": "91",
+        "mcc": "404"
+      },
+      {
+        "country": "Indonesia",
+        "cc": "62",
+        "mcc": "510"
+      },
+      {
+        "country": "Iran",
+        "cc": "98",
+        "mcc": "432"
+      },
+      {
+        "country": "Ivory Coast",
+        "cc": "225",
+        "mcc": "612"
+      },
+      {
+        "country": "Jordan",
+        "cc": "962",
+        "mcc": "416"
+      },
+      {
+        "country": "Kenya",
+        "cc": "254",
+        "mcc": "639"
+      },
+      {
+        "country": "Lebanon",
+        "cc": "961",
+        "mcc": "415"
+      },
+      {
+        "country": "Liberia",
+        "cc": "231",
+        "mcc": "618"
+      },
+      {
+        "country": "Libya",
+        "cc": "218",
+        "mcc": "606"
+      },
+      {
+        "country": "Madagascar",
+        "cc": "261",
+        "mcc": "646"
+      },
+      {
+        "country": "Malawi",
+        "cc": "265",
+        "mcc": "650"
+      },
+      {
+        "country": "Malaysia",
+        "cc": "60",
+        "mcc": "502"
+      },
+      {
+        "country": "Mali",
+        "cc": "223",
+        "mcc": "610"
+      },
+      {
+        "country": "Mauritius",
+        "cc": "230",
+        "mcc": "617"
+      },
+      {
+        "country": "Mexico",
+        "cc": "52",
+        "mcc": "334"
+      },
+      {
+        "country": "Morocco",
+        "cc": "212",
+        "mcc": "604"
+      },
+      {
+        "country": "Mozambique",
+        "cc": "258",
+        "mcc": "643"
+      },
+      {
+        "country": "Myanmar",
+        "cc": "95",
+        "mcc": "414"
+      },
+      {
+        "country": "Namibia",
+        "cc": "264",
+        "mcc": "649"
+      },
+      {
+        "country": "Niger",
+        "cc": "227",
+        "mcc": "614"
+      },
+      {
+        "country": "Nigeria",
+        "cc": "234",
+        "mcc": "621"
+      },
+      {
+        "country": "Pakistan",
+        "cc": "92",
+        "mcc": "410"
+      },
+      {
+        "country": "Panama",
+        "cc": "507",
+        "mcc": "714"
+      },
+      {
+        "country": "Philippines",
+        "cc": "63",
+        "mcc": "515"
+      },
+      {
+        "country": "Rwanda",
+        "cc": "250",
+        "mcc": "635"
+      },
+      {
+        "country": "Saudi Arabia",
+        "cc": "966",
+        "mcc": "420"
+      },
+      {
+        "country": "Senegal",
+        "cc": "221",
+        "mcc": "608"
+      },
+      {
+        "country": "Solomon Islands",
+        "cc": "677",
+        "mcc": "540"
+      },
+      {
+        "country": "Somalia",
+        "cc": "252",
+        "mcc": "637"
+      },
+      {
+        "country": "South Africa",
+        "cc": "27",
+        "mcc": "655"
+      },
+      {
+        "country": "South Sudan",
+        "cc": "211",
+        "mcc": "659"
+      },
+      {
+        "country": "Spain",
+        "cc": "34",
+        "mcc": "214"
+      },
+      {
+        "country": "Sudan",
+        "cc": "249",
+        "mcc": "634"
+      },
+      {
+        "country": "Tanzania",
+        "cc": "255",
+        "mcc": "640"
+      },
+      {
+        "country": "Thailand",
+        "cc": "66",
+        "mcc": "520"
+      },
+      {
+        "country": "Togo",
+        "cc": "228",
+        "mcc": "615"
+      },
+      {
+        "country": "Tunisia",
+        "cc": "216",
+        "mcc": "605"
+      },
+      {
+        "country": "Turkey",
+        "cc": "90",
+        "mcc": "286"
+      },
+      {
+        "country": "Uganda",
+        "cc": "256",
+        "mcc": "641"
+      },
+      {
+        "country": "United Arab Emirates",
+        "cc": "971",
+        "mcc": "424"
+      },
+      {
+        "country": "United States",
+        "cc": "1",
+        "mcc": "310"
+      },
+      {
+        "country": "Venezuela",
+        "cc": "58",
+        "mcc": "734"
+      },
+      {
+        "country": "Vietnam",
+        "cc": "84",
+        "mcc": "452"
+      },
+      {
+        "country": "Zambia",
+        "cc": "260",
+        "mcc": "645"
+      },
+      {
+        "country": "Zimbabwe",
+        "cc": "263",
+        "mcc": "648"
+      }
+    ]
+  }
+}

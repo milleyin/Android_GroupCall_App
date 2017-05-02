@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SystemBarTint_Style"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_login_bg"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_back_title_more" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/color_login_bg"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_fouse_selector"
+                android:gravity="center_vertical|left"
+                android:hint="@string/prompt_input_email"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="vertical" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/edit_password_reset_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/explanation_password_reset_email" />
+        </LinearLayout>
+
+        <Button
+            android:id="@id/next_button"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_blue_d"
+            android:text="@string/next"
+            android:textSize="@dimen/accounts_imagetxt_titlttest_size"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

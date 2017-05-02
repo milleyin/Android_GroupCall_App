@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/SystemBarTint_Style"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/head_back_title_more"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:background="@color/base_back">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/hotdayContain"
+            android:background="@color/base_back"
+            >
+        </RelativeLayout>
+        <!-- 刷新成功 -->
+        <TextView
+            android:id="@+id/broadcast_top_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tabs"
+            android:layout_marginTop="@dimen/broadcast_toprefresh_margintop_size"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/update_successful"
+            android:textColor="@color/white"
+            android:background="@color/text_level_1"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

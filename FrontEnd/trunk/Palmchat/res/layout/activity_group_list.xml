@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SystemBarTint_Style"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/head_back_title_more" />
+
+        <ListView
+            android:id="@+id/group_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.0dip"
+            android:cacheColorHint="#00000000"
+            android:choiceMode="singleChoice"
+            android:divider="@null"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="true"
+            android:groupIndicator="@null"
+            android:listSelector="@drawable/home_list"
+            android:scrollingCache="true"
+            android:visibility="visible"/>
+        <LinearLayout
+            android:id="@+id/no_group_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="@color/base_back"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_loadnothing_giraffe"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/group_not_create"
+                android:layout_marginTop="16dp"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/public_account_tip"/>
+            <TextView
+                android:id="@+id/add_group_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="36dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="36dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="@string/btn_group_create"
+                android:background="@drawable/login_button_selector"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

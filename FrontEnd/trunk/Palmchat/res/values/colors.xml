@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  	<color name="actionbar_bg">#AA000000</color>
+    <color name="color_white">#ffffffff</color>
+    <color name="color_black">#ff000000</color>
+    <color name="color_blue">#3AB0F0</color>
+    <color name="guide_color">#00729c</color>
+    <color name="main_bg">#cccccc</color>
+
+    <!-- Common color -->
+    <color name="black">#FF000000</color>
+    <color name="pro_file_bg">#303030</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_congratulation_afid_text">#7a7980</color>
+    <color name="red">#FFFF0000</color>
+    <color name="dark_red">#BB2525</color>
+    <color name="gray">#FFE3E3E3</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="base_back">#f5f5f5</color>
+    <color name="base_back_1">#999999</color>
+    <color name="profile_value">#838383</color>
+    <color name="yellow">#f9910a</color>
+    <color name="setting_content_text">#aaaaaa</color>
+
+    <!-- register login -->
+    <color name="log_gray">#aaaaaa</color>
+    <color name="log__black">#333333</color>
+    <color name="log_blue">#17a5ef</color>
+    <color name="uname">#c8c8c8</color>
+    <color name="msg">#969696</color>
+
+    <!-- invite friends -->
+    <color name="invite_friend_phonenum">#17a5ef</color>
+    <color name="preview_bottom_bg">#333740</color>
+    <!-- chatting_room_bg -->
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#b0000000</color>
+    <color name="chatting_room_blue">#05fde9</color>
+
+    <!-- my account setting -->
+    <color name="my_account_gray">#ff0c203d</color>
+    <color name="my_account_red">#ffca180c</color>
+
+    <!-- popup activity 80%透明 -->
+
+
+    <!-- register and login -->
+    <color name="color_btn">#FF000000</color>
+    <color name="color_edittext_hint">#68757e</color>
+    <color name="color_text_bottom_gray">#aeaeae</color>
+    <color name="color_text_bottom_cyan">#39b9f5</color>
+    <color name="color_login_bg">#f5f5f5</color>
+    <color name="color_chatting_options_text">#7f7f7f</color>
+    <color name="home_list_bg">#272829</color>
+    <color name="home_list_bg2">#1D1D1F</color>
+
+    <!-- groupCHAT -->
+    <color name="item_pressed">#ffcc00</color>
+
+    <!-- DatePicker -->
+
+
+    <!-- Chatting Bg -->
+    <color name="chatting_bg">#d0d3d9</color>
+    <color name="chatting_date_bg">#848484</color>
+    <color name="color_photowall">#666666</color>
+    <color name="color_loading">#aaaaaa</color>
+    <color name="color_social_bg">#272829</color>
+    <color name="dialog_content_color">#4e4e4e</color>
+    <color name="dialog_title_color">#4fadd3</color>
+    <color name="dialog_btn_color">#626262</color>
+
+    <!-- @Me color -->
+    <color name="chatting_room_ater_me">#17a5ef</color>
+    <color name="chatting_room_less_fifty">#22ac38</color>
+
+    <!-- look around -->
+    <color name="look_around_range1">#f39700</color>
+    <color name="look_around_range2">#22aC38</color>
+    <color name="look_around_range3">#17a5ef</color>
+    <color name="look_around_range_normal">#aaaaaa</color>
+    <color name="color_orange">#f39700</color>
+    <color name="color_light_gray">#cccccc</color>
+    <color name="color_guide_four">#e7e8f0</color>
+    <color name="color_green_n">#006622</color>
+    <color name="color_green_p">#05380e</color>
+    <color name="tips_bg">#77797d</color>
+    <color name="pink_dialog_bg">#f5f6f5</color>
+    <color name="light_white">#f0f0f0</color>
+    <color name="store_green">#22ac38</color>
+    
+    <color name="brdcast_voice_red">#d56565</color>
+    <color name="brdcast_voice_blue">#17a5ef</color>
+    <color name="brdcast_voice_txt_color">#f5f5f5</color>
+    <color name="brdcast_voice_txt_color2">#ebecf0</color>
+    
+    
+
+    <!-- 5.0 add -->
+    <color name="text_title">#2f3243</color>
+    <color name="text_tab">#98999f</color>
+    <color name="text_level_1">#242633</color>
+    <color name="text_level_2">#868892</color>
+    <color name="text_level_3">#b8b9bf</color>
+    <color name="text_level_4">#808185</color>
+    <color name="text_level_5">#c8c9cd</color>
+    
+    <color name="slid_bar_bg_selected">#99000000</color>
+	<color name="explore_line">#e1e1e1</color>
+	<color name="search_by_info_search_n">#22ac38</color>
+	<color name="search_by_info_search_p">#187827</color>
+	
+	<color name="color_nice_blue">#117eb6</color>
+	<color name="color_cancle">#8f8f8f</color>
+	<color name="color_voice">#17a5ef</color>
+	<color name="color_voice_red">#ff7588</color>
+	<color name="color_voice_ripple">#e5e5e5</color>
+	<color name="color_voice_line">#f3f3f3</color>
+	<color name="color_main_bg">#f3f3f3</color>
+	<color name="store_gray">#ced0d9</color>
+	<color name="gift_text_color">#f48d00</color>
+	<color name="fb_login_text_color">#3564a1</color>
+	<color name="login_text_color">#22ac38</color>
+	<color name="link_color">#3041f2</color>
+	<color name="bg_chatting">#e8e9ed</color>
+	<color name="guide_text_color">#ffffff</color>
+	
+	<color name="home_grid_bg_color">#66000000</color>
+	<color name="home_grid_distance_color">#d0d1d9</color>
+	<color name="verifi_phone_color">#ff554c</color>
+	<color name="send_gift_gray">#8a8a8b</color>
+	
+	<!-- 5.0.2  add -->
+	<color name="albun_photo_selected_bg">#4cffffff</color>
+    <color name="grouptitle_color">#FF888888</color>
+    <color name="public_group_memeber_color">#292C3B</color>
+    <color name="public_group_memeber_count_color">#868892</color>
+    <color name="public_group_disband_color">#ff3126</color>
+    <color name="broadcast_send_line">#bfbfbf</color>
+    <color name="broadcast_send_line2">#757575</color>
+    <!-- 5.1 add -->
+    <color name="color_b2b2b2">#b2b2b2</color>
+    
+     <color name="color_d5d5d5">#d5d5d5</color>
+    <!-- points record -->
+    <color name="c_pr_title">#b8b9bf</color>
+    <color name="c_pr_result">#242633</color>
+    <color name="c_pr_coins_success">#22ac38</color>
+    <color name="c_pr_coins_failed">#ff3126</color>
+    <color name="c_pr_coins_cancel">#b8b9bf</color>
+    
+      <!-- predict  add -->
+    <color name="point_line_top_gray">#C4C4C4</color>
+    <color name="point_line_bottom_gray">#dcdcdc</color>
+    <color name="point_txt_red">#de0000</color>
+    <color name="point_tv_gray">#3d3d3d</color>
+    <color name="point_bg_gray">#fafafa</color>
+    <color name="predict_tv_win_color_black">#242633</color>
+    <color name="predict_tv_per_color_red">#ff3b30</color>
+    <color name="predict_tv_system_color_gray">#a9abb8</color>
+    <color name="space_line">#cbcbcb</color>
+    <color name="predict_edit_address_btn">#22ac38</color>
+    <color name="my_points_number">#292c3b</color>
+    <color name="ranking_week_color_selector">#32CD32</color>
+    <color name="predict_backgroud">#ebebeb</color>
+    <color name="announcement_bg">#ffeae9</color>
+   <color name="predict_points_limit_tv_color">#d50000</color>
+   <color name="predict_tv_odds">#ffd740</color>
+   <color name="predict_d9">#d9d9d9</color>
+    <color name="predict_d10">#edeef0</color>
+   <color name="predict_e6">#e6e6e6</color>
+  <color name="predict_855f">#06855f</color>
+    <color name="predict_4d4d">#4d4d4d</color>
+    <color name="predict_9af">#9fa0a6</color>
+    <color name="predict_444">#444444</color>
+    <!-- qrcode add -->
+    <color name="viewfinder_mask">#7f000000</color>
+    <color name="backgroud">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <color name="qrcode_reader">#fefefe</color>
+
+    <!-- Chatrooms-->
+    <color name="light_gray">#9fa0a6</color>
+    <!--zhh  5.1.3 Recharge -->
+    <color name="color_ababab">#ababab</color>
+    <color name="color_ffaa00">#ffaa00</color>
+     <!-- accounts -->
+    <color name="chatting_room_at_me_color">#ff554c</color>
+    <color name="chatroom_at_friend">#ffec4c</color>
+	<color name="accounts_title_bg">#b2000000</color>
+    
+    <!-- notifications -->
+    <color name="notifications_list_unread_bg">#e5f6ff</color>
+    <color name="notifications_list_rect_bg">#0a000000</color>
+    
+    <!-- tags -->
+    <color name="broadcast_trending_17a5ef">#17a5ef</color>
+    <color name="broadcast_trending_cccccc">#cccccc</color>
+    <color name="broadcast_trending_242633">#242633</color>
+    <color name="broadcast_trending_868892">#868892</color>
+    <color name="broadcast_trending_e5e5e5">#e5e5e5</color>
+    <color name="broadcast_tags_9fa0a6">#9fa0a6</color>
+    <color name="broadcast_tags_868892">#868892</color>
+    <color name="broadcast_tags_e6e6e6">#e6e6e6</color>
+    <color name="broadcast_tagpage_94969f">#96949f</color>
+    <color name="broadcast_ffffff">#ffffff</color>
+
+    <color name="chats_17a5ef">#17a5ef</color>
+    <color name="chats_242633">#242633</color>
+    <color name="chattingroom_a6">#a6a6a6</color>
+    <color name="public_account_tip">#868892</color>
+    <color name="friends_text">#4c4c4c</color>
+    <color name="tags_pa">#f69309</color>
+    
+    <!-- 5.2.0 palmguess start -->
+    <color name="color_abacb3">#abacb3</color>
+     <!-- 5.2.0 palmguess end -->
+     
+    <color name="broadcast_hint_writecomment">#afb0b2</color>
+    <color name="share_broadcast_hint">#abacb2</color>
+    <color name="share_a_post_color">#5e5f66</color>
+    <color name="sharefb_text_color">#3b5998</color>
+    <color name="maintab_fabview_color">#b2000000</color>
+    <color name="maintab_fabview_prompt_color">#f4f4f4</color>
+ 	<color name="broadcast_unknow_color">#09000000</color>
+    <color name="chatting_system_backgroud">#19000000</color>
+    
+    <!-- 5.2.2 tart -->
+    <color name="color_fffee0">#fffee0</color>
+    <color name="color_ffdb9e">#ffdb9e</color>
+    <color name="color_8c6934">#8c6934</color>
+    <color name="chatting_system_color">#b3ffffff</color>
+    <color name="color_9c4843">#9c4843</color>
+    <color name="color_c2c3c8">#c2c3c8</color>
+    <color name="color_c2c2c2">#c2c2c2</color>
+    <color name="color_1284bf">#1284bf</color>
+    <color name="color_0099cc">#0099CC</color>
+    <color name="color_464957">#464957</color>
+    <color name="color_99ffffff">#99ffffff</color>
+    <color name="color_ea2f3243">#ea2f3243</color>
+    <color name="color_e02f3243">#e02f3243</color>
+    <color name="color_d02f3243">#d02f3243</color>
+
+    <!-- 5.4 Start -->
+    <color name="palmcall_guide_backgroud_color">#b3000000</color>
+</resources>

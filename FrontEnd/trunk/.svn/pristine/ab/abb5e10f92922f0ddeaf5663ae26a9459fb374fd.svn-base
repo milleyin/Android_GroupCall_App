@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SystemBarTint_Style"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_back_title_more" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@color/base_back"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/countrylist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarStyle="insideOverlay" >
+        </ListView>
+
+        <com.afmobi.palmchat.ui.customview.MySideBar
+            android:id="@+id/sideBar"
+            android:layout_width="20dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center_vertical"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

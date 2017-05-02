@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sn>
+    <!--
+    	说明：
+    	所有集成到您项目的平台都应该为其在表格中填写相对应的开发者信息，以Twitter为例：
+      <Twitter
+          id="1"
+          ConsumerKey="0iTv25jlnYfCV6JtlpDf88MSJ"
+          ConsumerSecret="vda8Y8OvHcF2sMUfKPUubieUAqWZctLhRSawVWXDlcYkBXxW2b"
+          Enable="true" />
+    	id是固定值不能改。
+    	AppKey和AppSecret是您在Twitter上注册开发者信息和应用后得到的信息。
+    	Enable字段表示此平台是否有效，布尔值，默认为true，如果Enable为false，即便平台的jar包
+    	已经添加到应用中，平台实例依然不可获取。
+    	
+    	各个平台注册应用信息的地址如下：
+			Twitter       https://dev.twitter.com
+			Google+       https://developers.google.com/+/mobile/android/
+			Facebook      https://developers.facebook.com
+    -->
+    
+    <Twitter
+        id="1"
+        ConsumerKey="XUhasTwHmnkdgVHuHDHbIJlci"
+        ConsumerSecret="uuTWSxeaSMf2gAu7VkXiNIOxBX5Jn3AzdnO1XIYpc4tCQYg8Bb"
+        Enable="true" />
+    <GooglePlus
+        id="2"
+        Enable="true" />
+    <Facebook
+        id="3"
+        Enable="true" />
+</sn>

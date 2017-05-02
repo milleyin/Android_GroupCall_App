@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/home_list" >
+    
+        <TextView
+        android:id="@+id/friend_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="A"
+        android:textColor="@color/text_level_2"
+        android:textSize="15sp"
+        android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@id/friend_photo"
+            style="@style/head_style"
+            android:layout_marginLeft="40dp"
+            android:contentDescription="@string/empty"
+            android:background="@drawable/head_male2"
+            android:layout_centerVertical="true" />
+
+
+            <TextView
+                android:id="@id/friend_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:ellipsize="end"
+                android:maxEms="8"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/friend_photo"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_level_1" />
+
+            <TextView
+                android:id="@id/friend_sign"
+                style="@style/list_second_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/friend_name"
+                android:singleLine="true"
+                android:layout_marginRight="24dp" 
+                android:layout_marginTop="3dp"
+                android:text="sign"
+                android:visibility="gone" />
+            
+     </RelativeLayout>
+</RelativeLayout>

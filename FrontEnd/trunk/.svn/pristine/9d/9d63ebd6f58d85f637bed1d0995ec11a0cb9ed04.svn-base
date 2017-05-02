@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="head_back_profile_name_max_width">160dp</dimen>
+    <dimen name="head_back_chatting_title_padding">15dp</dimen>
+    <dimen name="captrue_activity_top">30dp</dimen>
+    <dimen name="captrue_activity_width">180dp</dimen>
+    <dimen name="captrue_activity_height">180dp</dimen>
+    <dimen name="qr_img_width">200dp</dimen>
+    <dimen name="palmcall_reward">40dp</dimen>
+    <dimen name="palmcall_clearance">0dp</dimen>
+    <dimen name="palmcall_top_18">6dp</dimen>
+    <dimen name="palmcall_top_12">4dp</dimen>
+    <dimen name="palmcall_top_8">2dp</dimen>
+</resources>

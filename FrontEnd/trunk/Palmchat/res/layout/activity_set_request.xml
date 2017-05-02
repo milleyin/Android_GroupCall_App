@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_login_bg"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@id/title_layout"
+            layout="@layout/head_back_title_more" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/one_txt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dip"
+                        android:background="@drawable/set_request_bg"
+                        android:drawableRight="@drawable/arr_securityanswer"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="15dip"
+                        android:singleLine="true"
+						android:textColor="@color/text_level_2"
+                        android:text="@string/the_name_of_your_first_love"
+                        android:textSize="15sp" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/one_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dip"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/text_fouse_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginRight="15dip"
+                        android:maxLength="100"
+                        android:singleLine="true" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/two_txt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dip"
+                        android:background="@drawable/set_request_bg"
+                        android:drawableRight="@drawable/arr_securityanswer"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="15dip"
+                        android:singleLine="true"
+                        android:textColor="@color/text_level_2"
+                        android:text="@string/your_best_friends_name"
+                        android:textSize="15sp" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/two_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dip"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/text_fouse_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginRight="15dip"
+                         android:maxLength="100"
+                        android:singleLine="true" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/three_txt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dip"
+                        android:background="@drawable/set_request_bg"
+                        android:drawableRight="@drawable/arr_securityanswer"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="15dip"
+                        android:singleLine="true"
+                        android:textColor="@color/text_level_2"
+                        android:text="@string/the_job_you_are_dreaming_of"
+                        android:textSize="15sp" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/three_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dip"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/text_fouse_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginRight="15dip"
+                         android:maxLength="100"
+                        android:singleLine="true" >
+                    </EditText>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/next_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/long_button_height"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_blue_d"
+                    android:text="@string/next"
+                    android:textColor="@color/guide_text_color"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

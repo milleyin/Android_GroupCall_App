@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/base_back"
+    android:paddingTop="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingRight="2dp"
+        >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/rl_palmcall_home_text"
+            >
+
+            <ImageView
+                android:id="@+id/iv_call_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/head_male"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_palmcall_home_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/palmcall_Hostlist_intro_Heigth"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/rl_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_call_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:lines="1"
+                        android:maxEms="4"
+                        android:text="fdsjklfjsdsfs"
+                        android:textColor="@color/c_pr_result"
+                        android:textSize="@dimen/d_broadcast_nameszie_share"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_call_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_palmcall_age_female"
+                        android:drawableLeft="@drawable/bg_palmcall_gender_female"
+                        android:text="17"
+                        android:textColor="@color/guide_text_color"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="@dimen/d_10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:layout_toLeftOf="@+id/iv_call_play"
+                        />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_call_answerinlg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/predict_9af"
+                    android:layout_below="@+id/rl_top"
+                    android:textSize="@dimen/d_10dp"
+                    android:text="@string/call_ai_times"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:maxEms="10"
+                    android:layout_marginTop="4dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_call_play"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/btn_palmcall_voice_n"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="2dp"
+        >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/rl_palmcall_home_text2"
+            >
+
+            <ImageView
+                android:id="@+id/iv_call_photo2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/head_male"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_palmcall_home_text2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_title_height_48dp"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_centerVertical="true"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_top2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_call_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:lines="1"
+                        android:maxEms="4"
+                        android:text="fdsjklfjsdsfs"
+                        android:textColor="@color/c_pr_result"
+                        android:textSize="@dimen/d_broadcast_nameszie_share"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_call_age2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_palmcall_age_female"
+                        android:drawableLeft="@drawable/icon_sexage_girl"
+                        android:layout_marginLeft="4dp"
+                        android:layout_centerVertical="true"
+                        android:text="17"
+                        android:textColor="@color/guide_text_color"
+                        android:textSize="@dimen/d_10dp"
+                        android:layout_toRightOf="@+id/tv_call_name2"
+                        />
+
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:id="@+id/tv_call_answerinlg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/predict_9af"
+                    android:layout_below="@+id/rl_top2"
+                    android:textSize="@dimen/d_10dp"
+                    android:text="@string/call_ai_times"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:maxEms="10"
+                    android:layout_marginTop="4dp"
+                    />
+
+
+
+                <ImageView
+                    android:id="@+id/iv_call_play2"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/btn_palmcall_voice_n"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:background="@color/white"
+        >
+        
+        <ImageView
+            android:id="@+id/iv_call_photo"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            />
+        
+        <ImageView
+            android:id="@+id/iv_call_play"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignRight="@+id/iv_call_photo"
+            android:layout_alignBottom="@+id/iv_call_photo"
+            android:background="@drawable/ic_palmcall_play_boy"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/iv_call_photo"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_palmcall_call"
+            android:layout_marginRight="6dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_call_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hahhahagjfsklajfklsdjaflksajlfdsfsdfsdfa"
+                android:maxEms="15"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                android:lines="1"
+                android:textColor="@color/chats_242633"
+                />
+
+            <TextView
+                android:id="@+id/tv_call_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_sexage_female"
+                android:drawableLeft="@drawable/icon_sexage_girl"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="18"
+                android:lines="1"
+                android:textSize="9sp"
+                android:paddingRight="4dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/tv_call_answerinlg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call_ai_times"
+                android:textSize="12sp"
+                android:lines="1"
+                android:textColor="@color/broadcast_trending_868892"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_palmcall_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_palmcall_call_selector"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/main_bg"
+            android:layout_toRightOf="@+id/iv_call_photo"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>-->
+</LinearLayout>

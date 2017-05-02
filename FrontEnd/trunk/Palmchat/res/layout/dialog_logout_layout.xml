@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="30dip" >
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/list_first_no_arrow_selector" >
+        
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dip"
+        android:paddingTop="15dp"
+        android:text="@string/close_palmchat"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+        
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dip"
+        android:text="@string/close_palmchat_des"
+        android:textColor="@color/dialog_btn_color"
+        android:textSize="15sp"
+        android:paddingBottom="15dp" />
+    </LinearLayout>
+
+   <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/list_last_no_arrow_selector" >
+        
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dip"
+        android:text="@string/log_out"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:paddingTop="15dp" />
+        
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dip"
+        android:text="@string/logout_des"
+        android:textColor="@color/dialog_btn_color"
+        android:textSize="15sp"
+        android:paddingBottom="15dp" />
+    </LinearLayout>
+
+</LinearLayout>

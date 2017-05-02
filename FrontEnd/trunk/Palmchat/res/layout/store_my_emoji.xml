@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res-auto"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_login_bg" />
+    
+	<include
+		android:id="@id/title_layout"
+		layout="@layout/head_back_title_more" />
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/title_layout" >
+
+		<ListView
+	        android:id="@+id/listview_my_emoji"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:cacheColorHint="@android:color/transparent"
+	        android:divider="@null"
+	        android:fadingEdge="none" />
+
+		<com.afmobi.palmchat.ui.customview.dragsort.DragSortListView
+		    android:id="@+id/listview_drag_sort"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:cacheColorHint="@android:color/transparent"
+		    android:choiceMode="singleChoice"
+		    android:divider="@null"
+		    android:fadingEdge="none"
+		    android:visibility="gone"
+		    dslv:click_remove_id="@+id/click_remove"
+		    dslv:collapsed_height="1px"
+		    dslv:drag_enabled="true"
+		    dslv:drag_handle_id="@+id/drag_handle"
+		    dslv:drag_scroll_start="0.33"
+		    dslv:drag_start_mode="onDown"
+		    dslv:float_alpha="0.6"
+		    dslv:remove_enabled="true"
+		    dslv:remove_mode="clickRemove"
+		    dslv:slide_shuffle_speed="0.3" />
+        </FrameLayout>
+
+</RelativeLayout>

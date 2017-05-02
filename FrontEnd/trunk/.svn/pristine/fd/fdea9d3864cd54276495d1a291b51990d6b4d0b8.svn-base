@@ -1,0 +1,7 @@
+<resources>
+  <string name="call_mute_text">ዝም አሰኝ</string>
+  <string name="call_audio">ድምጽ ማጉያ</string>
+  <string name="call_decline_text">ዝጋ</string>
+  <string name="peer_refuse_to_answer">ተጠቃሚው ጥሪውን አልተቀበለም</string>
+  <string name="call_ended">ጥሪው አብቅቷል</string>
+</resources>

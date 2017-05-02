@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/head_back_title_more" />
+
+    <FrameLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_list"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/bg_list"
+                android:orientation="horizontal" >
+
+                <!--      <TextView
+                          android:id="@+id/text1"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical"
+                          android:layout_weight="1.0"
+                          android:gravity="center"
+                          android:text="@string/friends"
+                          android:textColor="@color/log_blue"
+                          android:textSize="15sp" />-->
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/following"
+                    android:textColor="@color/text_tab"
+                    android:textSize="15sp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center">
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/followers"
+                    android:textColor="@color/text_tab"
+                    android:textSize="15sp" />
+                <ImageView
+                    android:id="@+id/tv_followed"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/text3"
+                    android:src="@drawable/reddot"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:visibility="invisible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/bg_list"
+                android:orientation="horizontal" >
+
+                <!--        <TextView
+                            android:id="@+id/text_count1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:text="@string/friends"
+                            android:textColor="@color/log_blue"
+                            android:textSize="15sp" />-->
+
+                <TextView
+                    android:id="@+id/text_count2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/following"
+                    android:textColor="@color/text_tab"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_count3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/followers"
+                    android:textColor="@color/text_tab"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/dibidingline_2" />
+
+        <com.afmobi.palmchat.ui.customview.UnderlinePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_gravity="bottom" />
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r1"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

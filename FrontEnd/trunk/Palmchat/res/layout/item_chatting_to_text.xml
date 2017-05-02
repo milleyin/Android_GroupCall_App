@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/l_chatting_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@id/chatting_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="26dp"
+            android:paddingBottom="10dp"
+            android:text="fdasdfasdfasfd"
+            android:textColor="@color/chatting_date_bg"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/l_group_system_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="@dimen/chating_margin"
+        android:layout_marginBottom="@dimen/chating_margin">
+        <TextView
+            android:id="@+id/textview_group_system_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/chatting_system_color"
+            android:text="fdasfafds"
+            android:lineSpacingExtra="0dp"
+            android:background="@drawable/chatting_system_backgroud"
+            android:textSize="@dimen/sp_12"/>
+    </RelativeLayout>
+    
+
+    <LinearLayout
+        android:id="@+id/chatting_linearlayout_layout_from_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/setting_my_profile_layout_from_recommend"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/card_frame_selector"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/icon_from_recommend"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/head_male2"
+                    android:contentDescription="@string/empty"
+                    android:gravity="center_vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp" >
+
+                    <TextView
+                        android:id="@+id/friend_sign_from_recommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:singleLine="false"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp" >
+
+                <TextView
+                    android:id="@id/accept"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/button_hight_large_selector"
+                    android:gravity="center"
+                    android:text="@string/accept"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@id/ignore"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@drawable/button_hight_large_selector"
+                    android:gravity="center"
+                    android:text="@string/ignore"
+                    android:textColor="@color/black" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/chatting_photo_from_recommend"
+                style="@style/head_style"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/head_male2"
+                android:contentDescription="@string/empty" />
+
+            <RelativeLayout
+                android:id="@+id/chatting_from_layout_from_recommend"
+                style="@style/chatting_msg_layout"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/chatting_photo_from_recommend"
+                android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/chatting_msg_content_from_recommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chatting_from_text_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@+id/view_stub_left"
+        android:inflatedId="@id/chatting_from_layout_from"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout="@layout/item_chatting_left_text"/>
+    <ViewStub
+        android:id="@+id/view_stub_right"
+        android:inflatedId="@id/chatting_to_layout_to"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout="@layout/item_chatting_right_text"/>
+</LinearLayout>

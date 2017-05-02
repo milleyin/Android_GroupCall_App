@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+        <RelativeLayout android:id="@+id/h1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_list"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp" >
+        
+        
+        <ImageView android:id="@+id/hicon1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_explore_groupchat"
+            android:contentDescription="@string/empty"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            style="@style/home_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/groupchat"
+            android:textColor="@color/text_level_1"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/hicon1"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/group_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_level_2"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/empty"
+            android:drawableRight="@drawable/arrow_right"
+            android:drawablePadding="5dp"
+            android:layout_marginRight="36dp" />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout android:id="@+id/h2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/home_list"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp" >
+        
+        <ImageView android:id="@+id/hicon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_explore_publicaccount"
+            android:contentDescription="@string/empty" />
+
+        <TextView
+            style="@style/home_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_level_1"
+            android:text="@string/home_left_item_public_account"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/hicon2"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/publicAccount_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_level_2"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/empty"
+            android:drawableRight="@drawable/arrow_right"
+            android:drawablePadding="5dp"
+            android:layout_marginRight="36dp" />
+    </RelativeLayout>
+
+</LinearLayout>

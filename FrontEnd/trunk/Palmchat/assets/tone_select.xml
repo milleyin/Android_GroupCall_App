@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--
+
+		des: id : sign
+        name: find name in string.xml
+        ext: by future
+-->
+<root>
+    <Tone id="1"
+          name="setting_sound_drum"
+          ext="mp3"
+          />
+    <Tone id="2"
+          name="setting_sound_bloom"
+          ext="mp3"
+          />
+    <Tone id="3"
+          name="setting_sound_bubble"
+          ext="mp3"
+          />
+    <Tone id="4"
+          name="setting_sound_glass"
+          ext="mp3"
+          />
+    <Tone id="5"
+          name="setting_sound_shortmessage"
+          ext="mp3"
+          />
+    <Tone id="6"
+          name="setting_sound_shortmessage2"
+          ext="mp3"
+          />
+    <Tone id="7"
+          name="setting_sound_tweet"
+          ext="mp3"
+          />
+    <Tone id="8"
+          name="setting_sound_bubble2"
+          ext="mp3"
+          />
+    <Tone id="9"
+          name="setting_sound_drop"
+          ext="mp3"
+          />
+    <Tone id="10"
+          name="setting_sound_fresh"
+          ext="mp3"
+          />
+    <Tone id="11"
+          name="setting_sound_wave"
+          ext="mp3"
+          />
+    <Tone id="12"
+          name="setting_sound_wind_bell"
+          ext="mp3"
+          />
+    <Tone id="13"
+          name="setting_sound_magic_charms"
+          ext="mp3"
+          />
+</root>

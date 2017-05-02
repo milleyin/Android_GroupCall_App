@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/guide_text_color">
+
+    <LinearLayout
+        android:id="@+id/frends_share_linear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_list_more_send_to_friends"
+            android:layout_gravity="center"
+            android:layout_marginLeft="18dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friends_send"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/c_pr_result"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/friends_broadcast_share_linear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_sheet_share_to_broadcast"
+            android:layout_gravity="center"
+            android:layout_marginLeft="18dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/broadcast_tagpage_sharebroadcast"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/c_pr_result"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/friends_facebook_share_linear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="19dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_sheet_share_to_facebook"
+            android:layout_gravity="center"
+            android:layout_marginLeft="18dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/share_to_facebook"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/c_pr_result"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

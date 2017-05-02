@@ -1,0 +1,7 @@
+<resources>
+  <string name="call_mute_text">خاموش کریں</string>
+  <string name="call_audio">اسپیکر</string>
+  <string name="call_decline_text">بند کریں</string>
+  <string name="peer_refuse_to_answer">یوزر نے کال مسترد کر دی</string>
+  <string name="call_ended">کال ختم</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+    	android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_login_bg" />
+    
+	<include
+		android:id="@+id/title_layout"
+      	layout="@layout/head_back_title_more" />
+
+	<TextView
+		android:id="@+id/text_activity_end"
+       	android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+       	android:layout_centerInParent="true"
+       	android:gravity="center"
+       	android:text="@string/miss_nigeria_end"
+       	android:textSize="20sp"
+       	android:visibility="gone" />
+
+	<FrameLayout
+		android:id="@+id/miss_nigeria_content"
+	 	android:layout_width="match_parent"
+		android:layout_height="match_parent"
+   		android:layout_below="@+id/title_layout"
+   		android:background="@color/base_back" >
+
+        <com.afmobi.palmchat.ui.customview.RefreshableView
+	        android:id="@+id/refresh_list1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+			<ListView
+				android:id="@+id/listview_store1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:cacheColorHint="@android:color/transparent"
+				android:divider="@null"
+				android:fadingEdge="none"
+				android:scrollbars="none" />
+		</com.afmobi.palmchat.ui.customview.RefreshableView>
+
+		<com.afmobi.palmchat.ui.customview.RefreshableView
+			android:id="@+id/refresh_list2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:visibility="gone" >
+
+			<ListView
+	            android:id="@+id/listview_store2"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:cacheColorHint="@android:color/transparent"
+	            android:divider="@null"
+	            android:fadingEdge="none"
+	            android:scrollbars="none"/>
+		</com.afmobi.palmchat.ui.customview.RefreshableView>
+
+		<com.afmobi.palmchat.ui.customview.RefreshableView
+			android:id="@+id/refresh_list3"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:visibility="gone" >
+
+			<ListView
+				android:id="@+id/listview_store3"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:cacheColorHint="@android:color/transparent"
+				android:divider="@null"
+				android:fadingEdge="none" />
+		</com.afmobi.palmchat.ui.customview.RefreshableView>
+
+		<TextView
+	        android:id="@+id/no_normal_star"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:text="@string/no_normal_star"
+	        android:textColor="@color/look_around_range_normal"
+	        android:textSize="15sp"
+	        android:visibility="gone" />
+	</FrameLayout>
+</RelativeLayout>

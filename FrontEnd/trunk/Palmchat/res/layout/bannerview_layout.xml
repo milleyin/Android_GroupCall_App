@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.afmobi.palmchat.ui.customview.AdvBannerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id = "@+id/bannerview_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/point_bg_gray">
+    
+    <com.afmobi.palmchat.ui.customview.BannerViewPager
+        android:id="@+id/bannnerviewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+	<!--此LinearLayout用来显示小圆点-->
+    <LinearLayout
+        android:id="@+id/dots_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingRight="5dp" >
+    </LinearLayout>
+</com.afmobi.palmchat.ui.customview.AdvBannerView>

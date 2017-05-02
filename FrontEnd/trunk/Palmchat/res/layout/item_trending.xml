@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/white">
+   
+    <LinearLayout 
+        android:id="@+id/trending_firstline_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+		<!-- 第一张照片布局 -->
+		<RelativeLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1">
+
+			<!--照片-->
+			<com.afmobi.palmchat.ui.customview.RectImageView
+				android:id="@+id/trending_imageview_first_id"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:contentDescription="@null"
+				android:scaleType="fitXY"/>
+
+			<!--video标记-->
+			<com.afmobi.palmchat.ui.customview.RectImageView
+				android:id ="@+id/trending_imageview_first_vf_id"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:contentDescription="@null"
+				android:background="@drawable/icon_broadcast_video_play_n"
+				android:scaleType="fitXY"/>
+		</RelativeLayout>
+
+		<!-- 第二张照片 -->
+		<RelativeLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/broadcast_trending_listitem_image_margin_size"
+			android:layout_weight="1">
+
+			<!--照片-->
+			<com.afmobi.palmchat.ui.customview.RectImageView
+				android:id="@+id/trending_imageview_second_id"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:contentDescription="@null"
+				android:scaleType="fitXY"/>
+
+			<!--video标记-->
+			<com.afmobi.palmchat.ui.customview.RectImageView
+				android:id ="@+id/trending_imageview_second_vf_id"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:contentDescription="@null"
+				android:background="@drawable/icon_broadcast_video_play_n"
+				android:scaleType="fitXY"/>
+		</RelativeLayout>
+    </LinearLayout>
+    
+    <!-- 第二行布局 -->
+    <LinearLayout 
+        android:id="@+id/trending_secondline_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trending_firstline_layout"
+        android:layout_marginTop="@dimen/broadcast_trending_listitem_image_margin_size"
+        android:orientation="horizontal">
+
+		<!-- 第三张图片 -->
+
+		<RelativeLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="3">
+
+			<!--图片-->
+			<com.afmobi.palmchat.ui.customview.RectImageView
+				android:id="@+id/trending_imageview_third_id"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:contentDescription="@null"
+				android:scaleType="fitXY" />
+
+			<!--video标记-->
+			<com.afmobi.palmchat.ui.customview.RectImageView
+				android:id ="@+id/trending_imageview_third_vf_id"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:contentDescription="@null"
+				android:background="@drawable/icon_broadcast_video_play_n"
+				android:scaleType="fitXY"/>
+		</RelativeLayout>
+        
+        <!-- 右侧布局 -->
+        <LinearLayout 
+            android:id="@+id/trending_secondline_right_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/broadcast_trending_listitem_image_margin_size"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+			<!-- 第四张图片 -->
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1">
+
+				<!--图片-->
+				<ImageView
+					android:id="@+id/trending_imageview_fourth_id"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:contentDescription="@null"
+					android:scaleType="fitXY"/>
+
+				<!--video标记-->
+				<com.afmobi.palmchat.ui.customview.RectImageView
+					android:id ="@+id/trending_imageview_fourth_vf_id"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:contentDescription="@null"
+					android:background="@drawable/icon_broadcast_video_play_n"
+					android:scaleType="fitXY"/>
+
+			</RelativeLayout>
+
+			<!-- 第五张图片 -->
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				android:layout_marginTop="@dimen/broadcast_trending_listitem_image_margin_size">
+
+				<ImageView
+					android:id="@+id/trending_imageview_fifth_id"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:contentDescription="@null"
+					android:scaleType="fitXY"/>
+
+				<!--video标记-->
+				<com.afmobi.palmchat.ui.customview.RectImageView
+					android:id ="@+id/trending_imageview_fifth_vf_id"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:contentDescription="@null"
+					android:layout_centerInParent="true"
+					android:background="@drawable/icon_broadcast_video_play_n"
+					android:scaleType="fitXY"/>
+			</RelativeLayout>
+
+			<!-- 第六张图片 -->
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_marginTop="@dimen/broadcast_trending_listitem_image_margin_size"
+				android:layout_weight="1">
+
+				<!--图片-->
+				<ImageView
+					android:id="@+id/trending_imageview_sixth_id"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:contentDescription="@null"
+					android:scaleType="fitXY"/>
+
+				<!--Video 标记-->
+				<com.afmobi.palmchat.ui.customview.RectImageView
+					android:id ="@+id/trending_imageview_sixth_vf_id"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:contentDescription="@null"
+					android:layout_centerInParent="true"
+					android:background="@drawable/icon_broadcast_video_play_n"
+					android:scaleType="fitXY"/>
+			</RelativeLayout>
+            
+        </LinearLayout> 
+	</LinearLayout>  
+	
+    <!-- 第三行布局 -->
+    <LinearLayout
+        android:id="@+id/trending_thirdline_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trending_secondline_layout"
+        android:layout_marginTop="@dimen/broadcast_trending_listitem_image_margin_size"
+        android:orientation="horizontal">
+
+		<!-- 第七张图片 -->
+		<RelativeLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1">
+
+			<!--图片-->
+			<com.afmobi.palmchat.ui.customview.RectImageView
+				android:id="@+id/trending_imageview_seventh_id"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:contentDescription="@null"
+				android:scaleType="fitXY"/>
+
+			<!--Video 标记-->
+			<com.afmobi.palmchat.ui.customview.RectImageView
+				android:id ="@+id/trending_imageview_seventh_vf_id"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:contentDescription="@null"
+				android:background="@drawable/icon_broadcast_video_play_n"
+				android:scaleType="fitXY"/>
+
+		</RelativeLayout>
+
+		<!-- 第八张图 -->
+		<!--图片-->
+		<RelativeLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/broadcast_trending_listitem_image_margin_size"
+			android:layout_weight="1">
+
+			<!--图片-->
+			<com.afmobi.palmchat.ui.customview.RectImageView
+				android:id="@+id/trending_imageview_eighth_id"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scaleType="fitXY"/>
+
+			<!--Video 标记-->
+			<com.afmobi.palmchat.ui.customview.RectImageView
+				android:id ="@+id/trending_imageview_eighth_vf_id"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:contentDescription="@null"
+				android:background="@drawable/icon_broadcast_video_play_n"
+				android:scaleType="fitXY"/>
+		</RelativeLayout>
+
+		<!-- 第九张图 -->
+		<RelativeLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/broadcast_trending_listitem_image_margin_size"
+			android:layout_weight="1">
+
+			<!--图片-->
+			<com.afmobi.palmchat.ui.customview.RectImageView
+				android:id="@+id/trending_imageview_nineth_id"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scaleType="fitXY"/>
+
+			<!--Video 标记-->
+			<com.afmobi.palmchat.ui.customview.RectImageView
+				android:id ="@+id/trending_imageview_nineth_vf_id"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="@null"
+				android:layout_centerInParent="true"
+				android:background="@drawable/icon_broadcast_video_play_n"
+				android:scaleType="fitXY"/>
+
+		</RelativeLayout>
+            
+    </LinearLayout>
+    
+</RelativeLayout>
+	

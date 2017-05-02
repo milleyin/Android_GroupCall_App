@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/editmygroup_title_layout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentTop="true" -->
+    <!-- android:background="@drawable/title_bg" > -->
+
+    <include
+        android:id="@+id/editmygroup_title_layout"
+        layout="@layout/head_back_title_more" />
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/profile_chat" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="548dp" -->
+    <!-- android:background="@drawable/profile_chat_selector" -->
+    <!-- android:paddingRight="10dip" -->
+    <!-- android:text="@string/chat" -->
+    <!-- android:textColor="#aeb2b5" -->
+    <!-- android:textSize="12sp" -->
+    <!-- android:visibility="visible" /> -->
+
+    <LinearLayout
+        android:id="@+id/profile_chat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_tag_profile_chat"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_chat_style"
+            android:duplicateParentState="true" />
+
+        <TextView
+            android:id="@+id/txt_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:duplicateParentState="true"
+            android:text="@string/chat"
+            android:textColor="@drawable/button_profile_text_selector"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- 圈子人员显示 -->
+
+    <com.afmobi.palmchat.ui.customview.ScrollViewExtend
+        android:id="@+id/editmygroup_member_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/profile_chat"
+        android:layout_below="@id/editmygroup_title_layout"
+        android:background="@color/color_main_bg"
+        android:fadingEdge="none"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@drawable/dividingline_582" />
+
+            <LinearLayout
+                android:id="@+id/lin_andmin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <!-- 圈子名称 -->
+
+                <RelativeLayout
+                    android:id="@+id/editmygroup_groupname_row"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp" >
+
+                    <TextView
+                        android:id="@+id/editmygroup_groupname_title_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dip"
+                        android:text="@string/editmygroup_groupname"
+                        android:textColor="@color/text_level_1"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/editmygroup_groupname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_toLeftOf="@id/img_arrow"
+                        android:layout_toRightOf="@+id/editmygroup_groupname_title_id"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/text_level_2"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/img_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dip"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="18dip"
+                    android:background="@drawable/dividingline_560" />
+                <!-- 圈子签名 -->
+
+                <RelativeLayout
+                    android:id="@+id/signature_row"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/signature_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dip"
+                        android:singleLine="true"
+                        android:text="@string/group_intro"
+                        android:textColor="@color/text_level_1"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:layout_marginBottom="18dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/rl_edit_group_info">
+                    <TextView
+                        android:id="@+id/group_signature_txt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dip"
+                        android:layout_marginRight="12dip"
+                        android:layout_toLeftOf="@id/img_arrow"
+                        android:text=""
+                        android:textColor="@color/text_level_2"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@id/img_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dip"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_oth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- 圈子名称 -->
+
+                <RelativeLayout
+                    android:id="@id/editmygroup_groupname_row"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp" >
+
+                    <TextView
+                        android:id="@+id/editmygroup_groupname_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dip"
+                        android:text="@string/group_name"
+                        android:textColor="@color/text_level_2"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/editmygroup_groupname_oth"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="18dip"
+                        android:layout_toRightOf="@+id/editmygroup_groupname_title"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:textColor="@color/text_level_1"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="18dip"
+                    android:background="@drawable/dividingline_560" />
+                <!-- 圈子签名 -->
+
+                <RelativeLayout
+                    android:id="@id/signature_row"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@id/signature_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dip"
+                        android:singleLine="true"
+                        android:text="@string/group_intro"
+                        android:textColor="@color/text_level_2"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:layout_marginBottom="18dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/group_signature_txt_oth"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dip"
+                        android:layout_marginRight="18dip"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:textColor="@color/text_level_1"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/dividingline_582" />
+
+            <LinearLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="195dp"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/settings_bg"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="45dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        
+
+                        <RelativeLayout
+                            android:id="@+id/chat_group_head_pic_bg"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:gravity="center"
+                            android:visibility="visible" >
+
+                            <ImageView
+                                android:id="@+id/group_head_1"
+                                android:layout_width="32dip"
+                                android:layout_height="32dip"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="12dp"
+                                  />
+
+                            <ImageView
+                                android:id="@+id/group_head_2"
+                                android:layout_width="32dip"
+                                android:layout_height="32dip"
+                                android:layout_below="@+id/group_head_1"
+                                android:layout_marginTop="-8dp"
+                                  />
+
+                            <ImageView
+                                android:id="@+id/group_head_3"
+                                android:layout_width="32dip"
+                                android:layout_height="32dip"
+                                android:layout_below="@+id/group_head_1"
+                                android:layout_marginLeft="-8dp"
+                                android:layout_marginTop="-8dp"
+                                android:layout_toRightOf="@+id/group_head_2"
+                                />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/groupName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="5dip"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/group_signature_txt" -->
+                    <!-- android:layout_width="fill_parent" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_marginLeft="14dip" -->
+                    <!-- android:layout_marginRight="20dip" -->
+                    <!-- android:layout_weight="0" -->
+                    <!-- android:background="@drawable/profile_whatsup_bg" -->
+                    <!-- android:paddingLeft="8dip" -->
+                    <!-- android:paddingRight="8dip" -->
+                    <!-- android:textColor="#aeb2b5" -->
+                    <!-- android:visibility="visible" /> -->
+                </LinearLayout>
+
+                <!-- <LinearLayout -->
+                <!-- android:id="@+id/set_opr_layout" -->
+                <!-- android:layout_width="fill_parent" -->
+                <!-- android:layout_height="fill_parent" -->
+                <!-- android:layout_gravity="bottom" -->
+                <!-- android:layout_marginBottom="5dip" -->
+                <!-- android:layout_marginTop="5dip" -->
+                <!-- android:layout_weight="0" -->
+                <!-- android:gravity="bottom|center_horizontal" > -->
+
+
+                <!-- <Button -->
+                <!-- android:id="@+id/profile_chat" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:background="@drawable/profile_chat_selector" -->
+                <!-- android:minWidth="90dip" -->
+                <!-- android:paddingRight="10dip" -->
+                <!-- android:text="@string/chat" -->
+                <!-- android:textColor="#aeb2b5" -->
+                <!-- android:textSize="12sp" -->
+                <!-- android:visibility="visible" /> -->
+                <!-- </LinearLayout> -->
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@drawable/dividingline_582" />
+
+            <LinearLayout
+                android:id="@+id/attr_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/attr_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="24dp"
+                    android:layout_margin="18dip"
+                    android:layout_marginBottom="18dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/accept"
+                    android:textColor="@color/black" />
+
+                <ScrollView
+                    android:id="@+id/gv_sv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dip"
+                    android:layout_marginRight="18dip">
+
+                    <com.afmobi.palmchat.ui.customview.MyGridView
+                        android:id="@+id/gridview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:listSelector="@color/transparent"
+                        android:numColumns="4"
+                        android:layout_gravity="top"
+                        android:scrollbars="vertical"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="0dip"
+                        android:layout_marginBottom="12dp"/>
+                </ScrollView>
+
+                <RelativeLayout
+                    android:id="@+id/more_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/uilist"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@string/warning_delete"
+                        android:textColor="#777777"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/editgroup_member_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/icon_circle_more"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/dividingline_582" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <!-- NOTIFICATION -->
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@drawable/dividingline_582" />
+
+                <LinearLayout
+                    android:id="@+id/editmygroup_notification_row"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dip"
+                    android:layout_marginRight="18dip"
+                    android:minHeight="48dp" >
+
+                    <TextView
+                        android:id="@+id/btn_notification"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:text="@string/set_notification"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/editmygroup_notification_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="0"
+                        android:button="@drawable/setting_check_selector"
+                        android:checked="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/editmygroup_groupstatus_row"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:background="@drawable/btn_predict_win_bg_selector"
+                    android:gravity="center_vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/group_status_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13.3dip"
+                        android:layout_marginRight="13.3dip"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="@string/groupstatus"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/group_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="1"
+                        android:maxLength="16"
+                        android:singleLine="true"
+                        android:textColor="#939393"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!-- clear chat history -->
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/dividingline_560" />
+
+                <Button
+                    android:id="@+id/clear_history_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/uilist"
+                    android:gravity="left|center_vertical"
+                    android:minHeight="48dp"
+                    android:paddingLeft="18dip"
+                    android:paddingRight="18dip"
+                    android:text="@string/member_clear_history"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@drawable/dividingline_582" />
+
+            <Button
+                android:id="@+id/quit_group_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/long_button_height"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="18dip"
+                android:layout_marginRight="18dip"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_predict_win_bg_selector"
+                android:text="@string/member_leave"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </com.afmobi.palmchat.ui.customview.ScrollViewExtend>
+
+</RelativeLayout>

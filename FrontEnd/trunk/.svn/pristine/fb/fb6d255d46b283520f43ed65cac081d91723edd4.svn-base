@@ -1,0 +1,30 @@
+/*******************************************************************/
+ Palmchat 更改包名牵扯东西比较多，现在整理大体流程如下
+/******************************************************************/
+begin   wx   2016.03.12
+modify  wx	 2016.05.10
+/******************************************************************/
+palmchat 改包名流程 (如果用eclipse或者as里面的rename更改不成功可以用下面前四点)
+1.AndroidManifest.xml 的 package
+2.所有sever activity 使用绝对路径
+3.包名.R 需要改为新的
+4.所有layout里面用到的自定义命名空间用到的包名改为新的
+5.facebook 相关
+	i：facebook_strings 里面的app_id 改为 新的 id
+	ii：<provider android:authorities="com.facebook.app.FacebookContentProvider930217953693664" 后面的数字改为app_id
+	iii：FacebookConstant 里面更改facebook share content对应的新的命名空间 OG_ACTION_TYPE =“命名空间:share”
+
+
+6.如果是GooglePlay版本 包名palmchatnow
+   a.要修改Const.java里的public final static String GET_SCORE = "https://play.google.com/store/apps/details?id=com.palmchatnow";
+   b.去掉Facebook登陆
+   c.Facebook分享用的appid为597994537045650
+   d.去掉支付功能
+   e.替换图标
+
+Google 新新包名:com.palmchatnow的签名为：palmchatnow.keystore 密码为36881180,别名：androiddebugkey 密码：android
+其他包名的签名为36881180, 别名密码为：36881180
+																		   OG_OBJECT_TYPE ="命名空间:content"
+/******************************************************************/
+end
+/******************************************************************/

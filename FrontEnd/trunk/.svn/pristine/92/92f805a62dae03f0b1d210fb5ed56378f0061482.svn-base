@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_login_bg"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@id/title_layout"
+            layout="@layout/head_back_title_more" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/enter_your_af_id"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/afid_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/text_fouse_selector"
+            android:digits="0123456789"
+            android:gravity="center_vertical|left"
+            android:hint="@string/enter_your_af_id"
+            android:inputType="phone"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:singleLine="true"
+            android:textColorHint="@color/color_edittext_hint" >
+        </EditText>
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/long_button_height"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_blue_d"
+            android:text="@string/next"
+            android:textColor="@color/guide_text_color"
+            android:textSize="@dimen/accounts_imagetxt_titlttest_size"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

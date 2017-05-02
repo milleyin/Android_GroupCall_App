@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SystemBarTint_Style"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_login_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include layout="@layout/head_back_title_more" />
+
+            <LinearLayout
+                android:id="@id/setting_traffic_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="18dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feed_back_advice"
+                    android:textColor="@color/text_level_2" />
+
+                <EditText
+                    android:id="@id/feedback_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/text_fouse_selector"
+                    android:gravity="top"
+                    android:hint="@string/feed_back_edit_hint"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:maxLength="250"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:singleLine="false"
+                    android:textColorLink="@color/text_level_3" />
+            </LinearLayout>
+        </LinearLayout>
+
+<!--        <RelativeLayout
+            android:id="@id/ok_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/filter_right_down_selector" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dip"
+                android:drawableLeft="@drawable/send_button"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/sent" />
+        </RelativeLayout>-->
+    </RelativeLayout>
+
+</RelativeLayout>

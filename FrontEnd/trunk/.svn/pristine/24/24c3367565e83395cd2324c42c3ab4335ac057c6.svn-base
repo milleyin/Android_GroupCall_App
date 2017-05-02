@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_back_title_more" />
+
+    <ScrollView
+        style="@style/BaseBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/setting_main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp" >
+            
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+					android:text="@string/broadcast_permission_text_msg"    
+					android:textColor="@color/text_level_2"       
+					android:layout_marginLeft="18dp"         
+					android:layout_marginBottom="3dp"
+                    />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_list"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/explore_line" />
+
+                <RelativeLayout
+                    android:id="@+id/r_all_permission"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/filter_right_down_selector" >
+
+                    <TextView
+                        style="@style/exploreItemImage"
+                        android:text="@string/all"
+                        android:textColor="@color/color_black" />
+
+                    <ImageView
+                        android:id="@+id/img_all_permission"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/radiobutton_press" />
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="18dp"
+                    android:background="@color/explore_line" />
+
+                <RelativeLayout
+                    android:id="@+id/r_connections"
+                    style="@style/profile_layout"
+                    android:background="@drawable/filter_right_down_selector" >
+
+                    <TextView
+                        style="@style/exploreItemImage"
+                        android:text="@string/broadcast_permission_option_connection"
+                        android:textColor="@color/color_black" />
+
+                    <ImageView
+                        android:id="@+id/img_connections"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/radiobutton_normal" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/explore_line" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

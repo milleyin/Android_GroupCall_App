@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/filter_right_down_selector">
+    <RelativeLayout
+        android:id="@+id/group_tag_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginLeft="18dip"
+        android:layout_marginRight="18dip"
+        android:background="@drawable/filter_right_down_selector">
+
+        <TextView
+            android:id="@+id/map_addr_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="fdafsfdafasfaf fdasdfasf fdasdfaf fdafadffda dfaf "
+            android:textColor="@color/text_level_1"
+            android:textSize="16sp"
+            android:layout_marginRight="23dp"/>
+
+        <ImageView
+            android:id="@+id/select_map_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_btn_profile_save"
+            android:visibility="visible"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="18dp"
+        android:background="@color/explore_line" />
+</LinearLayout>

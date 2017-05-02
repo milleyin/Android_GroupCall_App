@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/broadcast_tagpage_dialog_height_size"
+        style="@style/pop_text_dialog_style"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/dialog_row"
+        android:addStatesFromChildren="true">
+        <ImageView
+            android:id="@+id/dialog_icon"
+            android:layout_width="@dimen/broadcast_tagpage_dialog_headerview_height_size"
+            android:layout_height="@dimen/broadcast_tagpage_dialog_headerview_height_size"
+            android:layout_marginLeft="@dimen/broadcast_tagpage_dialog_headerview_margin_size"
+            android:contentDescription="@null"
+            android:background="@android:color/white"
+            />
+
+        <TextView
+            android:id="@+id/popup_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/broadcast_tagpage_dialog_headerview_margin_size"
+            android:textSize = "@dimen/broadcast_tagpage_dialog_text_size"
+            style="@style/dialog_text_style"
+            />
+</LinearLayout>

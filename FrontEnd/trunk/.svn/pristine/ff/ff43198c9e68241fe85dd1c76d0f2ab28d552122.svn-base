@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SystemBarTint_Style">
+	
+    <View
+        android:layout_below="@+id/tagpager_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/predict_d10"
+        />
+    
+    <!--列表-->
+	<android.support.v4.view.ViewPager
+		android:id="@+id/tagpage_viewpager_id"
+	   	android:layout_width="match_parent"
+	   	android:layout_height="match_parent"
+	   	android:layout_marginTop="@dimen/broadcast_bar_shadeupheight_size"
+	   	android:layout_marginBottom="@dimen/broadcast_bar_shadeupheight_size"
+	   	android:background="@color/color_login_bg"
+	   	android:flipInterval="30"
+	   	android:persistentDrawingCache="animation"/>
+	
+	<!-- title -->
+    <include 
+        android:focusableInTouchMode="false"
+        android:id="@+id/tagpager_title_layout"
+        layout="@layout/head_back_title_more"
+        android:clickable="true" />
+	
+	<RelativeLayout 
+	    android:id="@+id/tagpage_tab_layout_id"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/tagpager_title_layout"
+	    android:layout_marginTop="-1dp"
+	    >
+	    
+	    <!-- tab -->    
+	    <LinearLayout
+			android:id="@+id/tagpage_tab_layout"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="@dimen/broadcast_tagpage_tags_height_size"	
+	    	android:gravity="center"
+	    	android:background="@drawable/bg_nav_tagpage"
+	        android:orientation="horizontal">
+			
+			<!-- lefttab -->
+		    <TextView
+		        android:id="@+id/tagpage_tab_left_id"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:gravity="center"
+		        android:textColor="@drawable/btn_tagpager_tagstext_selector"
+		        android:textSize="@dimen/broadcast_tagpage_tags_text_size"
+		        android:text="@string/broadcast_tagpage_tagpost"/>
+	    
+	    	<!-- righttab -->
+		    <TextView
+		        android:id="@+id/tagpage_tab_right_id"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:gravity="center"
+		        android:textColor="@drawable/btn_tagpager_tagstext_selector"
+		        android:textSize="@dimen/broadcast_tagpage_tags_text_size"
+		        android:text="@string/broadcast_tagpage_recentpost"/>
+	        
+	    </LinearLayout>
+	    	    
+	    <!-- 下划 选中线 -->
+	    <com.afmobi.palmchat.ui.customview.UnderlinePageIndicator
+	           android:id="@+id/tagpage_indicator_id"
+	           android:layout_width="match_parent"
+	           android:layout_height="@dimen/broadcast_tagpage_indicator_height_size"
+	           android:layout_marginBottom="@dimen/broadcast_bar_underline_margin_size"
+	           android:layout_alignBottom="@id/tagpage_tab_layout" />	
+	           
+		<!-- 刷新成功 -->
+        <TextView
+            android:id="@+id/tagpage_top_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tagpage_tab_layout"
+            android:layout_marginTop="@dimen/broadcast_toprefresh_margintop_size"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/update_successful"
+            android:textColor="@color/white"
+            android:background="@color/text_level_1"
+            android:visibility="gone" />
+        
+    </RelativeLayout>
+	<!-- 分割线 -->
+	<View 
+		android:id ="@+id/tagpage_partingline_id"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/broadcast_tagpage_partingline_height_size"
+	    android:layout_below="@id/tagpage_tab_layout_id"
+	    android:background="@color/predict_d10"
+	    android:visibility="gone"/>
+
+	<FrameLayout
+		android:id="@+id/tagepage_tab_fab_id"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginRight="@dimen/maintab_sendicon_marginright_size"
+		android:layout_marginBottom="@dimen/maintab_sendicon_marginbottom_size"
+		android:layout_alignParentRight="true">
+
+		<ImageButton
+			android:id="@+id/tagepage_broadcast_fab_id"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/btn_sendbroad_selector"/>
+	</FrameLayout>
+
+	<com.afmobi.palmchat.ui.customview.SendBroadcastMaskingView
+		android:id="@+id/tagepage_fab_id"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:layouttype="type2"
+		android:visibility="gone"/>
+	
+</RelativeLayout>

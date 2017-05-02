@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fabviewlayout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maintab_fabview_color">
+
+    <RelativeLayout
+        android:id="@+id/maintab_send_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/maintab_send_photos_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/maintab_sendicon_marginright_size"
+            android:layout_marginBottom="@dimen/maintab_sendphotoicon_marginbottom_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_sendphoto_selector"/>
+
+        <ImageButton
+            android:id="@+id/maintab_send_voice_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/maintab_send_photos_id"
+            android:layout_marginRight="@dimen/maintab_sendvoiceicon_marginright_size"
+            android:layout_marginBottom="@dimen/maintab_sendicon_marginbottom_size"
+            android:layout_above="@+id/maintab_send_photos_id"
+            android:background="@drawable/btn_sendvoice_selector"/>
+        
+        <TextView
+            android:id="@+id/maintab_send_voice_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/maintab_send_voice_id"
+            android:layout_toLeftOf="@id/maintab_send_voice_id"
+            android:layout_marginRight="@dimen/maintab_sendvoice_marginright_size"
+            android:layout_marginTop="@dimen/maintab_sendvoicetext_margintop_size"
+            android:paddingLeft="@dimen/maintab_send_paddinglr_size"
+            android:paddingRight="@dimen/maintab_send_paddinglr_size"
+            android:paddingBottom="@dimen/maintab_send_paddingbottom_size"
+            android:paddingTop="@dimen/maintab_send_paddingtop_size"
+            android:textSize="@dimen/maintab_sendvoice_text_size"
+            android:textColor="@color/maintab_fabview_prompt_color"
+            android:text="@string/broadcast_maintab_sendvoice"
+            android:background="@drawable/bg_prompt_words"/>
+
+        <TextView
+            android:id="@+id/maintab_send_photos_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/maintab_send_photos_id"
+            android:layout_toLeftOf="@id/maintab_send_voice_id"
+            android:layout_marginTop="@dimen/maintab_sendphototext_margintop_size"
+            android:layout_marginRight="@dimen/maintab_sendphoto_marginright_size"
+            android:paddingLeft="@dimen/maintab_send_paddinglr_size"
+            android:paddingRight="@dimen/maintab_send_paddinglr_size"
+            android:paddingBottom="@dimen/maintab_send_paddingbottom_size"
+            android:paddingTop="@dimen/maintab_send_paddingtop_size"
+            android:textSize="@dimen/maintab_sendvoice_text_size"
+            android:textColor="@color/maintab_fabview_prompt_color"
+            android:text="@string/broadcast_maintab_sendpoto"
+            android:background="@drawable/bg_prompt_words"/>
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:focusable="false"
+    android:orientation="vertical"
+    >
+
+     <!-- 消息时间 -->
+    <LinearLayout
+        android:id="@+id/l_chatting_accounts_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/chatting_accounts_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:textColor="@color/chatting_date_bg"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@+id/view_stub_accounts_left"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inflatedId="@+id/view_stub_accounts_left_id"
+        android:layout="@layout/item_chatting_accounts_left_text"/>
+    
+    <ViewStub
+        android:id="@+id/view_stub_accounts_right"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="right"
+        android:layout="@layout/item_chatting_accounts_right_text"/>
+</LinearLayout>

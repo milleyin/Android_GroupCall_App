@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_popup"
+    android:paddingRight="18dp">
+
+    <LinearLayout
+        android:id="@+id/lin_sendToFriend"
+        android:layout_width="109dp"
+        android:layout_height="44dp"
+        android:background="@drawable/uilist"
+        android:gravity="left|center_vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/broadcast_send_to_friend"
+            android:textColor="@color/text_level_1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_report_abuse"
+        android:layout_width="109dp"
+        android:layout_height="44dp"
+        android:background="@drawable/uilist"
+        android:gravity="left|center_vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/report_abuse"
+            android:textColor="@color/text_level_1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_del"
+        android:layout_width="109dp"
+        android:layout_height="44dp"
+        android:background="@drawable/uilist"
+        android:gravity="left|center_vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/delete"
+            android:textColor="@color/text_level_1" />
+    </LinearLayout>
+
+</LinearLayout>

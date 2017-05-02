@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/head_back_title_more"
+        android:visibility="invisible" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:visibility="invisible" />
+
+    <com.afmobi.palmchat.ui.customview.KeyboardListenRelativeLayoutEditText
+        android:id="@+id/softkey_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/transparent" >
+
+        <LinearLayout
+            android:id="@+id/input_box_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@id/chatting_options_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg_profile"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@id/chatting_operate_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="18.0dp"
+                    android:paddingRight="18.0dip"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/btn_follow_style"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@id/un_talk"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" >
+
+                    <com.afmobi.palmchat.ui.customview.CutstomEditTextBanLineKey
+                        android:id="@id/chatting_message_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/textbox"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_commet"
+                        android:imeOptions="actionSend|flagNoEnterAction"
+                        android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+                        android:maxLines="4"
+                        android:minHeight="36.0dip"
+                        android:nextFocusRight="@id/chatting_send_button"
+                        android:textColorHint="@color/text_level_5"
+                        android:textSize="15sp"
+                         />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/list_cl"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/image_emotion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="18.0dp"
+                        android:paddingRight="9.0dip"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/chatting_room_smile_selector" />
+                    <ImageView
+                        android:id="@+id/btn_keyboard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="18.0dp"
+                        android:paddingRight="9.0dip"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/btn_keyboard_selector"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@id/chatting_send_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center|right"
+                    android:nextFocusLeft="@id/chatting_message_edit"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="9.0dp"
+                    android:paddingRight="18.0dip"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/send_button"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:id="@id/chatting_operate_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="9.0dp"
+                    android:paddingRight="18.0dip"
+                    android:paddingTop="10dp" >
+
+                  <!--   <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/voice_button_icon"
+                        android:visibility="gone" /> -->
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/send_button" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chatting_emoji_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+            </LinearLayout>
+        </LinearLayout>
+    </com.afmobi.palmchat.ui.customview.KeyboardListenRelativeLayoutEditText>
+
+</LinearLayout>

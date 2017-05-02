@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- //android:startColor="@color/red" 为自定义开始颜色
+//<corners android:radius="0.0dip" /> 为两头圆角的弧度，值越大越圆
+//<gradient > 为设置渐变色背景 angle 为角度，必须是45的倍数 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="8.0dip" />
+
+            <gradient
+                android:angle="270.0"
+                android:endColor="@color/black"
+                android:startColor="@color/black" />
+        </shape>
+    </item> -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="8.0dip" />
+
+                <gradient
+                    android:angle="270.0"
+                    android:centerColor="@color/invite_friend_phonenum"
+                    android:endColor="@color/invite_friend_phonenum"
+                    android:startColor="@color/invite_friend_phonenum" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

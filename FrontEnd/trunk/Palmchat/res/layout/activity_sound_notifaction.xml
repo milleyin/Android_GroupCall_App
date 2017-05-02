@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_back_title_more" />
+
+    <ScrollView
+        style="@style/BaseBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/setting_main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_list"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/broadcast_trending_cccccc" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_new_msg_notify"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/filter_right_down_selector" >
+
+                    <TextView
+                        style="@style/exploreItemImage"
+                        android:text="@string/sound_receive_new_msg"
+                        android:textColor="@color/color_black" />
+
+                    <com.afmobi.palmchat.ui.customview.switchbutton.SwitchButton
+                        android:id="@+id/checkbox_new_msg_notify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dp" />
+                    <!--android:button="@drawable/setting_check_selector" />-->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/r_sound"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/filter_right_down_selector" >
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@color/predict_e6" />
+                    <TextView
+                        style="@style/exploreItemImage"
+                        android:text="@string/settings_sound"
+                        android:textColor="@color/color_black" />
+
+                    <com.afmobi.palmchat.ui.customview.switchbutton.SwitchButton
+                        android:id="@+id/checkbox_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dp" />
+                        <!--android:button="@drawable/setting_check_selector" />-->
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/btn_sound"
+                    style="@style/profile_layout"
+                    android:background="@drawable/filter_right_down_selector" >
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@color/predict_e6" />
+                    <TextView
+                        style="@style/exploreItemImage"
+                        android:text="@string/settings_sound"
+                        android:textColor="@color/color_black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dip"
+                        android:src="@drawable/navigation_forward"
+                        android:visibility="visible" />
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/r_in_app"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/filter_right_down_selector" >
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/predict_e6" />
+                    <TextView
+                        style="@style/exploreItemImage"
+                        android:text="@string/settings_inapp_sound"
+                        android:textColor="@color/color_black" />
+
+                    <com.afmobi.palmchat.ui.customview.switchbutton.SwitchButton
+                        android:id="@+id/checkbox_inapp_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dp" />
+                    <!--android:button="@drawable/setting_check_selector" />-->
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/broadcast_trending_cccccc" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/sound_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/broadcast_trending_cccccc" />
+
+            <LinearLayout
+                android:id="@+id/r_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_list"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/btn_vibrate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/filter_right_down_selector" >
+
+                    <TextView
+                        style="@style/exploreItemImage"
+                        android:text="@string/settings_vibrate"
+                        android:textColor="@color/color_black" />
+
+                    <com.afmobi.palmchat.ui.customview.switchbutton.SwitchButton
+                        android:id="@+id/checkbox_vibrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dp" />
+                    <!--android:button="@drawable/setting_check_selector" />-->
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/btn_popup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/filter_right_down_selector" >
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@color/predict_e6" />
+                    <TextView
+                        style="@style/exploreItemImage"
+                        android:text="@string/pop_up"
+                        android:textColor="@color/color_black" />
+
+                    <com.afmobi.palmchat.ui.customview.switchbutton.SwitchButton
+                        android:id="@+id/checkbox_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dp"
+                        android:button="@drawable/setting_check_selector" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/broadcast_trending_cccccc" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sound_line_top_disturb"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/broadcast_trending_cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/btn_no_disturb"
+                style="@style/profile_layout"
+                android:background="@drawable/filter_right_down_selector" >
+
+                <TextView
+                    style="@style/exploreItemImage"
+                    android:text="@string/sound_not_disturb"
+                    android:textColor="@color/color_black" />
+
+                <ImageView
+                    android:id="@+id/img_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dip"
+                    android:src="@drawable/navigation_forward"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/img_arrow"
+                    android:background="@drawable/msgnumber"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/check_update_new"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/broadcast_trending_cccccc" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

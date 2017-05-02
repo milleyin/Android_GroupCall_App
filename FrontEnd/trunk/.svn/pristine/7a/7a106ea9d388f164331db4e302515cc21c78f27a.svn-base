@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp">
+
+    <!-- 手机未认证 -->
+
+    <LinearLayout
+        android:id="@+id/ll_phone_unbind"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_phone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_country1"
+                android:layout_width="83dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/text_fouse_selector"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/arr_downward"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_fouse_selector"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_city_code1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@drawable/login_ico_ph_p"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_phone1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:digits="0123456789"
+                    android:hint="@string/phone"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLength="15"
+                    android:orientation="vertical"
+                    android:singleLine="true"
+                    android:textSize="16sp"></EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_phone_notice1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="fdafdafd"
+            android:textColor="@color/text_level_2"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_verificode1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="@string/register_verification_title"
+                android:textColor="@color/text_level_2"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_veri_city_code1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:text="+86"
+                    android:textColor="@color/verifi_phone_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_veri_phone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="123456789012345"
+                    android:textColor="@color/verifi_phone_color"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/img_resend_verifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_phone_edit" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_veri_code1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="54dp"
+                android:background="@drawable/text_fouse_selector"
+                android:digits="0123456789"
+                android:gravity="center_vertical"
+                android:hint="@string/verification_code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColorHint="@color/text_level_3"
+                android:textSize="16sp"></EditText>
+
+            <TextView
+                android:id="@+id/tv_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/set_request_bg"
+                android:gravity="center"
+                android:text="@string/register_verifi_notice"
+                android:textColor="@color/text_level_2"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/btn_blue_d"
+            android:clickable="false"
+            android:text="@string/str_continue"
+            android:textColor="@color/guide_text_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- 手机已认证 -->
+
+    <LinearLayout
+        android:id="@+id/ll_update_phone_bind"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_update_phone_bind_notice_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_change_number"
+            android:textColor="#242633"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_update_phone_bind_1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/txtframe_n"
+            android:text="@string/linked_phone"
+            android:textColor="@color/log_gray"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_update_phone_bind"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/long_button_height"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_button_selector"
+            android:text="@string/text_change_phone_number"
+            android:textColor="@color/guide_text_color"
+            android:textSize="@dimen/accounts_imagetxt_titlttest_size"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <!-- 未连接邮箱 -->
+
+    <LinearLayout
+        android:id="@+id/ll_email_unlinked"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <EditText
+                android:id="@+id/edt_email_unlinked"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/text_fouse_selector"
+                android:gravity="center_vertical"
+                android:hint="@string/email_address"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:maxLines="100"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:visibility="gone"></EditText>
+
+            <TextView
+                android:id="@+id/tv_email_unlinked"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/txtframe_n"
+                android:gravity="center_vertical"
+                android:hint="@string/email_address"
+                android:imeOptions="actionDone"
+
+                android:maxLength="100"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:textColor="@color/log_gray"
+                android:visibility="gone"></TextView>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_email_unlinked_notice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/my_account_gray"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_email_continue"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/long_button_height"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_predict_win_bg_selector"
+            android:text="@string/text_change_phone_number"
+            android:textColor="@color/brdcast_voice_blue"
+            android:textSize="@dimen/accounts_imagetxt_titlttest_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_edit_email"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/long_button_height"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_predict_win_bg_selector"
+            android:text="@string/eidt_email"
+            android:textColor="@color/brdcast_voice_blue"
+            android:textSize="@dimen/accounts_imagetxt_titlttest_size"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

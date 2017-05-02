@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+    <script>
+// Note: This example requires that you consent to location sharing when
+// prompted by your browser. If you see a blank space instead of the map, this
+// is probably because you have denied permission for location sharing.
+
+var map;
+ //var infowindow;
+  var geocoder;
+function initialize() {
+	geocoder = new google.maps.Geocoder();
+	
+	//document.getElementById('address').style.height =  "30px";
+	//document.getElementById('geoButton').style.height = "35px";
+	//document.getElementById('map-canvas').style.height = document.body.clientHeight-38+"px";
+	//document.getElementById('address').style.width=document.body.clientWidth-document.getElementById('geoButton').style.width-10+"px";
+  var mapOptions = {
+    zoom: 15,
+	panControl: false,   
+  zoomControl: true,  
+  mapTypeControl: false,  
+  scaleControl: false,  
+  streetViewControl: false,  
+  overviewMapControl: false
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	// var pos = new google.maps.LatLng(22,114); 
+       
+   //infowindow = new google.maps.InfoWindow({
+      //  map: map,
+    //    position: pos,
+    //    content: 'I am here'
+    //  });
+ // getLocation();
+   initMapPos();
+    // 3 seconds after the center of the map has changed, pan back to the
+    // marker.
+    //window.setTimeout(function() {
+      //map.panTo(marker.getPosition());
+    //}, 3000);
+      google.maps.event.addListener(map, 'center_changed', function() {
+		//infowindow.setPosition(	map.getCenter());
+		//infowindow.setContent(map.getCenter().lat()+'_'+map.getCenter().lng());
+		setPostion(map.getCenter().lat(),map.getCenter().lng() );
+    // 3 seconds after the center of the map has changed, pan back to the
+    // marker.
+    //window.setTimeout(function() {
+      //map.panTo(marker.getPosition());
+    //}, 3000);
+  });
+}  
+function setMapPos( lat,lng) {
+	var pos2 = new google.maps.LatLng(lat, lng);
+	 map.setCenter(pos2); 
+} 
+  
+function showAndroidToast(toast) {       
+    javascript:myInterfaceName.showToast(toast);   
+ }
+ function showAndroidAddr(addrs,arrLat,arrLng) {       
+    javascript:myInterfaceName.showAddr(addrs,arrLat,arrLng);   
+ }
+ 
+ function setPostion(lat,lng) {       
+ //codeLatLng(lat,lng);
+    javascript:myInterfaceName.setPostion(lat,lng);   
+ } 
+ function initMapPos( ) {  
+	javascript:myInterfaceName.initMapPos( );   
+ }
+ 
+  
+function codeAddress(place) { 
+  var address =place; //document.getElementById('address').value;
+  geocoder.geocode( { 'address': address}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) { 
+      map.setCenter(results[0].geometry.location);
+	  setPostion(map.getCenter().lat(),map.getCenter().lng() ); 
+    } else {
+      showAndroidToast('Geocode was not successful for the following reason: ' + status);
+    }
+  });
+} 
+
+function codeLatLng(lat,lng) { 
+  var latlng = new google.maps.LatLng(lat, lng);
+  geocoder.geocode({'latLng': latlng}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+		
+      if (results[1]) { 
+			var addrs = new Array(); 
+			var arrLat = new Array(); 
+			var arrLng = new Array();
+			 for (var i = 0; i < results.length ; i++) {
+				addrs[i] =   results[i].formatted_address ;
+				arrLat[i] =   results[i].geometry.location.lat();
+				arrLng[i] =   results[i].geometry.location.lng();
+			} 
+			  showAndroidAddr(addrs,arrLat,arrLng );
+      } else {
+        showAndroidToast('No results found');
+      }
+    } else {
+      showAndroidToast('Geocoder failed due to: ' + status);
+    }
+  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>    
+	<div id="map-canvas">
+	</div>
+  </body>
+</html>

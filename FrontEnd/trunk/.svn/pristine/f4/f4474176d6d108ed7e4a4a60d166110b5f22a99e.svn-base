@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/rl_Contacts"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/uilist"
+        android:orientation="horizontal" >
+        <ImageView
+            android:id="@+id/img_ico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_contacts_chats"
+            />
+        <TextView
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contacts"
+            android:layout_toRightOf="@+id/img_ico"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/text_level_1" />
+        
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dip"
+                android:src="@drawable/arr_notifications_blue"
+                android:visibility="visible" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/dividingline_560"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_login_sign_up"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" 
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp" >
+
+            <TextView
+                android:id="@+id/layout_login_facebook"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/long_button_height"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/btn_predict_win_bg_selector"
+                android:drawableLeft="@drawable/logo_fb_46x46"
+                android:gravity="center"
+                android:text="@string/log_in_with"
+                android:textColor="@color/fb_login_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/long_button_height"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_predict_win_bg_selector"
+                android:gravity="center"
+                android:text="@string/sign_up"
+                android:textColor="@color/login_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/long_button_height"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_predict_win_bg_selector"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="@color/login_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</RelativeLayout>

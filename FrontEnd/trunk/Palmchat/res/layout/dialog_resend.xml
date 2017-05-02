@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+        <TextView
+        android:id="@+id/dialog_message_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/set_box_title"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dip"
+        android:textColor="@color/text_level_1"
+        android:text="@string/operate"
+        android:textSize="18sp" />
+        
+    
+    <TextView
+        android:id="@+id/dialog_message_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dip"
+        android:paddingBottom="10dip"
+        android:textColor="@color/dialog_content_color"
+        android:text="@string/resend"
+        android:background="@drawable/set_box_mid_btn_selector"
+        android:textSize="16sp" />
+        
+    <Button
+        android:id="@+id/confim_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dip"
+        android:paddingBottom="10dip"
+        android:textColor="@color/dialog_btn_color"
+        android:text="@string/cancel"
+        android:background="@drawable/set_box_single_selector"
+        android:textSize="16sp" />
+
+</LinearLayout>

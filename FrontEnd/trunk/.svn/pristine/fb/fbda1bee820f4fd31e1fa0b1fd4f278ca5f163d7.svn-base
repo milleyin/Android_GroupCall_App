@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+	<View
+		android:layout_below="@id/tagpager_title_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/white"/>
+	 	
+	<android.support.v4.view.ViewPager
+		android:id="@+id/viewpager"
+	   	android:layout_width="fill_parent"
+	   	android:layout_height="fill_parent"
+		android:layout_marginTop="@dimen/broadcast_bar_shadeupheight_size"
+		android:background="@color/color_login_bg"
+		android:flipInterval="30"
+		android:persistentDrawingCache="animation" />
+
+	<RelativeLayout
+		android:id="@+id/broadcast_tabs"         
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/maintab_title_height"
+        android:layout_height="wrap_content" >
+         
+		<LinearLayout
+		    android:id="@+id/tabs"
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/broadcast_tab_height"
+			android:background="@drawable/bg_nav_tagpage"
+			android:orientation="horizontal" >
+	
+			<LinearLayout
+			    android:id="@+id/tab_newaround"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1" 
+			    android:clickable="true"
+			    android:gravity="center"
+			    android:orientation="horizontal" >
+	
+				<ImageView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginRight="@dimen/broadcast_tabs_img_marginright_size"
+					android:layout_gravity="center_vertical"
+				    android:background="@drawable/ic_broadcast_local" />
+	
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:gravity="center"
+				    android:text="@string/NewAround"
+				    android:singleLine="true"
+				    android:lineSpacingMultiplier="1.0"
+				    android:textColor="@color/black" />
+	                
+			</LinearLayout>
+	            
+			<View  
+				android:layout_width="0.5dp"
+			    android:layout_height="fill_parent"
+			    android:layout_marginTop="8dp"
+			    android:layout_marginBottom="8dp"
+			    android:background="@color/broadcast_trending_cccccc"/>
+			
+			<!-- 过去为hottoday 现在为Trending -->
+			<LinearLayout
+				android:id="@+id/tab_trending"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:background="@color/white"
+				android:clickable="true"
+				android:gravity="center"
+				android:orientation="horizontal" >
+	
+				<ImageView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginRight="@dimen/broadcast_tabs_img_marginright_size"
+					android:layout_gravity="center_vertical"
+				    android:contentDescription="@null"
+				    android:background="@drawable/ic_broadcast_trending" />
+	
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:gravity="center"
+				    android:text="@string/trending"
+				    android:textColor="@color/black" />
+			</LinearLayout>
+	            
+			<View    
+			    android:layout_width="0.5dp"
+			    android:layout_height="fill_parent"
+			    android:layout_marginTop="8dp"
+			    android:layout_marginBottom="8dp"
+			    android:background="@color/broadcast_trending_cccccc"/>
+		
+			<RelativeLayout
+			    android:id="@+id/tab_friends"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:background="@color/white"
+			    android:clickable="true" >
+	
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+		            android:orientation="horizontal" >
+		
+		            <ImageView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginRight="@dimen/broadcast_tabs_img_marginright_size"
+						android:layout_gravity="center_vertical"
+		                android:background="@drawable/ic_broadcast_friends" />
+		
+					<TextView
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:gravity="center"
+					    android:text="@string/following"
+					    android:textColor="@color/black" />
+				</LinearLayout>
+	
+				<ImageView
+				    android:id="@+id/friends_imageView"
+				    android:layout_width="9dp"
+				    android:layout_height="9dp"
+				    android:layout_alignParentRight="true"
+				    android:layout_alignParentTop="true"
+				    android:layout_marginRight="10dp"
+				    android:layout_marginTop="6dp"
+				    android:src="@drawable/reddot"
+				    android:visibility="gone" />
+			</RelativeLayout>
+			
+		</LinearLayout>
+		
+		<com.afmobi.palmchat.ui.customview.UnderlinePageIndicator
+			android:id="@+id/indicator"
+			android:layout_width="match_parent"
+			android:layout_height="4dp"
+			android:layout_marginBottom="@dimen/broadcast_bar_underline_margin_size"
+			android:layout_alignBottom="@id/tabs"/> 	
+			
+		<!-- 刷新成功 -->
+        <TextView
+            android:id="@+id/broadcast_top_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tabs"
+            android:layout_marginTop="@dimen/broadcast_toprefresh_margintop_size"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/update_successful"
+            android:textColor="@color/white"
+            android:background="@color/text_level_1"
+            android:visibility="gone" />
+        
+	</RelativeLayout>
+	<FrameLayout
+		android:id="@+id/tab_fab_id"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginRight="@dimen/maintab_sendicon_marginright_size"
+		android:layout_marginBottom="@dimen/maintab_sendicon_marginbottom_size"
+		android:layout_alignParentRight="true">
+
+		<ImageButton
+			android:id="@+id/broadcast_fab_id"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/btn_sendbroad_selector"/>
+	</FrameLayout>
+	
+  
+</RelativeLayout>

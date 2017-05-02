@@ -1,0 +1,7 @@
+<resources>
+  <string name="call_mute_text">بی‌صدا</string>
+  <string name="call_audio">بلندگو</string>
+  <string name="call_decline_text">قطع تماس</string>
+  <string name="peer_refuse_to_answer">تماس توسط کاربر رد شد</string>
+  <string name="call_ended">اتمام تماس</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/ll_follow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@drawable/uilist"
+        android:orientation="horizontal" >
+        
+        <TextView
+        	android:id="@+id/tv_follow"
+       	 	style="@style/pop_text_style"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_shet_follow"
+            android:drawablePadding="@dimen/broadcast_tagpage_dialog_headerview_margin_size"
+        	android:text="@string/follow" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_report_abuse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@drawable/uilist"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_report_abuse"
+            style="@style/pop_text_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/broadcast_dialog_abuse"
+            android:drawablePadding="@dimen/broadcast_tagpage_dialog_headerview_margin_size"
+            android:textColor="@color/red"
+            android:text="@string/report_abuse" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bloak"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/uilist"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_block"
+            style="@style/pop_text_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_shet_block"
+            android:drawablePadding="@dimen/broadcast_tagpage_dialog_headerview_margin_size"
+            android:text="@string/block" />
+    </LinearLayout>
+
+</LinearLayout>

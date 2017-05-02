@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AfmobiVisionlib</string>
+    <string name="edit">Edit</string>
+    <string name="demo_min_label">""</string>
+    <string name="demo_max_label">""</string>
+    <string name="cancle_uc">"CANCEL"</string>
+    <string name="done_uc">"DONE"</string>
+    <string name="OK">"OK"</string>
+    <!--setup string res -->
+    <string name="adjust_straighten">adjust</string>
+    <string name="brightness">brightness</string>
+    <string name="contrast">contrast</string>
+    <string name="fade">fade</string>
+    <string name="highlights">highlights</string>
+    <string name="saturation">saturation</string>
+    <string name="shadows">shadows</string>
+    <string name="sharpen">sharpen</string>
+    <string name="structure">structure</string>
+    <string name="tilt">tilt</string>
+    <string name="color">Color</string>
+    <string name="vignette">vignette</string>
+    <string name="warmth">warmth</string>
+
+    <!-- filter string id -->
+    <string name="top_filter_type_orgin">Orginal</string>
+    <string name="top_filter_type_ginham">Ginham</string>
+    <string name="top_filter_type_clarendon">Clarendon</string>
+    <string name="top_filter_type_black_white">B&amp;W</string>
+    <string name="top_filter_type_reyes">Reyes</string>
+    <string name="top_filter_type_juno">Juno</string>
+    <string name="top_filter_type_slumber">Slumber</string>
+    <string name="top_filter_type_ludwig">Ludwig</string>
+    <string name="top_filter_type_perpetua">Perpetua</string>
+    <string name="top_filter_type_amaro">Amaro</string>
+    <string name="top_filter_type_mayfair">Mayfair</string>
+    <string name="top_filter_type_rise">Rise</string>
+    <string name="top_filter_type_hudson">Hudson</string>
+    <string name="top_filter_type_valencia">Valencia</string>
+    <string name="top_filter_type_x_pro_ii">X_pro_ii</string>
+    <string name="top_filter_type_sierra">Sierra</string>
+    <string name="top_filter_type_willow">Willow</string>
+    <string name="top_filter_type_lo_fi">Lo_fi</string>
+    <string name="top_filter_type_inkwell">Inkwell</string>
+    <string name="top_filter_type_hefe">Hefe</string>
+    <string name="top_filter_type_nashville">Nashville</string>
+    <string name="top_filter_type_maven">Maven</string>
+    <string name="top_filter_type_ginza">Ginza</string>
+    <string name="top_filter_type_skyline">Skyline</string>
+    <string name="top_filter_type_dogpatch">Dogpatch</string>
+    <string name="top_filter_type_crayon">Crayon</string>
+    <string name="top_filter_type_oil_painting">Paint</string>
+    <string name="top_filter_type_color_pencil">Pencil</string>
+    <string name="top_filter_type_sketch">Sketch</string>
+
+    <string name="top_filter_type_type_setup">Type_setup</string>
+
+    <string name="top_filter_type_colorful">A Bao</string>
+    <string name="top_filter_type_color_blue">Blue</string>
+    <string name="top_filter_type_color_enhance">Enhance</string>
+    <string name="top_filter_type_color_yellow_blue">Cold</string>
+    <string name="top_filter_type_color_light">Light</string>
+    <string name="top_filter_type_skin_white">Skin White</string>
+
+    <string name="top_filter_type_lookup_map_intense">Intense</string>
+    <string name="top_filter_type_lookup_map_balance">Balance</string>
+    <string name="top_filter_type_lookup_map_fresh">Fresh</string>
+    <string name="top_filter_type_lookup_map_indoor">Indoor</string>
+    <string name="top_filter_type_lookup_map_warm">Warm</string>
+    <string name="top_filter_type_lookup_map_auto">Auto</string>
+
+    <string name="ClearButton">Clear</string>
+    <string name="PickerPhotos">Photos</string>
+    <string name="PickerVideo">Video</string>
+    <string name="ShowAllMedia">Show all media</string>
+    <string name="SaveToGallery">Save to gallery</string>
+    <string name="Of">%1$d of %2$d</string>
+    <string name="Gallery">Gallery</string>
+    <string name="AllPhotos">All Photos</string>
+    <string name="AllVideo">All Videos</string>
+    <string name="NoPhotos">No photos yet</string>
+    <string name="NoVideo">No videos yet</string>
+
+    <string name="SearchGifs">FIND GIFS</string>
+    <string name="SearchImages">FIND IMAGES</string>
+    <string name="SearchImagesInfo">WEB SEARCH</string>
+    <string name="NoRecentPhotos">No recent photos</string>
+    <string name="NoRecentGIFs">No recent GIFs</string>
+    <string name="Delete">Delete</string>
+    <string name="PleaseDownload">Please download media first</string>
+    <string name="DiscardChanges">Discard changes?</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Crop">CROP</string>
+    <string name="formatDateAtTime">%1$s at %2$s</string>
+    <string name="AttachPhoto">Photo</string>
+    <string name="Set">Set</string>
+    <string name="Send">Send</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/gridview_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/empty"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/gridview_img_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/empty"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/lin_play_icon_to_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/r_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/broadcast_voiceload" >
+
+            <RelativeLayout
+                android:id="@+id/play_icon_to_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" 
+                android:layout_centerVertical="true"
+                >
+
+                <ImageView
+                    android:id="@+id/play_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/voice_play_icon"
+                    android:contentDescription="@string/empty"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/play_icon_to_voice_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/play_icon_to_voice"
+                android:background="@drawable/voice_anim01"
+                android:contentDescription="@string/empty"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/play_time_to_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/play_icon_to_voice_anim"
+                android:text="15.3s"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/color_black"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/click_remove"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+			android:layout_centerVertical="true"            
+            android:layout_toRightOf="@id/r_1"
+            android:paddingLeft="12dp" 
+            android:paddingRight="12dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/store_delete"
+                android:contentDescription="@string/empty" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>

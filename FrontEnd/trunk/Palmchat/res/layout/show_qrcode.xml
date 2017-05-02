@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundviewatt="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_back"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/head_back_title_more" />
+    <RelativeLayout
+        android:id="@+id/qr_layout"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/qr_img_margion_top"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/qr_imageview"
+            android:layout_width="@dimen/qr_img_width"
+            android:layout_height="@dimen/qr_img_width"
+            android:background="@drawable/bg_qrcode_image" />
+
+        <com.afmobi.palmchat.ui.customview.RoundImageView
+            android:id="@+id/head_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/head_female2"
+            android:layout_centerInParent="true"
+            roundviewatt:type="circle_widthborder"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_code_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qr_layout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/qr_text_prompt_margion_top"
+        android:gravity="center_horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/scan_palmchat"
+        android:textColor="@color/text_level_2"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:id="@+id/btn_qrcode_reader"
+        android:layout_width="176dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/text_code_prompt"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/qr_text_code_margion_top"
+        android:background="@drawable/btn_myqrcode"
+        android:text="@string/qrcode_reader"
+        android:textColor="@color/guide_text_color"
+        android:textSize="16sp" />
+
+</RelativeLayout>

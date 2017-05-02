@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SystemBarTint_Style" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/head_back_title_more" />
+
+        <LinearLayout
+            android:id="@+id/add_friend_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_layout"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/home_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/add_friends"
+                android:textColor="@color/text_level_2" />
+
+            <RelativeLayout
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <EditText
+                    android:id="@+id/search_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/enter_btn"
+                    android:background="@color/transparent"
+                    android:drawableBottom="@drawable/bottom_line"
+                    android:hint="@string/online_search_hint"
+                    android:inputType="number"
+                    android:minHeight="24.0dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_level_1" />
+
+                <Button
+                    android:id="@+id/enter_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/noticefication_accept"
+                    android:text="@string/search"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/additem1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/home_list"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                    android:id="@+id/hicon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_invitefriends"
+                    android:contentDescription="@string/empty" />
+
+                <TextView
+                    style="@style/home_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/hicon1"
+                    android:text="@string/invite_friends"
+                    android:textColor="@color/text_level_1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/arrow_right"
+                    android:contentDescription="@string/empty"
+                    android:gravity="center"
+                    android:text="@string/test_num"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/additem2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/home_list"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                    android:id="@+id/hicon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_peopleyoumaykonw"
+                    android:contentDescription="@string/empty" />
+
+                <TextView
+                    style="@style/home_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/hicon2"
+                    android:text="@string/people_you_may_know"
+                    android:textColor="@color/text_level_1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/arrow_right"
+                    android:contentDescription="@string/empty"
+                    android:gravity="center"
+                    android:text="@string/test_num"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/net_search_result_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_layout"
+            android:divider="@null"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

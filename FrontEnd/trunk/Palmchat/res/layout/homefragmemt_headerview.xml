@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 没办法，headerview不能隐藏根布局，所有只能加一层 -->
+    <RelativeLayout
+        android:id="@+id/note_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/bg_lookaround_prompt"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/img_myphoto1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/head_male2"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_myphoto1"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="@string/upload_photo"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_upload_photo_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/upload"
+            android:layout_toLeftOf="@+id/btn_upload"
+            android:layout_toRightOf="@+id/img_myphoto1"
+            android:ellipsize="end"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="@string/upload_photo_earn_flowers"
+            android:textColor="@color/look_around_range_normal"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/img_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_lookaround_exit"
+            android:contentDescription="@null" />
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="75dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/img_exit"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/login_button_selector"
+            android:text="@string/upload"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/no_people_layout"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_marginTop="@dimen/homefragment_blankview_margintop_size"-->
+    <!--android:background="@color/white">-->
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/img_no_data"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:background="@drawable/img_loadnothing_giraffe" />-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/nearby_search_txt"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/img_no_data"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/no_conform_search"-->
+    <!--android:textColor="@color/text_level_2"-->
+    <!--android:textSize="@dimen/broadcast_blankview_text_size" />-->
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

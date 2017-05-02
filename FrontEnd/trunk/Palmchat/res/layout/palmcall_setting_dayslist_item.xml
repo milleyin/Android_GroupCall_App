@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    android:background="@android:color/transparent"
+
+    <RelativeLayout
+        android:id="@+id/linear_layout_up"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/arealist_upper_layout"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_popupwindow"
+        >
+
+        <LinearLayout
+            android:id="@+id/radiobutton_linayout"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rb_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_alignParentLeft="true"
+                android:button="@null"
+                android:drawableRight="@drawable/radio_button_selector"
+                android:saveEnabled="false"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/radiobutton_linayout"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/urban_area_layout"
+                android:layout_width="match_parent"
+                android:layout_marginRight="24dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_device_days_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_level_1"
+                    android:maxEms="7"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="16.0sp"
+                    android:text="fsdlkfjsdlkfjsdlkjflsda"
+                    android:typeface="monospace" />
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

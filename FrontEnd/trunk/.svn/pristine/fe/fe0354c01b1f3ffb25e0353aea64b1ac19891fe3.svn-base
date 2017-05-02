@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/set_box"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+        android:id="@+id/dialog_message_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="7dip"
+        android:textColor="@color/dialog_content_color"
+        android:textSize="18sp" />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/cty_code"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/input_lock"
+                android:gravity="center"
+                android:textColor="@color/log_gray" />
+            
+        <EditText
+                android:id="@id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/text_fouse_selector"
+                android:digits="0123456789"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:hint="@string/login_phone_tips1"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:maxLength="15"
+                android:orientation="vertical"
+                android:focusableInTouchMode="false"
+                android:paddingLeft="8dp" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/set_box_button_single_n"
+        android:paddingBottom="20dp"
+        android:paddingTop="40dp"
+        android:orientation="horizontal" >
+ 
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_phone_num"
+            android:background="@color/transparent"
+            android:textColor="@drawable/dialog_text_selector"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_weight="2"
+            android:gravity="right" />
+
+        <Button
+            android:id="@+id/confim_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:background="@color/transparent"
+            android:textColor="@drawable/dialog_text_selector"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

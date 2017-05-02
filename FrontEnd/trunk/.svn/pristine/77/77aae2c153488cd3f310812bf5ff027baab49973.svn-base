@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SystemBarTint_Style" >
+    
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <include
+            android:id="@id/title_layout"
+            layout="@layout/head_back_title_more" />
+
+       <ListView
+           android:id="@+id/listview"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:cacheColorHint="@android:color/transparent"
+           android:divider="@null"
+           android:fadingEdge="none"
+           android:layout_below="@id/title_layout"
+           android:scrollbars="none" />
+    </RelativeLayout>
+    
+</RelativeLayout>

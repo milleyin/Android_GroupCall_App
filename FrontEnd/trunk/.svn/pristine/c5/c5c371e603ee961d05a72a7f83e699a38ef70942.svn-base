@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top">
+
+    <RelativeLayout
+        android:id="@+id/main_member"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        >
+
+    <RelativeLayout
+        android:id="@+id/add_layout"
+        android:layout_width="55dip"
+        android:layout_height="60dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/btn_chattingroom_add" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/head_layout"
+        android:layout_width="52dip"
+        android:layout_height="52dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp" >
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:contentDescription="@string/empty"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:layout_toLeftOf="@id/add_layout"
+        android:layout_toRightOf="@id/head_layout"
+        android:orientation="vertical">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:gravity="left"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_level_1"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/txtage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_sexage_bg"
+            android:drawableLeft="@drawable/icon_sexage_boy"
+            android:paddingRight="2dp"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:layout_marginRight="6dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/title"/>
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxEms="15"
+            android:maxLines="2"
+            android:textColor="@color/predict_9af"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/row_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/main_member"
+        android:background="@drawable/dividingline_582"
+        android:layout_marginLeft="76dp"/>
+</RelativeLayout>

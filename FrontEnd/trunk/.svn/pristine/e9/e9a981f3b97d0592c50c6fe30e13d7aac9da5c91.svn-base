@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/title_layout"
+        layout="@layout/head_back_title_more" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_back"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/main_bg" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_width="80dp"
+                android:layout_height="64dp"
+                android:background="@color/light_white"
+                android:gravity="center"
+                android:text="+234"
+                android:textColor="@color/color_ababab"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edt_phone_number"
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:background="@color/white"
+                android:digits="0123456789"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_mobile"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:maxLength="15"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="@color/public_group_memeber_color"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/main_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/operator"
+            android:textColor="@color/text_level_2"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/main_bg" />
+
+        <com.afmobi.palmchat.ui.customview.TextViewDropDown
+            android:id="@+id/tv_operator"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/color_white"
+            android:drawableRight="@drawable/ic_attr_close"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:paddingRight="20dp"
+            android:text="MTN"
+            android:textColor="@color/public_group_memeber_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/main_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/call_charge"
+            android:textColor="@color/text_level_2"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_face_value_1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/recharge_btn_style" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <TextView
+                        android:id="@+id/tv_airtime_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/look_around_range1"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tv_coin_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_airtime_1"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/base_back_1"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_face_value_2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/recharge_btn_style" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <TextView
+                        android:id="@+id/tv_airtime_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/look_around_range1"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tv_coin_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_airtime_2"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/base_back_1"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_face_value_3"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="@drawable/recharge_btn_style" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <TextView
+                        android:id="@+id/tv_airtime_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/look_around_range1"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tv_coin_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_airtime_3"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/base_back_1"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

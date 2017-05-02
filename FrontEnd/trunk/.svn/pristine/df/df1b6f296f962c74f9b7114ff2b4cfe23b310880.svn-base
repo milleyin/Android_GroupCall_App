@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="30dip" >
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/set_box_title"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="18dp"
+        android:textColor="@color/text_level_1"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/select_btn_layout" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/set_box_down_btn_selector"
+        android:text="@string/cancel"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="18dp"
+        android:textSize="16sp"
+        android:textColor="@color/text_level_1" />
+  
+</LinearLayout>

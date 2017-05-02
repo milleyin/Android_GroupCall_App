@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_chatbg_icon_00_256"
+        android:contentDescription="@string/empty" />
+
+    <ImageView
+        android:id="@+id/isselected"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="top|right"
+        android:contentDescription="@string/empty"
+        android:padding="5dp"
+        android:src="@drawable/btn_chattingbackground_nosel"
+        android:textSize="15sp" />
+
+</FrameLayout>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/explore_option_selector"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/r_predict_win"
+                style="@style/exploreItemBg"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_predict_win"
+                    style="@style/exploreItemImage"
+                    android:src="@drawable/ic_explore_palmguess" />
+
+                <TextView
+                    android:id="@+id/predict_win"
+                    style="@style/exploreItemTextView"
+                    android:layout_toRightOf="@+id/img_predict_win"
+                    android:text="@string/predictWin" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="18dp"
+                    android:gravity="top|right|center">
+
+                    <TextView
+                        android:id="@+id/unread_msg_predict"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/reddot"
+                        android:gravity="center"
+                        android:minWidth="20.0dip"
+                        android:paddingLeft="6.0dip"
+                        android:paddingRight="6.0dip"
+                        android:text="@string/check_update_new"
+                        android:textColor="@color/white"
+                        android:textSize="10.0dip"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r_chatroom"
+                style="@style/exploreItemBg"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/img_chatroom"
+                    style="@style/exploreItemImage"
+                    android:src="@drawable/icon_explore_chatroom" />
+
+                <TextView
+                    android:id="@+id/text_chatroom"
+                    style="@style/exploreItemTextView"
+                    android:layout_toRightOf="@id/img_chatroom"
+                    android:text="@string/chatting_room" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="18dp"
+                    android:gravity="top|right|center">
+
+                    <TextView
+                        android:id="@+id/unread_msg_chattingroom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/reddot"
+                        android:gravity="center"
+                        android:minWidth="20.0dip"
+                        android:paddingLeft="6.0dip"
+                        android:paddingRight="6.0dip"
+                        android:text="@string/check_update_new"
+                        android:textColor="@color/white"
+                        android:textSize="10.0dip"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r_groupchat"
+                style="@style/exploreItemBg">
+
+                <ImageView
+                    android:id="@+id/img_miss_nigeria"
+                    style="@style/exploreItemImage"
+                    android:src="@drawable/ic_star" />
+
+                <TextView
+                    android:id="@+id/text_miss_nigeria"
+                    style="@style/exploreItemTextView"
+                    android:layout_toRightOf="@+id/img_miss_nigeria"
+                    android:text="@string/groupchat" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r_star"
+                style="@style/exploreItemBg"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_star"
+                    style="@style/exploreItemImage"
+                    android:src="@drawable/ic_star" />
+
+                <TextView
+                    android:id="@+id/text_star"
+                    style="@style/exploreItemTextView"
+                    android:layout_toRightOf="@id/img_star"
+                    android:text="@string/nearby_star" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r_shake"
+                style="@style/exploreItemBg">
+
+                <ImageView
+                    android:id="@+id/img_shake"
+                    style="@style/exploreItemImage"
+                    android:src="@drawable/ic_shake" />
+
+                <TextView
+                    android:id="@+id/text_shake"
+                    style="@style/exploreItemTextView"
+                    android:layout_toRightOf="@id/img_shake"
+                    android:text="@string/shake_shake" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r_far_far_away"
+                style="@style/exploreItemBg"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_search"
+                    style="@style/exploreItemImage"
+                    android:src="@drawable/ic_explore_farfaraway" />
+
+                <TextView
+                    android:id="@+id/text_search"
+                    style="@style/exploreItemTextView"
+                    android:layout_toRightOf="@id/img_search"
+                    android:text="@string/far_far_away" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="65dp"
+                android:background="@color/explore_line" />
+
+            <RelativeLayout
+                android:id="@+id/r_public_account"
+                style="@style/exploreItemBg">
+
+                <ImageView
+                    android:id="@+id/img_public_account"
+                    style="@style/exploreItemImage"
+                    android:src="@drawable/ic_explore_publicaccount" />
+
+                <TextView
+                    android:id="@+id/text_public_account"
+                    style="@style/exploreItemTextView"
+                    android:layout_toRightOf="@id/img_public_account"
+                    android:text="@string/home_left_item_public_account" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r_store"
+                style="@style/exploreItemBg">
+
+                <ImageView
+                    android:id="@+id/img_store"
+                    style="@style/exploreItemImage"
+                    android:src="@drawable/ic_store" />
+
+                <TextView
+                    android:id="@+id/text_store"
+                    style="@style/exploreItemTextView"
+                    android:layout_toRightOf="@id/img_store"
+                    android:text="@string/sticker_store" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="18dp"
+                    android:gravity="top|right|center">
+
+                    <TextView
+                        android:id="@+id/unread_msg_explore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/reddot"
+                        android:gravity="center"
+                        android:minWidth="20.0dip"
+                        android:paddingLeft="6.0dip"
+                        android:paddingRight="6.0dip"
+                        android:text="@string/check_update_new"
+                        android:textColor="@color/white"
+                        android:textSize="10.0dip"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r_game"
+                style="@style/exploreItemBg"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_game"
+                    style="@style/exploreItemImage"
+                    android:src="@drawable/ic_game" />
+
+                <TextView
+                    android:id="@+id/text_game"
+                    style="@style/exploreItemTextView"
+                    android:layout_toRightOf="@id/img_game"
+                    android:text="@string/game" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r_palmplay"
+                style="@style/exploreItemBg">
+
+                <ImageView
+                    android:id="@+id/img_palmplay"
+                    style="@style/exploreItemImage"
+                    android:src="@drawable/ic_explore_palmplay" />
+
+                <TextView
+                    android:id="@+id/text_palmplay"
+                    style="@style/exploreItemTextView"
+                    android:layout_toRightOf="@+id/img_palmplay"
+                    android:text="@string/palmplay" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r_account_center"
+                style="@style/exploreItemBg">
+
+                <ImageView
+                    android:id="@+id/img_account_center"
+                    style="@style/exploreItemImage"
+                    android:src="@drawable/ic_recharge" />
+
+                <TextView
+                    android:id="@+id/text_account_center"
+                    style="@style/exploreItemTextView"
+                    android:layout_toRightOf="@id/img_account_center"
+                    android:text="@string/palmcoin_wallet" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="18dp"
+                    android:gravity="top|right|center">
+
+                    <TextView
+                        android:id="@+id/tv_coin_change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/reddot"
+                        android:gravity="center"
+                        android:minWidth="20.0dip"
+                        android:paddingLeft="6.0dip"
+                        android:paddingRight="6.0dip"
+                        android:text="@string/check_update_new"
+                        android:textColor="@color/white"
+                        android:textSize="10.0dip"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r_mobile_tou_up"
+                style="@style/exploreItemBg"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_mobile_tou_up"
+                    style="@style/exploreItemImage"
+                    android:src="@drawable/icon_mobile_top_up" />
+
+                <TextView
+                    android:id="@+id/tv_mobile_tou_up"
+                    style="@style/exploreItemTextView"
+                    android:layout_toRightOf="@id/img_mobile_tou_up"
+                    android:text="@string/mobile_top_up" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r_betway"
+                style="@style/exploreItemBg"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_betway"
+                    style="@style/exploreItemImage"
+                    android:src="@drawable/icon_explore_betway" />
+
+                <TextView
+                    android:id="@+id/tv_betway"
+                    style="@style/exploreItemTextView"
+                    android:layout_toRightOf="@id/img_betway"
+                    android:text="@string/betway" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r_funclub"
+                style="@style/exploreItemBg"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/img_more"
+                    style="@style/exploreItemImage" />
+
+                <TextView
+                    android:id="@+id/text_more"
+                    style="@style/exploreItemTextView"
+                    android:layout_toRightOf="@id/img_more"
+                    android:text="@string/funclub" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

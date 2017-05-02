@@ -1,0 +1,7 @@
+<resources>
+  <string name="call_mute_text">كتم الصوت</string>
+  <string name="call_audio">مكبر الصوت</string>
+  <string name="call_decline_text">قطع المكالمة</string>
+  <string name="peer_refuse_to_answer">تم رفض المكالمة من المستخدم</string>
+  <string name="call_ended">تم إنهاء المكالمة</string>
+</resources>

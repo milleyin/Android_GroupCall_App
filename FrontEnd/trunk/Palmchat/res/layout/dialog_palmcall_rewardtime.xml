@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/palmcall_rewardprompt"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/palmcall_reward"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tv_reward_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/call_reward_time"
+            android:gravity="center"
+            android:textColor="@color/text_level_1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="@dimen/accountdetails_follow_text_size"
+            android:layout_marginBottom="@dimen/palmcall_clearance"
+            />
+
+        <TextView
+            android:id="@+id/tv_rewardtime_ok"
+            android:layout_width="120dp"
+            android:layout_height="42dp"
+            android:background="@drawable/btn_palmcall_detail"
+            android:text="OK"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/accountdetails_follow_text_size"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

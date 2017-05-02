@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_login_bg"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_back_title_more" />
+
+        <LinearLayout
+            android:id="@id/setting_traffic_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/content_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_fouse_selector"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:maxLength="250"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:singleLine="false" />
+        </LinearLayout>
+
+        <Button
+            android:id="@id/ok_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_hight_large_selector"
+            android:text="@string/confirm"
+            android:textColor="@color/color_btn" />
+    </LinearLayout>
+
+</LinearLayout>

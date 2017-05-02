@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <layer-list xmlns:android="http://schemas.android.com/apk/res/android">  
+  <item android:id="@android:id/background">  
+    <clip>  
+     <shape>  
+         <corners android:radius="15dip" />  
+          <gradient android:startColor="#00b7ee" android:endColor="#0075a9" android:angle="270" android:centerY="0.75"/>  
+        </shape>  
+        </clip>  
+   </item>  
+    <item android:id="@android:id/secondaryProgress">  
+       <clip>  
+         <shape>  
+               <corners android:radius="15dip" />  
+               <gradient android:startColor="#00b7ee" android:endColor="#0075a9" android:angle="270" android:centerY="0.75"/>  
+            </shape>  
+       </clip>  
+   </item>  
+      
+    <item android:id="@android:id/progress">  
+       <clip>  
+          <shape>  
+                <gradient android:startColor="#00b7ee" android:endColor="#0075a9" android:angle="270" android:centerY="0.25"/>  
+                <corners android:radius="15dip"/>  
+           </shape>  
+        </clip>  
+    </item>  
+</layer-list> -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >  
+
+  <item  
+   android:id="@android:id/background" >
+     <shape>
+     <corners android:radius="50dip" />
+     <solid android:color="@color/transparent"/>  
+      <!-- <padding android:bottom="3dip" android:left="3dip" android:right="3dip" android:top="3dip" /> -->
+     </shape>
+      </item>
+
+ <item  
+     android:id="@android:id/progress">  
+      <clip  
+          android:clipOrientation="horizontal"  
+       android:drawable="@drawable/loadingbar_s_2"  
+       android:gravity="left" >  
+      </clip>  
+    </item>
+    </layer-list>

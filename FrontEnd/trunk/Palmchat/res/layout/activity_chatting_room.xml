@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@id/title_chats"
+            layout="@layout/head_back_title_more" />
+
+        <com.afmobi.palmchat.ui.activity.chattingroom.widget.XListView
+            android:id="@+id/listview_chatting_room"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/uilist"
+            android:background="@color/transparent">
+        </com.afmobi.palmchat.ui.activity.chattingroom.widget.XListView>
+
+        <TextView
+            android:id="@id/listview_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

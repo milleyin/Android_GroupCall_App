@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_back" >
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/head_back_title_more" />
+
+        <RelativeLayout
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_layout"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/search_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:hint="@string/search_hint"
+                android:inputType="text"
+                android:singleLine="true"
+                android:drawablePadding="5dp"
+                android:paddingRight="38dp"
+                android:drawableBottom="@drawable/bottom_line"
+                android:drawableLeft="@drawable/ic_searchbar_grey"
+                android:textColor="@color/text_level_1" />
+
+            <ImageView
+                android:id="@+id/friend_delete_search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/search_cancel"
+                android:visibility="gone" >
+            </ImageView>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/s_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_bar"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:transcriptMode="disabled" />
+    </RelativeLayout>
+
+</RelativeLayout>

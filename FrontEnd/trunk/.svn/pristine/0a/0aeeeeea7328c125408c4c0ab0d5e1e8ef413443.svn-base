@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/broadcast_trending_headerview_img_width_size"
+    android:layout_height="wrap_content" >
+    
+    <!-- 照片 -->
+    <com.afmobi.palmchat.ui.customview.RectImageView
+        android:id="@+id/broadcast_trending_hottags_img_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:background="@drawable/store_emoji_default"/>
+    
+    <!-- 照片名-->
+    <TextView
+        android:id="@+id/broadcast_trending_hottags_name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/broadcast_trending_hottags_img_id"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/broadcast_trending_headerview_imagename_margintop_size"
+        android:paddingLeft="@dimen/broadcast_trending_headerview_imagename_paddingleft_size"
+        android:textSize="@dimen/broadcast_trending_headerview_imagename_size"
+        android:textColor="@color/broadcast_trending_242633"/>
+
+</RelativeLayout>

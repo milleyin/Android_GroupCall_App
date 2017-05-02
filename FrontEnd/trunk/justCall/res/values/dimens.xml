@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--palmcall-->
+    <dimen name="palmcall_talking_user_avatar_with">141dp</dimen>
+    <dimen name="palmcall_talking_user_avatar_margintop">72dp</dimen>
+    <dimen name="palmcall_username_margintop_size">12dp</dimen>
+    <dimen name="palmcall_diaview_ripp_width_size">232dp</dimen>
+    <dimen name="palmcall_ripple_margintop_size">26.5dp</dimen>
+    <dimen name="palmcall_button_text_size">12sp</dimen>
+    <dimen name="palmcall_decline_text_margintop_size">8dp</dimen>
+    <dimen name="palmcall_sub_operation_marginbottom_size">40dp</dimen>"
+    <dimen name="palmcall_extrainto_marginbottom_size">150dp</dimen>
+    <dimen name="palmcall_two_btnlayout_marginleftright_size">68dp</dimen>
+    <dimen name="palmcall_avator_circle_margin">2dp</dimen>
+    <dimen name="palmcall_toast_bottom_margin">150dp</dimen>
+</resources>

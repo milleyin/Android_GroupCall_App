@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/emojj_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+     	>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/viewpager_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+              	android:background="@color/white" >
+              <!-- 	   android:minHeight="135dp" -->
+
+                <com.afmobi.palmchat.ui.customview.CustomViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" >
+                </com.afmobi.palmchat.ui.customview.CustomViewPager>
+
+                <RelativeLayout
+                    android:id="@+id/r_download"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:id="@+id/r_progress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:visibility="gone" >
+
+                        <ProgressBar
+                            android:id="@+id/progress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="60dp"
+                            android:layout_height="6dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/loadingbar_s_1"
+                            android:max="100"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/store_list_progress"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/text_progress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/progress"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/update"
+                            android:textColor="@color/store_green"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                     <LinearLayout
+                        android:id="@+id/linear_btn_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical" >
+                        
+                          <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/download_sticker"
+                            android:textColor="@color/text_level_1"
+                            android:textSize="14sp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="20dp" />
+                    
+                    <FrameLayout
+                        android:id="@+id/linear_btn"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/ui_download_button"
+                        android:enabled="false"
+                        android:layout_gravity="center_horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/update"
+                            android:textColor="@color/store_green"
+                            android:textSize="20sp" />
+                    </FrameLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/page_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                 >
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/pop_msg_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@+id/pop_bar1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/chatting_emotion_bar_selector" >
+
+            <ImageView
+                android:id="@+id/pop_img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/face_normal" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/pop_bar2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/chatting_emotion_bar_selector" >
+
+            <ImageView
+                android:id="@+id/pop_img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/empty"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/scroll_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chatting_emotion_bar_selector" >
+
+        <HorizontalScrollView
+            android:id="@+id/gif_hscrollview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@id/chatting_emotion_type_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:id="@+id/frame_chatting_emotion_sun"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/chatting_emotion_bar_selector" >
+
+                    <ImageView
+                        android:id="@id/chatting_emotion_sun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/empty"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:src="@drawable/face_normal" /> <!--face_pressed-->
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frame_chatting_emotion_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/chatting_emotion_bar_selector"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/chatting_emotion_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/empty"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frame_chatting_emotion_face"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/chatting_emotion_bar_selector"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@id/chatting_emotion_face"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/empty"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"/>
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@id/chatting_emotion_fire"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/chatting_emotion_bar_selector"
+                    android:contentDescription="@string/empty"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@id/chatting_emotion_black"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/chatting_emotion_bar_selector"
+                    android:contentDescription="@string/empty"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:id="@+id/framelayout_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="@drawable/chatting_emotion_bar_selector" >
+
+            <ImageView
+                android:id="@+id/gif_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/empty"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/icon_sticker_add" />
+            <ImageView
+                android:id="@+id/new_store"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="-6dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_toRightOf="@+id/gif_add"
+                android:src="@drawable/reddot"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

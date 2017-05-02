@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/broadcast_selection_region"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/brd_divider_line"
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:background="@color/predict_d10"
+            android:visibility="visible" />
+        <RelativeLayout
+            android:id="@+id/region_textview_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FF474748"
+            android:visibility="visible"
+            android:layout_below="@+id/brd_divider_line">
+
+            <TextView
+                android:id="@+id/region_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/broadcast_region"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

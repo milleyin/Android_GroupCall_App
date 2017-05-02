@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="home_left_g1">
+        <item>@string/home</item>
+        <item>@string/notifications</item>
+    </string-array>
+    <string-array name="home_right_g1">
+        <item>@string/home_left_item_public_account</item>
+        <item>@string/group</item>
+        <item>@string/friends</item>
+    </string-array>
+    
+    <string-array name="forward_list">
+        <item>@string/group</item>
+        <item>@string/friends</item>
+    </string-array>
+    
+   <!-- <string-array name="left_home_items">
+        <item>@string/home_left_item1</item>
+        <item>@string/home_left_item2</item>
+        <item>@string/home_left_item5</item>
+        <item>@string/option_broadcast</item>
+        <item>@string/home_left_item6</item>
+        <item>@string/home_left_item_miss_nigeria</item>
+        <item>@string/home_left_item3</item>
+        <item>@string/home_left_item7</item>
+        <item>@string/home_left_item4</item>
+        <item>@string/home_left_item_public_account</item>
+        <item>@string/store</item>
+        <item>@string/account_center</item>
+        <item>@string/game</item>
+        <item>@string/home_left_item8</item>
+        <item>@string/home_left_item9</item>
+    </string-array>-->
+    <string-array name="setting_about_items">
+       <!--  <item>@string/rate_app</item> -->
+      <!--   <item>@string/feedback</item> -->
+         <item>@string/updates</item>
+         <item>@string/introduce</item>
+        <item>@string/help</item>
+         <!--<item>@string/terms_policies</item>-->
+        <!-- <item>@string/introduce</item> -->
+    </string-array>
+    
+      
+    <string-array name="setting_about_items2">
+           <item>@string/rate_app</item>
+        <!-- <item>@string/feedback</item> -->
+       <!--   <item>@string/updates</item> -->
+         <item>@string/introduce</item>
+        <item>@string/help</item>
+        <!-- <item>@string/terms_policies</item>-->
+        <!-- <item>@string/introduce</item> -->
+    </string-array>
+    
+    <string-array name="hobby">
+        <item>@string/hobby_music</item>
+        <item>@string/hobby_sports</item>
+        <item>@string/hobby_dance</item>
+        <item>@string/chatting</item>
+        <item>@string/hobby_shopping</item>
+        <!-- <item>@string/hobby_go_to_church</item> -->
+        <item>@string/profile_others</item>
+    </string-array>
+    <string-array name="hobby_en">
+        <item>Music</item>
+        <item>Sports</item>
+        <item>Dance</item>
+        <item>Chatting</item>
+        <item>Shopping</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="profession">
+        <item>@string/profession_accountancy</item>
+        <item>@string/profession_administration</item>
+        <item>@string/profession_agriculture</item>
+        <item>@string/profession_charity</item>
+        <item>@string/profession_construction</item>
+        <item>@string/profession_customer_service</item>
+        <item>@string/profession_educations</item>
+        <item>@string/profession_electronics</item>
+        <item>@string/profession_engineering</item>
+        <item>@string/profession_government</item>
+        <item>@string/profession_graduate</item>
+        <item>@string/profession_health</item>
+        <item>@string/profession_human_resources</item>
+        <item>@string/profession_information_technology</item>
+        <item>@string/profession_legal</item>
+        <item>@string/profession_management</item>
+        <item>@string/profession_manufacturing</item>
+        <item>@string/profession_marketing</item>
+        <item>@string/profession_media</item>
+        <item>@string/profession_recruitment</item>
+        <item>@string/profession_retail</item>
+        <item>@string/profession_sales</item>
+        <item>@string/profession_science</item>
+        <item>@string/profession_student</item>
+        <item>@string/profession_telecommunications</item>
+        <item>@string/profession_transport</item>
+        <item>@string/profession_travel</item>
+        <item>@string/profession_work_from_home</item>
+    </string-array>
+    <string-array name="profession_en">
+        <item>Accountancy</item>
+        <item>Administration</item>
+        <item>Agriculture</item>
+        <item>Charity</item>
+        <item>Construction</item>
+        <item>Customer Service</item>
+        <item>Educations</item>
+        <item>Electronics</item>
+        <item>Engineering</item>
+        <item>Government</item>
+        <item>Graduate</item>
+        <item>Health</item>
+        <item>Human Resources</item>
+        <item>Information Technology</item>
+        <item>Legal</item>
+        <item>Management</item>
+        <item>Manufacturing</item>
+        <item>Marketing</item>
+        <item>Media</item>
+        <item>Recruitment</item>
+        <item>Retail</item>
+        <item>Sales</item>
+        <item>Science</item>
+        <item>Student</item>
+        <item>Telecommunications</item>
+        <item>Transport</item>
+        <item>Travel</item>
+        <item>Work From home</item>
+    </string-array>
+    
+    <string-array name="setting_text_myaccount">
+        <item>@string/af_id</item>
+        <item>@string/phone</item>
+        <item>@string/email</item>
+        <item>@string/secure_answer</item>
+    </string-array>
+    <string-array name="gender">
+        <item>@string/male</item>
+        <item>@string/female</item>
+    </string-array>
+    <string-array name="school">
+        <item>@string/school_it</item>
+        <item>@string/school_market</item>
+        <item>@string/school_teacher</item>
+    </string-array>
+    <string-array name="religion">
+        <item>@string/religion_christianity</item>
+        <item>@string/religion_islam</item>
+        <item>@string/profile_others</item>
+    </string-array>
+    <string-array name="religion_en">
+        <item>Christianity</item>
+        <item>Islam</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="chatting_options">
+        <item>@string/camera</item>
+        <item>@string/gallary</item>
+        <item>@string/voice</item>
+        <item>@string/friends</item>
+    </string-array>
+    <string-array name="chat_msg_op">
+        <item>@string/resend</item>
+        <item>@string/copy</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="chat_msg_op2">
+        <item>@string/resend</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="chat_forward_msg_op2">
+        <item>@string/resend</item>
+        <item>@string/forward</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="chat_msg_op3">
+        <item>@string/copy</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="chat_msg_op31">
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="chat_resend">
+        <item>@string/resend</item>
+    </string-array>
+
+     <string-array name="chatroom_msg_op">
+        <item>@string/resend</item>
+        <item>@string/copy</item>
+    </string-array>
+    <string-array name="chatroom_msg_op2">
+        <item>@string/resend</item>
+    </string-array>
+    <string-array name="chatroom_msg_op3">
+        <item>@string/copy</item>
+    </string-array>
+    
+    
+    <!-- forward  item -->
+      <string-array name="chat_msg_op_f">
+          <item>@string/resend</item>
+         <item>@string/forward</item>
+        <item>@string/copy</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="chat_msg_op2_f">
+        <item>@string/resend</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="chat_forward_msg_op2_f">
+        <item>@string/resend</item>
+        <item>@string/forward</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="chat_msg_op3_f">
+          <item>@string/forward</item>
+        <item>@string/copy</item>
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="chat_msg_op31_f">
+         <item>@string/forward</item>
+        <item>@string/delete</item>
+    </string-array>
+    
+     <string-array name="chat_msg_op32_f">
+        <item>@string/delete</item>
+    </string-array>
+
+     <string-array name="chatroom_msg_op_f">
+          <item>@string/forward</item>
+        <item>@string/resend</item>
+        <item>@string/copy</item>
+    </string-array>
+   
+     
+      <string-array name="relations">
+        <item>@string/single</item>
+        <item>@string/in_relationship</item>
+        <item>@string/married</item>
+        <item>@string/engaged</item>
+        <item>@string/gay</item>
+        <item>@string/widowed</item>
+        <item>@string/divorced</item>
+        <item>@string/not_public</item>
+        <item>@string/Trouble</item>
+    </string-array>
+
+    <string-array name="carrier">
+        <item>Etisalat</item>
+        <item>MTN</item>
+        <item>Airtel</item>
+        <item>Glo</item>
+    </string-array>
+    
+      <string-array name="amount">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+    
+    <array name="language_setting">
+        <item>@string/app_lang_sys</item>
+        <item>@string/app_zh_CN</item>
+        <item>@string/app_en</item>
+        <item>@string/app_es</item>
+        <item>@string/app_pt</item>
+        <item>@string/app_ar</item>
+        <item>@string/app_ha</item>
+        <item>@string/app_fr</item>
+        <item>@string/app_sw</item>
+        <item>@string/app_am</item>
+         <item>@string/app_fa_IR</item>
+        <item>@string/app_hi_IN</item>
+        <item>@string/app_ur_PK</item>
+        <item>@string/app_th</item>
+    </array>
+    
+      <string-array name="array_logout">
+        <item>@string/close_palmchat</item>
+        <item>@string/log_out</item>
+        </string-array>
+ 
+    
+    <string-array name="array_sms_recharge">
+        <item>@string/predict_win_m_100</item>
+        <item>@string/predict_win_m_300</item>
+        <item>@string/predict_win_m_500</item>
+    </string-array>
+
+</resources>

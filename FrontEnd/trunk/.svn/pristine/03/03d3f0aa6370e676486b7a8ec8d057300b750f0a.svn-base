@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <com.afmobi.palmchat.ui.customview.ImageZoomView
+        android:id="@+id/zoom_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" >
+    </com.afmobi.palmchat.ui.customview.ImageZoomView>
+
+    <com.afmobi.palmchat.ui.customview.MyImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   
+        android:layout_gravity="center"
+        
+         />
+     <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.Holo.ProgressBar"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+	<RelativeLayout 
+	      android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_marginBottom="20dp"
+	    > 
+	    <TextView
+	        android:id="@+id/progress_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_gravity="center" 
+	        android:background="@drawable/dialog_progress"
+	        android:text="asdasdasd"
+	        
+	        android:padding="10dp" 
+	        android:textColor="@color/white"
+	        android:visibility="gone" />
+     </RelativeLayout>
+</FrameLayout>

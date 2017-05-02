@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/phone_number_lin"
+        style="@style/BaseBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@id/title_layout"
+            layout="@layout/head_back_title_more" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="left"
+                    android:text="@string/confirm_country_code"
+                    android:textColor="@color/log_gray"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@id/select_country"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/input_lock"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@id/country_code"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="+86"
+                                android:textColor="@color/black"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@id/country_text"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:textColor="@color/log_gray" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/cty_code"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/text_fouse_selector"
+                                android:gravity="center"
+                                android:textColor="@color/log_gray" />
+
+                            <EditText
+                                android:id="@id/login_user"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="12dp"
+                                android:background="@drawable/text_fouse_selector"
+                                android:digits="0123456789"
+                                android:drawablePadding="3dp"
+                                android:gravity="center_vertical|left"
+                                android:hint="@string/login_phone_tips1"
+                                android:inputType="phone"
+                                android:maxLength="15"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:textColorHint="@color/color_edittext_hint" >
+                            </EditText>
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@id/login_password"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/text_fouse_selector"
+                            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:drawablePadding="3dp"
+                            android:hint="@string/password_label"
+                            android:inputType="textPassword"
+                            android:maxLength="16"
+                            android:paddingLeft="8dp"
+                            android:textColorHint="@color/color_edittext_hint" />
+
+                        <Button
+                            android:id="@id/login_button"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/long_button_height"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/login_button_selector"
+                            android:text="@string/login"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/forget_pwd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/forget_password"
+                            android:textColor="@color/invite_friend_phonenum"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/sign_up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/sign_up"
+                            android:textColor="@color/invite_friend_phonenum"
+                            android:textSize="15sp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/layout_login_facebook"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/long_button_height"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_predict_win_bg_selector"
+                            android:drawableLeft="@drawable/logo_fb_46x46"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="@string/log_in_with"
+                            android:textColor="@color/fb_login_text_color"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="18dp"
+                        android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/more"
+                        android:textColor="@color/invite_friend_phonenum"
+                        android:layout_marginBottom="15dp"
+                        android:visibility="gone"/>
+                        <ImageView
+                            android:id="@+id/help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:background="@drawable/btn_help_selector" />
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:gravity="bottom"
+                    android:visibility="gone" >
+
+                    <include
+                        android:id="@+id/login_foot"
+                        layout="@layout/item_login_foot" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

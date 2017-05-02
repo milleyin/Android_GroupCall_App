@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SystemBarTint_Style"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/title_layout"
+        layout="@layout/head_back_title_more" />
+
+    <ScrollView
+        style="@style/BaseBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/headerview_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <!-- 头像 -->
+                <ImageView
+                    android:id="@+id/accountdetails_head_img"
+                    android:layout_width="@dimen/accountdetails_headimg_height_size"
+                    android:layout_height="@dimen/accountdetails_headimg_height_size"
+                    android:layout_marginLeft="@dimen/accountdetails_icon_marginlefet_size"
+                    android:layout_marginTop="@dimen/accountdetails_divide_margintop_size"
+                    android:contentDescription="@null" />
+
+                <!-- 图标 -->
+                <ImageView
+                    android:id="@+id/accountdetails_mark_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/accountdetails_head_img"
+                    android:layout_marginLeft="@dimen/accountdetails_icon_marginlefet_size"
+                    android:layout_marginTop="@dimen/accountdetails_icon_margintop_size"
+                    android:layout_toRightOf="@id/accountdetails_head_img"
+                    android:background="@drawable/icon_chat_list_public_account_messages"
+                    android:contentDescription="@null" />
+
+                <!-- name -->
+                <TextView
+                    android:id="@+id/accountdetails_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/accountdetails_mark_img"
+                    android:layout_marginLeft="@dimen/accountdetails_name_marginlefet_size"
+                    android:layout_marginTop="@dimen/accountdetails_name_margintop_size"
+                    android:layout_toRightOf="@id/accountdetails_mark_img"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/my_points_number"
+                    android:textSize="@dimen/accountdetails_name_text_size" />
+
+                <!--Palm ID: -->
+                <TextView
+                    android:id="@+id/accountdetails_id_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/accountdetails_mark_img"
+                    android:layout_below="@id/accountdetails_mark_img"
+                    android:layout_marginLeft="@dimen/accountdetails_id_marginleft_size"
+                    android:layout_marginTop="@dimen/accountdetails_id_margintop_size"
+                    android:text="@string/public_accountdetails_palmid"
+                    android:textColor="@color/text_level_2"
+                    android:textSize="@dimen/accountdetails_id_text_size" />
+
+                <!--Palm ID: -->
+                <TextView
+                    android:id="@+id/accountdetails_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/accountdetails_id_mark"
+                    android:layout_toRightOf="@id/accountdetails_id_mark"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/text_level_2"
+                    android:textSize="@dimen/accountdetails_id_text_size" />
+
+                <!-- like mark -->
+                <ImageView
+                    android:id="@+id/accountdetails_like_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/accountdetails_mark_img"
+                    android:layout_below="@id/accountdetails_id_mark"
+                    android:layout_marginLeft="@dimen/accountdetails_id_marginleft_size"
+                    android:layout_marginTop="@dimen/accountdetails_likemark_margintop_size"
+                    android:background="@drawable/icn_heart"
+                    android:contentDescription="@null" />
+
+                <!-- like count -->
+                <TextView
+                    android:id="@+id/accountdetails_like_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/accountdetails_like_mark"
+                    android:layout_marginLeft="@dimen/accountdetails_name_marginlefet_size"
+                    android:layout_marginTop="@dimen/accountdetails_likecount_margintop_size"
+                    android:layout_toRightOf="@id/accountdetails_like_mark"
+                    android:textColor="@color/my_points_number"
+                    android:textSize="@dimen/accountdetails_id_text_size" />
+
+                <!-- 分割线1 -->
+                <View
+                    android:id="@+id/accountdetails_divide_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/accountdetails_divide_height_size"
+                    android:layout_below="@id/accountdetails_head_img"
+                    android:layout_marginLeft="@dimen/accountdetails_icon_marginlefet_size"
+                    android:layout_marginRight="@dimen/accountdetails_icon_marginlefet_size"
+                    android:layout_marginTop="@dimen/accountdetails_divide_margintop_size"
+                    android:background="@color/color_light_gray" />
+
+            </RelativeLayout>
+
+
+            <!-- Intro  -->
+            <TextView
+                android:id="@+id/accountdetails_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headerview_layout"
+                android:background="@drawable/account_details_item_bottom"
+                android:lineSpacingExtra="@dimen/accountdetails_follow_textspacing_size"
+                android:paddingBottom="@dimen/accountdetails_intro_paddingbottom_size"
+                android:paddingLeft="@dimen/accountdetails_icon_marginlefet_size"
+                android:paddingRight="@dimen/accountdetails_icon_marginlefet_size"
+                android:paddingTop="@dimen/accountdetails_intro_paddingtop_size"
+                android:textColor="@color/broadcast_trending_868892"
+                android:textSize="@dimen/accountdetails_id_text_size" />
+
+            <View
+                android:id="@+id/accountdetails_divide_two"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/accountdetails_intro"
+                android:layout_marginTop="@dimen/accountdetails_intro_margintop_size"
+                android:background="@color/color_light_gray" />
+
+            <LinearLayout
+                android:id="@+id/accountdetails_viewmessage_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/accountdetails_viewhistory_height_size"
+                android:layout_below="@id/accountdetails_divide_two"
+                android:background="@drawable/home_list"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- viewhistory -->
+                <TextView
+                    android:id="@+id/accountdetails_viewmessage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/accountdetails_icon_marginlefet_size"
+                    android:paddingRight="@dimen/accountdetails_icon_marginlefet_size"
+                    android:text="@string/view_history"
+                    android:textColor="@color/my_points_number" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/accountdetails_arrow_marginright_size"
+                    android:background="@drawable/arrow_right_light"
+                    android:contentDescription="@null" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/accountdetails_divide_three"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/accountdetails_viewmessage_layout"
+                android:background="@color/color_light_gray" />
+
+            <LinearLayout
+                android:id="@+id/accountdetails_broadhistory_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/accountdetails_viewhistory_height_size"
+                android:layout_below="@id/accountdetails_divide_three"
+                android:background="@drawable/home_list"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <!-- broast history -->
+                <TextView
+                    android:id="@+id/accountdetails_broadcasthistory"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/accountdetails_icon_marginlefet_size"
+                    android:paddingRight="@dimen/accountdetails_icon_marginlefet_size"
+                    android:text="@string/public_accountdetails_broadcasthistory"
+                    android:textColor="@color/my_points_number" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginRight="@dimen/accountdetails_arrow_marginright_size"
+                    android:background="@drawable/arrow_right_light"
+                    android:clickable="false"
+                    android:contentDescription="@null"
+                    android:focusable="false" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/accountdetails_divide_four"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/accountdetails_broadhistory_layout"
+                android:background="@color/color_light_gray" />
+
+            <!-- follow -->
+            <Button
+                android:id="@+id/accountdetails_follow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/accountdetails_viewhistory_height_size"
+                android:layout_below="@id/accountdetails_divide_four"
+                android:layout_marginBottom="@dimen/accountdetails_follow_margintop_size"
+                android:layout_marginLeft="@dimen/accountdetails_icon_marginlefet_size"
+                android:layout_marginRight="@dimen/accountdetails_icon_marginlefet_size"
+                android:layout_marginTop="@dimen/accountdetails_follow_margintop_size"
+                android:background="@drawable/login_button_selector"
+                android:textColor="@color/chatting_room_ater_me"
+                android:textSize="@dimen/accountdetails_follow_text_size" />
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

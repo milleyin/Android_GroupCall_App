@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The CalendarView style. -->
+    <attr name="calendarViewStyle" format="reference" />
+
+    <declare-styleable name="STCalendarView">
+        <!-- The first day of week according to {@link java.util.Calendar}. -->
+        <attr name="st_firstDayOfWeek" format="integer" />
+        <!-- Whether do show week numbers. -->
+        <attr name="st_showWeekNumber" format="boolean" />
+        <!-- The minimal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="st_minDate" format="string" />
+        <!-- The minimal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="st_maxDate" format="string" />
+        <!-- The number of weeks to be shown. -->
+        <attr name="st_shownWeekCount" format="integer"/>
+        <!-- The background color for the selected week. -->
+        <attr name="st_selectedWeekBackgroundColor" format="color|reference" />
+        <!-- The color for the dates of the focused month. -->
+        <attr name="st_focusedMonthDateColor" format="color|reference" />
+        <!-- The color for the dates of an unfocused month. -->
+        <attr name="st_unfocusedMonthDateColor" format="color|reference" />
+        <!-- The color for the week numbers. -->
+        <attr name="st_weekNumberColor" format="color|reference" />
+        <!-- The color for the separator line between weeks. -->
+        <attr name="st_weekSeparatorLineColor" format="color|reference" />
+        <!-- Drawable for the vertical bar shown at the beginning and at the end of the selected date. -->
+        <attr name="st_selectedDateVerticalBar" format="reference" />
+        <!-- The text appearance for the week day abbreviation of the calendar header. -->
+        <attr name="st_weekDayTextAppearance" format="reference" />
+        <!-- The text appearance for the calendar dates. -->
+        <attr name="st_dateTextAppearance" format="reference" />
+
+        <attr name="st_dividerHorizontal" format="reference|color" />
+    </declare-styleable>
+
+    <!-- Framework styleables are not public. -->
+    <declare-styleable name="TextAppearanceCompatStyleable">
+        <attr name="android:textSize" />
+    </declare-styleable>
+    
+    
+    <!-- Don't touch this -->
+    <attr name="numberPickerStyle" format="reference" />
+
+    <declare-styleable name="STNumberPicker">
+        <!-- @hide Color for the solid color background if such for optimized rendering. -->
+        <attr name="solidColor" format="color|reference" />
+        <!-- @hide The divider for making the selection area. -->
+        <attr name="selectionDivider" format="reference" />
+        <!-- @hide The height of the selection divider. -->
+        <attr name="selectionDividerHeight" format="dimension" />
+        <!-- @hide The distance between the two selection dividers. -->
+        <attr name="selectionDividersDistance" format="dimension" />
+        <!-- @hide The min height of the NumberPicker. -->
+        <attr name="internalMinHeight" format="dimension" />
+        <!-- @hide The max height of the NumberPicker. -->
+        <attr name="internalMaxHeight" format="dimension" />
+        <!-- @hide The min width of the NumberPicker. -->
+        <attr name="internalMinWidth" format="dimension" />
+        <!-- @hide The max width of the NumberPicker. -->
+        <attr name="internalMaxWidth" format="dimension" />
+        <!-- @hide The layout of the number picker. -->
+        <attr name="internalLayout" format="reference" />
+        <!-- @hide The drawable for pressed virtual (increment/decrement) buttons. -->
+        <attr name="virtualButtonPressedDrawable" format="reference"/>
+    </declare-styleable>
+
+    <!-- DatePicker -->
+    <!-- The DatePicker style. -->
+    <attr name="datePickerStyle" format="reference" />
+
+    <declare-styleable name="STDatePicker">
+        <!-- The first year (inclusive), for example "1940".
+             {@deprecated Use minDate instead.}
+         -->
+        <attr name="dp_startYear" format="integer" />
+        <!-- The last year (inclusive), for example "2010".
+             {@deprecated Use maxDate instead.}
+         -->
+        <attr name="dp_endYear" format="integer" />
+        <!-- Whether the spinners are shown. -->
+        <attr name="dp_spinnersShown" format="boolean" />
+        <!-- Whether the calendar view is shown. -->
+        <attr name="dp_calendarViewShown" format="boolean" />
+        <!-- The minimal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="dp_minDate" format="string" />
+        <!-- The maximal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="dp_maxDate" format="string" />
+        <!-- @hide The layout of the date picker. -->
+        <attr name="dp_internalLayout" format="reference"  />
+    </declare-styleable>
+    
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundviewatt="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/date_picker_dialog_round"
+        >
+
+        <com.afmobi.palmchat.ui.customview.RoundImageView
+            android:id="@+id/iv_detail_call_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"
+            android:layout_above="@+id/ll_palmcall_tv"
+            roundviewatt:borderRadius="9dp"
+            roundviewatt:type="round_top_arc"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/ll_palmcall_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/palmcall_top_18"
+                android:gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_detail_call_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fhkjsf"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/c_pr_result"
+                    android:textSize="@dimen/palmcall_detail_20sp"
+                    android:singleLine="true"
+                    android:maxEms="6"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_detail_call_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_palmcall_popup_age_female"
+                    android:drawableLeft="@drawable/icon_sexage_girl"
+                    android:text="17"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/guide_text_color"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:textSize="@dimen/d_head_left_margin"
+                    android:layout_toRightOf="@+id/tv_detail_call_name"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_detail_call_frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/d_pr_title_small"
+                android:textColor="@color/predict_9af"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/call_ai_times"
+                android:layout_marginTop="@dimen/palmcall_top_8"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_detail_call"
+                android:layout_width="@dimen/palmcall_width_120"
+                android:layout_height="@dimen/palmcall_height_42"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:background="@drawable/btn_palmcall_detail"
+                android:layout_marginTop="@dimen/palmcall_top_18"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_detail_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_ic_palmcall_detail_select"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/palmcall_top_12"
+                android:layout_marginBottom="@dimen/palmcall_top_12"
+                >
+                <TextView
+                    android:id="@+id/tv_detail_surplus_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_level_2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="@dimen/d_broadcast_nameszie_share"
+                    android:text="@string/call_residual_time"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

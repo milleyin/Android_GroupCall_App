@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    >
+    <RelativeLayout 
+    android:id="@id/search_layout"
+    android:clickable="false"
+    android:focusable="false"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="30dp"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@id/search_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_centerVertical="true"
+        android:hint="@string/search_hint"
+        android:inputType="text"
+        android:singleLine="true"
+        android:drawablePadding="5dp"
+        android:drawableBottom="@drawable/bottom_line"
+        android:drawableLeft="@drawable/ic_searchbar_grey"
+        android:textColor="@color/text_level_1" />
+    <Button
+        android:id="@id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:contentDescription="@string/empty" />
+    
+   
+</RelativeLayout>
+    
+     <include layout="@layout/include_offline" android:visibility="gone"/>
+</LinearLayout>

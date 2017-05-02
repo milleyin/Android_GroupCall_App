@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/palmcall_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:soundEffectsEnabled="false">
+
+	<!--背景-->
+   <com.afmobi.palmchat.ui.customview.blurredview.BlurImageView
+        android:id="@+id/palmcall_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/Voice_call"
+        android:scaleType="fitXY"
+        android:soundEffectsEnabled="false"
+	   	android:layout_centerInParent="true"
+	    app:heightofwith ="height"/>
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/color_d02f3243"/>
+
+	<!--用户信息显示部分-->
+    <RelativeLayout
+        android:id="@+id/call_operation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/call_video_background_color"
+        android:soundEffectsEnabled="false">
+
+		<RelativeLayout
+			android:id="@+id/call_user"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:soundEffectsEnabled="false">
+
+			<!--水波纹效果-->
+			<com.afmobi.palmchat.ui.customview.RippleBackground
+				android:id="@+id/palmcall_makecall_effect"
+				android:layout_width="@dimen/palmcall_diaview_ripp_width_size"
+				android:layout_height="@dimen/palmcall_diaview_ripp_width_size"
+				android:layout_marginTop="@dimen/palmcall_ripple_margintop_size"
+				android:layout_centerHorizontal="true"
+				app:rb_strokeWidth = "1dp"
+				app:rb_color="@color/color_99ffffff"
+				app:rb_radius="20dp"
+				app:rb_rippleAmount="6"
+				app:rb_duration="3000"
+				app:rb_scale="6">
+
+				<!--头像-->
+				<ImageView
+					android:id = "@+id/palmcall_opposite_avatar"
+					android:layout_marginTop="@dimen/palmcall_talking_user_avatar_margintop"
+					android:layout_width="@dimen/palmcall_talking_user_avatar_with"
+					android:layout_height="@dimen/palmcall_talking_user_avatar_with"
+					android:layout_centerInParent="true"
+					android:background="@drawable/head_male2"
+					/>
+			</com.afmobi.palmchat.ui.customview.RippleBackground>
+
+			<!--呼叫显示姓名-->
+			<com.justalk.cloud.juscall.FontFitTextView
+				android:id="@+id/palmcall_name"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="-30dp"
+				android:layout_below="@id/palmcall_makecall_effect"
+				android:gravity="center"
+				android:paddingLeft="20dp"
+				android:paddingRight="20dp"
+				android:singleLine="true"
+				android:textColor="@color/white"
+				android:textSize="24sp"
+				android:text="userName"
+				android:textStyle="bold" />
+
+			<RelativeLayout
+				android:id="@+id/call_state_layout"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/palmcall_name"
+				android:layout_centerHorizontal="true" >
+
+				<!--Chronometr 一个简单的定时器-->
+				<Chronometer
+					android:id="@+id/call_state"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:gravity="center_vertical"
+					android:textColor="@color/predict_e6"
+					android:textSize="16sp" />
+			</RelativeLayout>
+			
+		</RelativeLayout>
+
+		<!--附加信息提示-->
+		<TextView
+			android:id="@+id/call_extrainfo_id"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:singleLine="true"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="@dimen/palmcall_extrainto_marginbottom_size"
+			android:textColor="@color/color_b2b2b2"
+			android:textSize="@dimen/palmcall_button_text_size"
+			android:visibility="gone"
+			android:text="@string/call_lefttime_tip"/>
+
+		<!--底部三个按钮布局-->
+		<RelativeLayout
+			android:id="@+id/call_sub_operation_threebtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:visibility="gone"
+			android:layout_marginBottom="@dimen/palmcall_sub_operation_marginbottom_size"
+			android:splitMotionEvents="false"
+			android:soundEffectsEnabled="false">
+
+			<RelativeLayout
+				android:id="@+id/call_hangup_layout_id"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentTop="true">
+
+				<!--挂断按钮-->
+				<ImageButton
+					android:id="@+id/call_hangup_id"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/call_decline_selector"/>
+
+				<!--挂断文字-->
+				<TextView
+					android:id="@+id/call_hangup_text_id"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/call_hangup_id"
+					android:layout_marginTop="@dimen/palmcall_decline_text_margintop_size"
+					android:text="@string/call_decline_text"
+					android:layout_centerHorizontal="true"
+					android:textColor="@color/color_b2b2b2"
+					android:textSize="@dimen/palmcall_button_text_size"/>
+			</RelativeLayout>
+
+
+			<RelativeLayout
+				android:id="@+id/call_mute_layout_id"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_toLeftOf="@id/call_hangup_layout_id"
+				android:layout_alignParentTop="true">
+
+				<!--麦克风控制按钮-->
+				<ImageButton
+					android:id="@+id/call_mute_id"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:background="@drawable/call_mute_selector"/>
+
+				<!--麦克风文字-->
+				<TextView
+					android:id="@+id/call_mute_text_id"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/call_mute_id"
+					android:textSize="@dimen/palmcall_button_text_size"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="@dimen/palmcall_decline_text_margintop_size"
+					android:textColor="@color/color_b2b2b2"
+					android:text="@string/call_mute_text"/>
+			</RelativeLayout>
+			
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_toRightOf="@id/call_hangup_layout_id"
+				android:layout_centerHorizontal="true">
+
+				<!--外放切换按钮-->
+				<ImageButton
+					android:id="@+id/call_auto_id"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentTop="true"
+					android:layout_centerHorizontal="true"
+					android:background="@drawable/call_auto_selector"/>
+
+				<TextView
+					android:id="@+id/call_auto_text_id"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/call_auto_id"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="@dimen/palmcall_decline_text_margintop_size"
+					android:textSize="@dimen/palmcall_button_text_size"
+					android:textColor="@color/color_b2b2b2"
+					android:text="@string/call_audio"/>
+			</RelativeLayout>
+		</RelativeLayout>
+
+		<!--底部两个按钮布局-->
+		<LinearLayout
+			android:id="@+id/call_sub_operation_twobtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="@dimen/palmcall_sub_operation_marginbottom_size"
+			android:soundEffectsEnabled="false"
+			android:orientation="horizontal"
+			android:splitMotionEvents="false"
+			android:visibility="visible">
+
+			<!--左边的按钮-->
+			<RelativeLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+
+				<ImageButton
+					android:id="@+id/call_twobtn_left_id"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentTop="true"
+					android:layout_centerHorizontal="true"
+					android:background="@drawable/call_decline_selector"/>
+
+				<TextView
+					android:id="@+id/call_twobtn_leftxt_id"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:layout_below="@id/call_twobtn_left_id"
+					android:layout_marginTop="@dimen/palmcall_decline_text_margintop_size"
+					android:textSize="@dimen/palmcall_button_text_size"
+					android:textColor="@color/color_b2b2b2"
+					android:text="@string/call_decline_text"/>
+			</RelativeLayout>
+
+			<!--右边的按钮-->
+			<RelativeLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+
+				<ImageButton
+					android:id="@+id/call_twobtn_right_id"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentTop="true"
+					android:layout_centerHorizontal="true"
+					android:background="@drawable/call_accept_selector"/>
+
+				<TextView
+					android:id="@+id/call_twobtn_rightxt_id"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:layout_below="@id/call_twobtn_right_id"
+					android:layout_marginTop="@dimen/palmcall_decline_text_margintop_size"
+					android:textSize="@dimen/palmcall_button_text_size"
+					android:textColor="@color/color_b2b2b2"
+					android:text="@string/call_accept"/>
+			</RelativeLayout>
+
+		</LinearLayout>
+
+	s</RelativeLayout>
+
+</RelativeLayout>

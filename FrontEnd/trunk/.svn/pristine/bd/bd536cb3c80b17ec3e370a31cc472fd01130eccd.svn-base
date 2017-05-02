@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/set_box" >
+        
+       <!--  <TextView
+        android:id="@+id/dialog_message_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingBottom="10dip"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="22sp" /> -->
+        
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/titlebg_misspalmchat_popupview" >
+            
+             
+             <ImageView
+                    android:id="@+id/title_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pinktitle_crown"
+                    android:contentDescription="@string/empty"
+                    android:layout_centerHorizontal="true" />
+             
+              <TextView
+                    android:id="@+id/title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/empty"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/title_icon"
+                    android:layout_centerInParent="true" 
+                    android:textSize="18sp"
+                    android:text="@string/congratulations" />
+            </RelativeLayout>
+        
+    
+    <TextView
+        android:id="@+id/dialog_message_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingBottom="10dip"
+        android:background="@color/white"
+        android:textColor="@color/log_gray"
+        android:textSize="16sp"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/congratulations_content" />
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" >
+
+        <Button
+            android:id="@+id/confim_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:textColor="@drawable/dialog_text_selector"
+            android:text="@string/ok"
+            android:gravity="center"
+             />
+    </LinearLayout>
+    
+    </LinearLayout>
+
+</LinearLayout>

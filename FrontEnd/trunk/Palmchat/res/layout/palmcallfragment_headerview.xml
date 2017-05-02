@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sendbroadcastshareto_height"
+        android:background="#ffffff"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_call_recharge_often"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/palmcall_surplus_minutes"
+            android:textColor="@color/broadcast_tags_868892"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_call_recharge"
+            android:layout_width="84dp"
+            android:layout_height="29dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:text="@string/palmcall_rechatge"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/broadcast_ffffff"
+            android:background="@drawable/broadcast_photo_selection"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_c2c2c2"
+        >
+
+    </View>
+
+</LinearLayout>
